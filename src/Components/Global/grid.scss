@@ -1,0 +1,90 @@
+// 1. Grid Setup
+body {
+  box-sizing:border-box;
+  max-width: 100%;
+  display:grid;
+
+  grid-column-gap:0px;
+  grid-row-gap: 0px;
+  // grid-template-columns:repeat(6, 1rem);
+  // grid-template-rows:repeat(4, [column-start] 1fr);
+  grid-auto-columns: 1fr;
+  // grid-auto-rows:2rem;
+  justify-content: space-between;
+  align-content: safe center;
+}
+// 2. Grid Placement
+nav {
+  grid-row-start:1;
+  grid-row-end:1;
+  grid-column-start:1;
+  grid-column-end:4;
+  grid-auto-rows: 1rem;
+  max-height:3rem;
+  // grid-template-rows:repeat(4, [column-start] 1fr);
+}
+header {
+  grid-row-start:2;
+  grid-row-end:2;
+  grid-column-start:1;
+  grid-column-end:4;
+}
+main {
+  grid-row-start:3;
+  grid-row-end:3;
+  grid-column-start:1;
+  grid-column-end:4;
+}
+footer {
+}
+.nav-toggle {
+  width:100%;
+  height:auto;
+}
+
+// iphone x,  iphone 6, galaxy s5, note 6 - like devices
+@media (min-width: 375px) {
+}
+
+//
+@media (min-width: 425px) {
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .navigation-list {
+    display:flex;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .nav-toggle,
+  .navbar {
+    height:0px;
+    overflow-y:hidden;
+  }
+  .collapsed-mobile {
+    max-height:100%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+// note: iPad Pro hath been targeted within
+@media (min-width: 992px) {
+  nav {
+    display:flex;
+    position:initial;
+  }
+  body {
+    max-height:100%;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-template-rows: repeat(8, [row-start] 1fr);
+    grid-auto-rows: max(135px);
+  }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
