@@ -6,7 +6,9 @@ class App extends Component {
   render () {
     return (
       <React.Fragment>
-        <p>test</p>
+        <header>
+          <h1>Zack Morgenthaler</h1>
+        </header>
       </React.Fragment>
     );
   }
