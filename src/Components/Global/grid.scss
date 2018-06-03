@@ -37,7 +37,7 @@ main {
 }
 footer {
 }
-.nav-toggle {
+.toggle {
   width:100%;
   height:auto;
 }
@@ -60,7 +60,7 @@ footer {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .nav-toggle,
+  .navbar .toggle,
   .navbar {
     height:0px;
     overflow-y:hidden;

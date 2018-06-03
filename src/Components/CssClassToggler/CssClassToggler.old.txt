@@ -1,0 +1,66 @@
+import React, { Component } from 'react';
+
+export class ToggleTrigger extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      Toggled: true
+    };
+    console.log('toggle constructed. props: ', this.props);
+    this.toggle = this.toggle.bind(this);
+  }
+  componentDidMount () {
+    console.log('componentDidMount');
+  }
+  toggle () {
+    this.setState(prevState => ({
+      toggled: !prevState.collapsed
+    }));
+  }
+  componentDidUpdate (prevProps, prevState) {
+    this.state.Toggled ? (
+      document.querySelector(this.props.target).classList.toggle(this.props.toggledClassName)
+      // document.querySelector(this.id)
+    ) : (
+      (function () { return false; })()
+    );
+  }
+
+  render (props) {
+    console.log(this.props);
+    console.log(this.props.children);
+    const OutputHtmlTag =
+      React.createElement(this.props.htmlTag, { displayName: '', className: 'trigger' }, this.props.children);
+    return ({ OutputHtmlTag });
+  }
+}
+
+export class CssClasToggler extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      Toggled: false
+    };
+    console.log('ToggleTrigger constructor()', 'props: ', this.props);
+    this.toggle = this.toggle.bind(this);
+  }
+  componentWillMount (props) {
+  }
+  toggle () {
+    this.setState(prevState => ({
+      toggled: !prevState.collapsed
+    }));
+  }
+  componentDidUpdate (prevProps, prevState) {
+    this.state.Toggled ? (
+      document.querySelector(this.props.target).classList.toggle(this.props.toggledClassName)
+    ) : (
+      (function () { return false; })()
+    );
+  }
+  render (props) {
+    {this.props.children}
+  }
+}
+
+export default CssClassToggler;
