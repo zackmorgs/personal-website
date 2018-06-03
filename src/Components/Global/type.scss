@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Archivo:regular,italic,500,500italic,600,600italic,700,700italic');
-
+html {
+  font-size:18px;
+}
 body {
   font-family:'Work Sans';
+  line-height: 1rem;
 }
 
 h1, h2, h3, h4 {

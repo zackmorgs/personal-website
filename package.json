@@ -16,10 +16,12 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive --output-style compressed --source-map-embed",
     "help-sass":"node-sass-chokidar --help"
+  },
+  "scripts-for-later":{
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "eslint-plugin-react": "^7.8.2",

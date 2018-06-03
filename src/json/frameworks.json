@@ -1,0 +1,92 @@
+[
+  {
+    "name":"React",
+    "languages":["JavaScript"],
+    "category":"front-end",
+    "knowledge_level": "",
+    "certificates": []   
+  },
+  {
+    "name": "jQuery",
+    "languages": ["JavaScript"],
+    "category": "front-end",
+    "knowledge_level": "",
+    "certificates": []
+  },
+  {
+    "name":"Bulma",
+    "category":"front-end",
+    "languages":[
+      "CSS", "JS", "HTML"
+    ],
+    "knowledge_level": "",
+    "certificates": []
+  },
+  {
+    "name": "Bootstrap",
+    "category":"front-end",
+    "languages": [
+      "CSS", "JS", "HTML"
+    ]
+  },
+  {
+    "name": "ASP.NET",
+    "languages": [
+      "C#",
+      "Visual Basic",
+      "F#"
+    ],
+    "category": "server-side programming",
+    "knowledge_level": "",
+    "certificates": []
+  },
+  {
+    "name": "Node.js",
+    "languages": ["JavaScript"],
+    "category": "server-side programming, build tool",
+    "knowledge_level": 80
+  },
+  {
+    "name": "NPM",
+    "languages": ["JavaScript"],
+    "category": "build tool, package manager",
+    "knowledge_level": 50
+  },
+  {
+    "name": "Express",
+    "languages": ["JavaScript"],
+    "category": "server-side framework for Node.js",
+    "knowledge_level": 50
+  },
+  {
+    "name": "Git",
+    "languages": [""],
+    "category": "Development Tool, Version Control, Package Manager",
+    "knowledge_level": 50
+  },
+  {
+    "name": "SASS",
+    "languages": ["CSS"],
+    "category": "Developement Tool, CSS Preprocessor",
+    "knowledge_level": 50
+  },
+  {
+    "name": "LESS",
+    "languages": ["CSS"],
+    "category": "Development Tool, CSS Preprocessor",
+    "knowledge_level": 50
+  },
+  {
+    "name": "Bash",
+    "languages": ["Bash"],
+    "category": "Unix Shell, Command Language",
+    "knowledge_level": 50
+  },
+  {
+    "name": "PowerShell",
+    "languages": [""],
+    "category": "Command-Line Shell, Scripting Language",
+    "knowledge_level": 50
+  }
+  
+]
