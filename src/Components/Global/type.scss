@@ -4,3 +4,31 @@
 body {
   font-family:'Work Sans';
 }
+
+h1, h2, h3, h4 {
+  font-family:'Archivo';
+}
+// iphone x,  iphone 6, galaxy s5, note 6 - like devices
+@media (min-width: 375px) {
+}
+
+//
+@media (min-width: 425px) {
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+// note: iPad Pro hath been targeted within
+@media (min-width: 992px) {
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

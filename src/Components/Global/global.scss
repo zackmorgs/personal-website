@@ -4,6 +4,7 @@
 @import "./type.scss";
 @import "./colors.scss";
 
+
 body {
   display:grid;
   grid-gap:0;
@@ -20,22 +21,34 @@ nav {
   grid-template: "branding" "navigation";
   grid-template-columns: 1fr;
 }
-
-.navigation-list {
-  list-style: none;
-  margin:0;
-  padding:0;
+.navbar {
   display: flex;
-  li {
-    padding:0;
-    margin:0;
-  }
+  align-items: stretch;
+  padding:.5rem 1rem;
+  position: sticky;
 }
 .branding {
   a {
     color:$brand_red;
   }
 }
+.nav-toggle {
+  margin-left: auto;
+}
+.nav-list {
+  list-style: none;
+  margin:0;
+  padding:0;
+  &.nav-closed {
+    height:0px;
+    overflow-y:hidden;
+  }
+  li {
+    padding:0;
+    margin:0;
+  }
+}
+
 // </ Navigation >
 
 //
@@ -55,7 +68,9 @@ nav {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-
+  .navigation-list {
+    display:flex;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
