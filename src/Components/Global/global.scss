@@ -1,4 +1,8 @@
 // global styles
 // no modules allowed!
 @import "./../node_modules/normalize.css/normalize";
-
+@import "./type.scss";
+@import './colors.scss'
+body {
+  background-color:$base_blue;
+}
