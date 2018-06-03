@@ -1,1 +1,20 @@
-$base_blue:#253137
+$base_blue:#253137;
+$text_white:#D7DCDE;
+$brand_red:#F44336;
+
+body {
+  background-color:$base_blue;
+  color:$text_white;
+}
+// <navigation>
+nav {
+  background-color:#151D21;
+}
+
+
+.branding {
+  a {
+    color:$brand_red;
+  }
+}
+// </navigation>

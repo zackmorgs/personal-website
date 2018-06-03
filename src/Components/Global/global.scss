@@ -1,8 +1,84 @@
 // global styles
 // no modules allowed!
-@import "./../node_modules/normalize.css/normalize";
+@import "./../../../node_modules/normalize.css";
 @import "./type.scss";
-@import './colors.scss'
+@import "./colors.scss";
+
 body {
-  background-color:$base_blue;
+  display:grid;
+  grid-gap:0;
+  grid-template-areas:
+    "nav"
+    "header"
+    "content"
+    "footer";
+}
+// < Navigation >
+nav {
+  display:grid;
+  grid-area:"r1";
+  grid-template: "branding" "navigation";
+  grid-template-columns: 1fr;
+}
+
+.navigation-list {
+  list-style: none;
+  margin:0;
+  padding:0;
+  display: flex;
+  li {
+    padding:0;
+    margin:0;
+  }
+}
+.branding {
+  a {
+    color:$brand_red;
+  }
+}
+// </ Navigation >
+
+//
+//   Media Queries
+//   (mobile-first, above is 320 and above code)
+//
+
+
+// iphone x,  iphone 6, galaxy s5, note 6 - like devices
+@media (min-width: 375px) {
+}
+
+//
+@media (min-width: 425px) {
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+// note: iPad Pro hath been targeted within
+@media (min-width: 992px) {
+  grid-auto-rows: 135px;
+  grid-auto-columns: 160px;
+  grid-template-areas:
+    "r1_c1 r1_c2 r1_c3 r1_c4 r1_c5 r1_c6 r1_c7 r1_c8 r1_c9 r1_c11 r1_c12"
+    "r2_c1 r2_c2 r2_c3 r2_c4 r2_c5 r2_c6 r2_c7 r2_c8 r2_c9 r2_c11 r2_c12"
+    "r3_c1 r3_c2 r3_c3 r3_c4 r3_c5 r3_c6 r3_c7 r3_c8 r3_c9 r3_c11 r3_c12"
+    "r4_c1 r4_c2 r4_c3 r4_c4 r4_c5 r4_c6 r4_c7 r4_c8 r4_c9 r4_c11 r4_c12"
+    "r5_c1 r5_c2 r5_c3 r5_c4 r5_c5 r5_c6 r5_c7 r5_c8 r5_c9 r5_c11 r5_c12"
+    "r6_c1 r6_c2 r6_c3 r6_c4 r6_c5 r6_c6 r6_c7 r6_c8 r6_c9 r6_c11 r6_c12"
+    "r7_c1 r7_c2 r7_c3 r7_c4 r7_c5 r7_c6 r7_c7 r7_c8 r7_c9 r7_c11 r7_c12"
+    "r8_c1 r8_c2 r8_c3 r8_c4 r8_c5 r8_c6 r8_c7 r8_c8 r8_c9 r8_c11 r8_c12";
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
 }

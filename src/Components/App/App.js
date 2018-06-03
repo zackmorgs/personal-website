@@ -6,7 +6,10 @@ class App extends Component {
     return (
       <React.Fragment>
         <nav>
-          <ul className='navigation-items'>
+          <div className='branding'>
+            <a>zackmorgs</a>
+          </div>
+          <ul className='navigation-list'>
             <li>
               <a>Home</a>
             </li>
@@ -24,13 +27,20 @@ class App extends Component {
             </li>
           </ul>
         </nav>
-        <header>
+        <header role='banner'>
           <h1>Zack Morgenthaler</h1>
           <p>multidisciplinary web developer</p>
         </header>
-        <section>
+        <section className='skills'>
+          <h2>Focus</h2>
 
         </section>
+        <section>
+          <h2>Skills</h2>
+        </section>
+        <footer>
+          <p>this is the footer :D</p>
+        </footer>
       </React.Fragment>
     );
   }
