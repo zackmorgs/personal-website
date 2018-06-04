@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { CssClassToggler, ToggleTrigger } from './../CssClassToggler/CssClassToggler';
+import { CssClassToggler } from './../CssClassToggler/CssClassToggler';
+import { ToggleTrigger } from './../ToggleTrigger/ToggleTrigger';
 export class Navigation extends Component {
   constructor (props) {
     super(props);
@@ -14,43 +15,26 @@ export class Navigation extends Component {
   componentDidUpdate () {
     console.log('Navigation:', 'componentDidUpdate()');
   }
-  // toggle () {
-  //   console.log('aye it triggered');
-  //   this.classList.toggle('collapsed');
-  // }
+
   render () {
     // var CollapsibleClassList = 'nav-list collapsible collapsed';
     // var CollapsibleClassList = DOMTokenList.prototype();
     return (
       <nav>
         <div className='navbar'>
-          {/* React.createElement(CssClassToggler, ) */}
-          {/* <ToggleTrigger htmlTagName='button' target='.nav-list' toggledClassName='collapsed'> */}
-          {/* const ToggleTrigger = React.forwardRef(({ htmlTagName: 'button', target: {}, toggledClassName: 'collapsed'}, ref) => ( */}
-            {/* React.createElement (this.props.htmlTagName, { displayName: '', className: 'trigger' },  */}
-          {/* var _props = { htmlTagName: 'button', target: {}, toggledClassName: 'collapsed' }; */}
-          {/* var toggleTriggerProps = { htmlTagName: 'button', toggledClassName: 'collapsed' }; */}
-
-          {/* const ToggleTrigger = React.forwardRef((props, ref) => (
-
-          )); */}
-          const ToggleTrigger = React.forwardRef((props, ref) => (
-            React.createElement (this.props.htmlTagName, props, props.children)
-          ));
-          <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
-            <line x1='3' y1='12' x2='21' y2='12' />
-            <line x1='3' y1='6' x2='21' y2='6' />
-            <line x1='3' y1='18' x2='21' y2='18' />
-          </svg>
-          {/* <ToggleTrigger >
-
-          </ToggleTrigger>
           {
-            var navigationTrigger = React.Create
-          } */}
+            console.log('test')
+          }
+          <ToggleTrigger htmlTagName='button'>
+            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+              <line x1='3' y1='12' x2='21' y2='12' />
+              <line x1='3' y1='6' x2='21' y2='6' />
+              <line x1='3' y1='18' x2='21' y2='18' />
+            </svg>
+          </ToggleTrigger>
         </div>
         {/* nav-list collapsible collapsed */}
-        <CssClassToggler toggleTrigger=''>
+        <CssClassToggler initiallyToggled='false' toggledClassName='collapsed'>
           <ul className='nav-list collapsible collapsed'>
             <li>
               <a>Home</a>

@@ -1,72 +1,51 @@
 import React, { Component } from 'react';
 
-export class ToggleTrigger extends Component {
-  constructor (props) {
-    super(props);
-    this.state = {
-      Toggled: true
-    };
-    console.log('toggle constructed. props: ', this.props);
-    this.toggle = this.toggle.bind(this);
-  }
-  componentDidMount () {
-    console.log('componentDidMount');
-  }
-  toggle () {
-    this.setState(prevState => ({
-      toggled: !prevState.collapsed
-    }));
-  }
-  componentDidUpdate (prevProps, prevState) {
-    this.state.Toggled ? (
-      document.querySelector(this.props.target).classList.toggle(this.props.toggledClassName)
-      // document.querySelector(this.id)
-    ) : (
-      (function () { return false; })()
-    );
-  }
-
-  render (props) {
-    console.log(this.props);
-    console.log(this.props.children);
-    const OutputHtmlTag =
-      React.createElement(this.props.htmlTag, { displayName: '', className: 'trigger' }, this.props.children);
-    return ({ OutputHtmlTag });
-  }
-}
-
 export class CssClassToggler extends Component {
   constructor (props) {
     super(props);
-    this.state = {
+    console.log('constructor (props)', this.props);
+    this.setState = {
       isToggled: false
     };
-    // this.props.toggledClassName
-    console.log('ToggleTrigger constructor()', 'props: ', this.props);
-    this.toggleHandler = this.toggleHandler.bind(this);
+    this.togglerHandler = this.togglerHandler.bind(this);
   }
+  componentWillReceiveProps (nextProps) {
+    console.log('componentWillReceiveProps (nextProps)', nextProps);
+    // if ('checked' in nextProps) {
+    //   this.setState({checked: !!nextProps.checked});
+    // }
+  }
+
   componentWillMount (props) {
-    if (this.isToggled) {
-      this.children.forEach(function (Element, Elements, ElementIndex) {
-        if (Element.classList.contains(this.props.toggledClassName)) {
-          Element.classList.Toggle(this.props.toggledClassName);
-        }
-      });
-    }
+    console.log('componentWillMount(props)', props);
+    Object.keys(this.props.children);
+    // React.clone()
+    this.props.HTMLToggleTarget =
+      React.cloneElement(
+        this.props.childToggleTarget,
+        this.props,
+        this.props.children
+      );
   }
-  toggleHandler () {
+  togglerHandler (event) {
+    console.log('togglerHandler (event)', event);
     this.setState(prevState => ({
-      isToggled: !prevState.collapsed
+      toggled: !prevState.isToggled
     }));
   }
   componentDidUpdate (prevProps, prevState) {
+    console.log('componentDidUpdate (prevProps, prevState)', prevProps, prevState);
+    if (this.state.isToggled) {
+    }
     // this.state.Toggled ? (
-      // document.querySelector(this.props.target).classList.toggle(this.props.toggledClassName)
-    // ) : ((function () { return false; })());
-
+    //   document.querySelector(this.props.target).classList.toggle(this.props.toggledClassName)
+    // ) : (
+    //   (function () { return false; })()
+    // );
   }
   render (props) {
-    return this.props.children;
+    console.log('render(props)', this.props);
+    return this.props.HTMLToggleTarget;
   }
 }
 
