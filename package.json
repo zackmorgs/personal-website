@@ -18,12 +18,14 @@
     "test": "react-scripts test --env=jsdom",
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive --output-style compressed --source-map-embed",
-    "help-sass":"node-sass-chokidar --help"
+    "help-sass": "node-sass-chokidar --help"
   },
-  "scripts-for-later":{
+  "scripts-for-later": {
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
     "eslint-plugin-react": "^7.8.2",
     "semistanard": "*"
   }
