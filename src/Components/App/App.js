@@ -1,61 +1,65 @@
 import React, { Component } from 'react';
-import { Navigation, NavigationBar, NavigationList, NavigationItem, NavigationLinkText, NavigationItemLink } from './../Navigation/Navigation';
-import { CssClassToggler } from './../CssClassToggler/CssClassToggler';
+import { Navigation, NavBar, NavList, NavItem, NavLink, NavText } from './../Navigation/Navigation';
+// import { CssClassToggler } from './../CssClassToggler/CssClassToggler';
 import { ToggleTrigger } from './../ToggleTrigger/ToggleTrigger';
 // import logo from './logo.svg';
 
 class App extends Component {
-  render () {
+  constructor (props) {
+    super(props);
+    console.log('App => constructor (this.props)', this.props);
+  }
+  render (props) {
+    console.log('App => render (this.props)', this.props);
     return (
       <React.Fragment>
         <Navigation>
-          <CssClassToggler>
-            <NavigationBar className='navbar'>
-              {/* <a className='branding'>zackmorgs</a> */}
-              <ToggleTrigger>
-                <button className='toggle' >
-                  <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
-                    <line x1='3' y1='12' x2='21' y2='12' />
-                    <line x1='3' y1='6' x2='21' y2='6' />
-                    <line x1='3' y1='18' x2='21' y2='18' />
-                  </svg>
-                </button>
-              </ToggleTrigger>
-            </NavigationBar>
-            {/* toggleTarget='nav-list'
-          toggledOnInit='false'
-          toggledClassName='collapsed' */}
-            <NavigationList className='nav-list collapsible'>
-              <NavigationItem>
-                <NavigationItemLink href='/'>
-                  <NavigationLinkText>
-                    {'home'}
-                  </NavigationLinkText>
-                </NavigationItemLink>
-              </NavigationItem>
-              <NavigationItem>
-                <NavigationItemLink href=''>
-                  <NavigationLinkText>
-                    {'about'}
-                  </NavigationLinkText>
-                </NavigationItemLink>
-              </NavigationItem>
-              <NavigationItem>
-                <NavigationItemLink href=''>
-                  <NavigationLinkText>
-                    {'projects'}
-                  </NavigationLinkText>
-                </NavigationItemLink>
-              </NavigationItem>
-              <NavigationItem>
-                <NavigationItemLink href=''>
-                  <NavigationLinkText>
-                    {'contact'}
-                  </NavigationLinkText>
-                </NavigationItemLink>
-              </NavigationItem>
-            </NavigationList>
-          </CssClassToggler>
+          <NavBar className='navbar'>
+            {/* <a className='branding'>zackmorgs</a> */}
+            <ToggleTrigger
+              className='toggle'
+              classNameOnToggled='toggled'
+              toggleTargetClassName='nav-list'
+              targetClassNameUntoggled='collapsible'
+              targetClassNameToggled='collapsed'
+              toggledOnInit='true'>
+              <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+                <line x1='3' y1='12' x2='21' y2='12' />
+                <line x1='3' y1='6' x2='21' y2='6' />
+                <line x1='3' y1='18' x2='21' y2='18' />
+              </svg>
+            </ToggleTrigger>
+          </NavBar>
+          <NavList className='nav-list collapsible'>
+            <NavItem>
+              <NavLink href='/'>
+                <NavText>
+                  {'home'}
+                </NavText>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='/test'>
+                <NavText>
+                  {'about'}
+                </NavText>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='/test'>
+                <NavText>
+                  {'projects'}
+                </NavText>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='/test'>
+                <NavText>
+                  {'contact'}
+                </NavText>
+              </NavLink>
+            </NavItem>
+          </NavList>
         </Navigation>
         <header role='banner'>
           <h1>Zack Morgenthaler</h1>

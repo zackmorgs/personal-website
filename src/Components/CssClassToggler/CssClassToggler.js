@@ -3,52 +3,55 @@ import React, { Component } from 'react';
 export class CssClassToggler extends Component {
   constructor (props) {
     super(props);
-    console.log('constructor (props)', this.props);
+    console.log('CssClassToggler (props)', this.props);
     this.setState = {
       isToggled: this.props.toggledOnInit
     };
-    this.togglerHandler = this.togglerHandler.bind(this);
-    this.ToggleTrigger = React.createRef();
+    // toggleTarget='nav-list' classNameUntoggled='collapsible' classNameToggled='collapsed' toggledOnInit='true'
+    // var toggleTargetName = this.props.toggleTarget;
+
+    //console.log(document.querySelector(toggleTargetName));
+    // var recursiveSearch = function (targetName, searchArea) {
+    //   if ((typeof test === 'object' && test.length >= 0)) {
+    //     searchArea.forEach(function (current, index, array) {
+    //       if (typeof current.props !== 'undefined') {
+    //         if (current.className === targetName) {
+    //           return current;
+    //         } else if (current.props.children) {
+    //           return recursiveSearch(targetName, current.props.children);
+    //         }
+    //       }
+    //     });
+    //   }
+    // };
+    // this.toggleTarget = recursiveSearch(this.props.toggleTarget, this.props.children);
+    // this.toggleTarget = this.props.children.find(function (Child, index, array) {
+    //   console.log('Child: ', Child);
+    //   console.log('Typeof', typeof Child);
+
+    //   if (typeof Child === 'object') {
+    //     if (typeof Child.props !== 'undefined') {
+    //       if (Child.props.className === toggleTargetName) {
+    //         return true;
+    //       } else if (Child.props.children.length) {
+
+    //       }
+    //     }
+    //   }
+    // });
+    // this.togglerHandler = this.togglerHandler.bind();
+    //this.ToggleTrigger = React.createRef();
   }
   componentWillReceiveProps (nextProps) {
     console.log('CssClassToggler => componentWillReceiveProps (nextProps)', nextProps);
-    // if ('checked' in nextProps) {
-    //   this.setState({checked: !!nextProps.checked});
-    // }
   }
   componentWillMount (props) {
     console.log('CssClassToggler => componentWillMount(props)', props);
-    // Object.keys(this.props.children);
-    // React.clone()
-    // this.props.HTMLToggleTarget =
-    //   React.cloneElement(
-    //     this.props.childToggleTarget,
-    //     this.props,
-    //     this.props.children
-    //   );
   }
   componentDidMount (props) {
     console.log('CssClassToggler => componentDidMount (props)', this.props);
-    window.ZacksProps = this.props;
-    this.props.children.find(function (child) {
-      // console.log('type: ', type(child.props));
-      console.log('New Child: --- ');
-      console.log('Child: ', child.props.children);
-      // console.log('child.props.children.length:', child.props.children.length);
-      // console.log('Object.keys(child.props.children)', Object.keys(child.props.children));
-      // child.props.children.forEach(function(superKid){
-
-      // })
-    });
-    // this.props.children.forEach(function (child) {
-    //   console.log('Child:', child);
-    //   console.log('Child.props.children:', child.props.)
-    //   // if (child.props.children.type.name === 'ToggleTrigger') {
-    //   //   child.onClick=this.togglerHandler;
-    //   // } else if (child.props.type.name === 'NavigationList') {
-    //   //   this.props.HTMLToggleTarget
-    //   // }
-    // });
+    document.querySelector(this.props.)
+    //this.togglerHandler.bind()
   }
   togglerHandler (event) {
     console.log('CssClassToggler => togglerHandler (event)', event);
@@ -58,20 +61,22 @@ export class CssClassToggler extends Component {
   }
   componentDidUpdate (prevProps, prevState) {
     console.log('CssClassToggler => componentDidUpdate (prevProps, prevState)', prevProps, prevState);
+    console.log('Find Target');
+    console.log('==========================')
     if (this.state.isToggled) {
+      // gotta update our toggleTarget
+      var toggleTarget =
+        document.querySelectorAll(this.props.toggleTarget)
+        .classList.toggle(this.props.classNameToggled);
+      this.props.toggleTarget.classList.toggle(this.props.classNameToggled);
     }
-    // this.state.Toggled ? (
-    //   document.querySelector(this.props.target).classList.toggle(this.props.toggledClassName)
-    // ) : (
-    //   (function () { return false; })()
-    // );
   }
+
   render (props) {
     // 1. find ToggleTrigger
     // 2. ref={this.ToggleTrigger}
     // this.props.children.find()
     console.log('CssClassToggler => render(props)', this.props);
-    // return this.props.HTMLToggleTarget;
     return this.props.children;
   }
 }

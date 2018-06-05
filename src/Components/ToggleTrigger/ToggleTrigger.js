@@ -4,47 +4,64 @@ import React, { Component } from 'react';
 export class ToggleTrigger extends Component {
   constructor (props) {
     super(props);
-    console.log('constructor (props)', this.props);
+    console.log('ToggleTrigger (props)', this.props);
     this.state = {
-      Toggled: true
+      Toggled: this.props.toggledOnInit
     };
     this.toggleHandler = this.toggleHandler.bind(this);
   }
   componentWillReceiveProps (nextProps) {
-    console.log('componentWillReceiveProps (nextProps)', nextProps);
+    console.log('ToggleTrigger => componentWillReceiveProps (nextProps)', nextProps);
     // if ('checked' in nextProps) {
     //   this.setState({checked: !!nextProps.checked});
     // }
   }
   componentWillMount (props) {
-    console.log('componentWillMount(props)', this.props);
-    // this.props.HTMLTrigger =
-    //   React.createElement(, props, this.props.children);
-    // this.props.HTMLTrigger.className = 'trigger';
-    // this.props.HTMLTrigger = React.createElement()
-    if (this.props.isToggled) {
-      this.props.HTMLTrigger.classList.toggle('triggered');
-    }
+    console.log('ToggleTrigger => componentWillMount(props)', this.props);
+    // if (this.props.isToggled) {
+    //   this.props.HTMLTrigger.classList.toggle('triggered');
+    // }
   }
   componentDidMount (props) {
-    console.log('componentDidMount()', this.props);
+    console.log('ToggleTrigger => componentDidMount()', this.props);
   }
 
   toggleHandler (event) {
-    console.log('toggleHandler (event)', event);
+    console.log('ToggleTrigger => toggleHandler (event)', event);
+    // className='toggle', classNameOnToggled='toggled'
+    // toggleTarget='nav-list', targetClassNameToggled='collapsed'
+    // give our toggle the correct class
+    //document.querySelector('.' + this.props.className).className.toggle(this.props.classNameonToggle);
+    console.log('.' + this.props.classList);
+    document.querySelector('.toggle').classList.toggle('toggled');
+    // give our target the correct class
+    // document.querySelector('.' + this.props.toggleTarget).classList.toggle(this.props.targetClassNameToggled);
+    console.log('.' + this.props.toggleTarget)
+    document.querySelector('.nav-list').classList.toggle('collapsed');
+  }
+  componentDidUpdate (prevProps, prevState) {
     this.setState(prevState => ({
       isToggled: !prevState.collapsed
     }));
   }
-  componentDidUpdate (prevProps, prevState) {
-    console.log('componentDidUpdate (prevProps, prevState)', prevProps, prevState);
-    // this.state.isToggled ? (
-    //   document.querySelector(this.props.target).classList.toggle(this.props.toggledClassName))
-    //   : ((function () { return false; })());
-  }
   render (props) {
     console.log('ToggleTrigger => render (props)', this.props);
-    return (this.props.children);
+    // className='toggle'
+    // classNameOnToggled='toggled'
+    // toggleTarget='nav-list'
+    // targetClassNameInit='collapsible'
+    // targetClassNameToggled='collapsed'
+    // toggledOnInit='true'
+    var toggleClassName = this.props.className;
+    if (this.isToggled || Boolean(this.props.toggledOnInit)) {
+      // is toggled.
+      toggleClassName += ' ' + this.props.classNameOnToggled;
+    }
+    return (
+      <button className={toggleClassName} onClick={this.toggleHandler}>
+        {this.props.children}
+      </button>
+    );
   }
 }
 

@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 // import { CssClassToggler } from './../CssClassToggler/CssClassToggler';
 // import { ToggleTrigger } from './../ToggleTrigger/ToggleTrigger';
 
+// someday ill learn how to do this, make it validate my stuff for me.
+// class NavigationComponent extends Component {
+//   constructor (props) {
+//     super(props);
+//   }
+// }
 export class Navigation extends Component {
   constructor (props) {
     super(props);
@@ -23,89 +29,79 @@ export class Navigation extends Component {
     );
   }
 }
-export class NavigationBar extends Component {
+export class NavBar extends Component {
   constructor (props) {
     super(props);
-    console.log('NavigationBar => constructor (props)', props);
+    console.log('NavBar => constructor (props)', props);
   }
   componentDidMount (props) {
-    console.log('NavigationBar => componentDidMount(props)', props);
+    console.log('NavBar => componentDidMount(props)', props);
     // document.
   }
   componentDidUpdate (props) {
-    console.log('NavigationBar => componentDidUpdate(props)', props);
+    console.log('NavBar => componentDidUpdate(props)', props);
   }
   render (props) {
     // var CollapsibleClassList = 'nav-list collapsible collapsed';
     // var CollapsibleClassList = DOMTokenList.prototype();
-    console.log('NavigationBar => render(props)', props);
+    console.log('NavBar => render(props)', props);
     return (<div className={this.props.className}>{ this.props.children }</div>);
   }
 }
-export class NavigationList extends Component {
-  // private NavigationItemsList
+export class NavList extends Component {
   constructor (props) {
     super(props);
-    console.log('NavigationList => constructor (props)', this.props);
+    console.log('NavList => render (props)', this.props);
   }
-  componentWillReceiveProps (nextProps) {
-    console.log('NavigationList => componentWillReceiveProps (nextProps)', nextProps);
-  }
-  componentWillMount (props) {
-    console.log('NavigationList => componentWillMount(props)', this.props);
-  }
-  componentDidMount (props) {
-    console.log('NavigationList => componentDidMount (props)', this.props);
-  }
-  componentDidUpdate (prevProps, prevState) {
-    console.log('NavigationList => componentDidUpdate (prevProps, prevState)', prevProps, prevState);
-  }
-  render (props) {
-    console.log('NavigationList => render (props)', this.props);
+  render () {
     return (<ul class={this.props.className}>{ this.props.children }</ul>);
   }
 }
-export class NavigationItem extends Component {
+export class NavItem extends Component {
   constructor (props) {
     super(props);
-    console.log('NavigationItem => constructor (props)', this.props);
+    console.log('NavItem => constructor (props)', this.props);
   }
   componentWillReceiveProps (nextProps) {
-    console.log('NavigationItem => componentWillReceiveProps (nextProps)', nextProps);
+    console.log('NavItem => componentWillReceiveProps (nextProps)', nextProps);
   }
   componentWillMount (props) {
-    console.log('NavigationItem => componentWillMount(props)', this.props);
+    console.log('NavItem => componentWillMount(props)', this.props);
   }
   componentDidMount (props) {
-    console.log('NavigationItem => componentDidMount (props)', this.props);
+    console.log('NavItem => componentDidMount (props)', this.props);
   }
   componentDidUpdate (prevProps, prevState) {
-    console.log('NavigationItem => componentDidUpdate (prevProps, prevState)', prevProps, prevState);
+    console.log('NavItem => componentDidUpdate (prevProps, prevState)', prevProps, prevState);
   }
   render (props) {
-    console.log('NavigationItem => render (props)', this.props);
+    console.log('NavItem => render (props)', this.props);
     return (<li class={this.props.className}>{ this.props.children }</li>);
   }
 }
-export class NavigationItemLink extends Component {
+export class NavLink extends Component {
   constructor (props) {
     super(props);
-    console.log('NavigationItemLink => constructor (props)', this.props);
+    console.log('NavLink => constructor (props)', this.props);
+    // if (typeof this.props.className === 'undefined' || this.props.className.length === 0) {
+    //   this.props.className = 'nav-item-link';
+    // }
   }
   componentWillReceiveProps (nextProps) {
-    console.log('NavigationItemLink => componentWillReceiveProps (nextProps)', nextProps);
+    console.log('NavLink => componentWillReceiveProps (nextProps)', nextProps);
   }
   componentWillMount (props) {
-    console.log('NavigationItemLink => componentWillMount(props)', this.props);
+    console.log('NavLink => componentWillMount(props)', this.props);
   }
   componentDidMount (props) {
-    console.log('NavigationItemLink => componentDidMount (props)', this.props);
+    console.log('NavLink => componentDidMount (props)', this.props);
   }
   componentDidUpdate (prevProps, prevState) {
-    console.log('NavigationItemLink => componentDidUpdate (prevProps, prevState)', prevProps, prevState);
+    console.log('NavLink => componentDidUpdate (prevProps, prevState)', prevProps, prevState);
   }
   render (props) {
-    console.log('NavigationItemLink => render (props)', this.props);
+    console.log('NavLink => render (props)', this.props);
+
     return (<a href={this.props.href} class={this.props.className}>{ this.props.children }</a>);
   }
 }
@@ -133,30 +129,33 @@ export class NavigationItemLink extends Component {
 //     return (this.props.Icon);
 //   }
 // }
-export class NavigationLinkText extends Component {
+export class NavText extends Component {
   constructor (props) {
     super(props);
-    console.log('NavigationLinkText => constructor (props)', this.props);
+    console.log('NavText => constructor (props)', this.props);
+    // if (this.props.className.length === 0) {
+    //   this.props.className = 'nav-list-item-link';
+    // }
   }
   componentWillReceiveProps (nextProps) {
-    console.log('NavigationLinkText => componentWillReceiveProps (nextProps)', nextProps);
+    console.log('NavText => componentWillReceiveProps (nextProps)', nextProps);
   }
   componentWillMount (props) {
-    console.log('NavigationLinkText => componentWillMount(props)', this.props);
+    console.log('NavText => componentWillMount(props)', this.props);
   }
   componentDidMount (props) {
-    console.log('NavigationLinkText => componentDidMount (props)', this.props);
+    console.log('NavText => componentDidMount (props)', this.props);
   }
   componentDidUpdate (prevProps, prevState) {
-    console.log('NavigationLinkText => componentDidUpdate (prevProps, prevState)', prevProps, prevState);
+    console.log('NavText => componentDidUpdate (prevProps, prevState)', prevProps, prevState);
   }
   render (props) {
     // return this.props.LinkText;
     // if (this.props.LinkText )
-    return this.props.children;
+    return (<span>{this.props.children}</span>);
   }
 }
 export default Navigation;
 // export {
-//   NavigationList, NavigationItem, NavigationItemLink, NavigationLinkIcon, NavigationLinkText
+//   NavList, NavItem, NavLink, NavigationLinkIcon, NavText
 // }
