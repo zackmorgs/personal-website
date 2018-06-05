@@ -1,12 +1,62 @@
 import React, { Component } from 'react';
-import { Navigation } from './../Navigation/Navigation';
+import { Navigation, NavigationBar, NavigationList, NavigationItem, NavigationLinkText, NavigationItemLink } from './../Navigation/Navigation';
+import { CssClassToggler } from './../CssClassToggler/CssClassToggler';
+import { ToggleTrigger } from './../ToggleTrigger/ToggleTrigger';
 // import logo from './logo.svg';
 
 class App extends Component {
   render () {
     return (
       <React.Fragment>
-        <Navigation />
+        <Navigation>
+          <CssClassToggler>
+            <NavigationBar className='navbar'>
+              {/* <a className='branding'>zackmorgs</a> */}
+              <ToggleTrigger>
+                <button className='toggle' >
+                  <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+                    <line x1='3' y1='12' x2='21' y2='12' />
+                    <line x1='3' y1='6' x2='21' y2='6' />
+                    <line x1='3' y1='18' x2='21' y2='18' />
+                  </svg>
+                </button>
+              </ToggleTrigger>
+            </NavigationBar>
+            {/* toggleTarget='nav-list'
+          toggledOnInit='false'
+          toggledClassName='collapsed' */}
+            <NavigationList className='nav-list collapsible'>
+              <NavigationItem>
+                <NavigationItemLink href='/'>
+                  <NavigationLinkText>
+                    {'home'}
+                  </NavigationLinkText>
+                </NavigationItemLink>
+              </NavigationItem>
+              <NavigationItem>
+                <NavigationItemLink href=''>
+                  <NavigationLinkText>
+                    {'about'}
+                  </NavigationLinkText>
+                </NavigationItemLink>
+              </NavigationItem>
+              <NavigationItem>
+                <NavigationItemLink href=''>
+                  <NavigationLinkText>
+                    {'projects'}
+                  </NavigationLinkText>
+                </NavigationItemLink>
+              </NavigationItem>
+              <NavigationItem>
+                <NavigationItemLink href=''>
+                  <NavigationLinkText>
+                    {'contact'}
+                  </NavigationLinkText>
+                </NavigationItemLink>
+              </NavigationItem>
+            </NavigationList>
+          </CssClassToggler>
+        </Navigation>
         <header role='banner'>
           <h1>Zack Morgenthaler</h1>
           <p>multidisciplinary web developer</p>

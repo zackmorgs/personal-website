@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+// import ReactDOM from 'react-dom';
+
 export class ToggleTrigger extends Component {
   constructor (props) {
     super(props);
     console.log('constructor (props)', this.props);
-    // this.state = {
-    //   Toggled: true
-    // };
+    this.state = {
+      Toggled: true
+    };
     this.toggleHandler = this.toggleHandler.bind(this);
   }
   componentWillReceiveProps (nextProps) {
@@ -16,13 +18,14 @@ export class ToggleTrigger extends Component {
   }
   componentWillMount (props) {
     console.log('componentWillMount(props)', this.props);
-    this.props.HTMLTrigger = React.createElement(React.findDOMNode(), props, this.props.children);
-    this.props.HTMLTrigger.className = 'trigger';
+    // this.props.HTMLTrigger =
+    //   React.createElement(, props, this.props.children);
+    // this.props.HTMLTrigger.className = 'trigger';
+    // this.props.HTMLTrigger = React.createElement()
     if (this.props.isToggled) {
       this.props.HTMLTrigger.classList.toggle('triggered');
     }
   }
-
   componentDidMount (props) {
     console.log('componentDidMount()', this.props);
   }
@@ -40,7 +43,8 @@ export class ToggleTrigger extends Component {
     //   : ((function () { return false; })());
   }
   render (props) {
-    return (this.props.HTMLTrigger);
+    console.log('ToggleTrigger => render (props)', this.props);
+    return (this.props.children);
   }
 }
 
