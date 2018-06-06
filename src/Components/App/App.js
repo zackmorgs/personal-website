@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { Navigation, NavBar, NavList, NavItem, NavLink, NavText } from './../Navigation/Navigation';
-// import { CssClassToggler } from './../CssClassToggler/CssClassToggler';
 import { ToggleTrigger } from './../ToggleTrigger/ToggleTrigger';
-// import logo from './logo.svg';
+// import Portfolio from './../../json/public.json';
+// import Portfolio from './../../../public/index.txt';
+// import FrontPageListing ./../../..json/front-page.json';
+import { Portfolio } from './../Portfolio/Portfolio.js';
 
+// import logo from './logo.svg';
 class App extends Component {
   constructor (props) {
     super(props);
@@ -15,22 +18,33 @@ class App extends Component {
       <React.Fragment>
         <Navigation>
           <NavBar className='navbar'>
-            {/* <a className='branding'>zackmorgs</a> */}
+            {/* <a className='branding'>test</a> */}
             <ToggleTrigger
+              ref='navigationTrigger'
               className='toggle'
               classNameOnToggled='toggled'
               toggleTargetClassName='nav-list'
               targetClassNameUntoggled='collapsible'
               targetClassNameToggled='collapsed'
               toggledOnInit='true'>
+              {/* <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+                <line x1='0' y1='6' x2='24' y2='6' />
+                <line x1='0' y1='12' x2='24' y2='12' />
+                <line x1='0' y1='18' x2='24' y2='18' />
+              </svg> */}
+              {/* <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+                <line x1='0' y1='6' x2='24' y2='6' transform="rotate(0)" />
+                <line x1='0' y1='12' x2='24' y2='12' opacity="1.0"/>
+                <line x1='0' y1='18' x2='24' y2='18' transform="rotate(0)" />
+              </svg> */}
               <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
-                <line x1='3' y1='12' x2='21' y2='12' />
-                <line x1='3' y1='6' x2='21' y2='6' />
-                <line x1='3' y1='18' x2='21' y2='18' />
+                <line x1='0' y1='6' x2='24' y2='6' transform='rotate(0)' />
+                <line x1='0' y1='12' x2='24' y2='12' opacity='1.0' />
+                <line x1='0' y1='18' x2='24' y2='18' transform='rotate(0)' />
               </svg>
             </ToggleTrigger>
           </NavBar>
-          <NavList className='nav-list collapsible'>
+          <NavList ref='navigationList' className='nav-list collapsible'>
             <NavItem>
               <NavLink href='/'>
                 <NavText>
@@ -45,13 +59,13 @@ class App extends Component {
                 </NavText>
               </NavLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLink href='/test'>
                 <NavText>
                   {'projects'}
                 </NavText>
               </NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLink href='/test'>
                 <NavText>
@@ -61,53 +75,26 @@ class App extends Component {
             </NavItem>
           </NavList>
         </Navigation>
-        <header role='banner'>
+        {/* <header role='banner'>
           <h1>Zack Morgenthaler</h1>
           <p>multidisciplinary web developer</p>
-        </header>
+        </header> */}
         <main>
-          <div id='about collapsible collapsed'>
-            <section id='focus' className=''>
-              <div className='card'>
-                <h2>Focus</h2>
-                <ul className='experience-list'>
-                  <li>
-                    {/* <i class="experience_item" data-feather="smartphone" style="color: #42A5F5;"></i> */}
-                    <span>Mobile-First Responsive Web Development</span>
-                  </li>
-                  <li>
-                    {/* <i class="experience_item" data-feather="code" style="color:#AB47BC"></i> */}
-                    <span>Front-End UI Development</span>
-                  </li>
-                  <li>
-                    {/* <i class="experience_item" data-feather="bar-chart" style="color:#D4E157"></i> */}
-                    <span>A/B/n &amp; Mlitivariate Design Testing</span>
-                  </li>
-                  <li>
-                    {/* <i class="experience_item" data-feather="shopping-cart" style="color:#78909C"></i> */}
-                    <span>E-Commerce Front-End Development</span>
-                  </li>
-                  <li>
-                    {/* <i class="experience_item" data-feather="check-square" style="color:#4CAF50"></i> */}
-                    <span>"Pixel-Perfect" CSS</span>
-                  </li>
-                  <li>
-                    {/* <i class="experience_item" data-feather="globe" style="color:#3F51B5"></i> */}
-                    <span>Legacy Cross-Browser Support</span>
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-            <section id='skills' className=''>
-              <div>
-                <h2>Skills</h2>
-
-              </div>
-            </section>
-          </div>
+          <header className='about enter-right exited overlay'>
+            <div className='hero'>
+              <h1>Zack Morgenthaler</h1>
+              <span className='subtitle'>fullstack web developer</span>
+              <p>Uno tenerem et zenith quolores. Yearling excelcior!</p>
+            </div>
+          </header>
+          <Portfolio />
+          {/* // ex. output for now. */}
+          {/* <div className='portfolio-grid'>
+            <div className='portfolio-item'>
+              <Portfolio />
+            </div>
+          </div> */}
         </main>
-
         <footer>
           <p>this is the footer :D</p>
         </footer>

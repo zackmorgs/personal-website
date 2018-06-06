@@ -12,15 +12,9 @@ export class ToggleTrigger extends Component {
   }
   componentWillReceiveProps (nextProps) {
     console.log('ToggleTrigger => componentWillReceiveProps (nextProps)', nextProps);
-    // if ('checked' in nextProps) {
-    //   this.setState({checked: !!nextProps.checked});
-    // }
   }
   componentWillMount (props) {
     console.log('ToggleTrigger => componentWillMount(props)', this.props);
-    // if (this.props.isToggled) {
-    //   this.props.HTMLTrigger.classList.toggle('triggered');
-    // }
   }
   componentDidMount (props) {
     console.log('ToggleTrigger => componentDidMount()', this.props);
@@ -28,16 +22,15 @@ export class ToggleTrigger extends Component {
 
   toggleHandler (event) {
     console.log('ToggleTrigger => toggleHandler (event)', event);
-    // className='toggle', classNameOnToggled='toggled'
-    // toggleTarget='nav-list', targetClassNameToggled='collapsed'
+    // className='toggle', classNameOnToggled='toggled' toggleTarget='nav-list', targetClassNameToggled='collapsed'
     // give our toggle the correct class
-    //document.querySelector('.' + this.props.className).className.toggle(this.props.classNameonToggle);
-    console.log('.' + this.props.classList);
+    console.log('.' + this.props.className);
     document.querySelector('.toggle').classList.toggle('toggled');
+
     // give our target the correct class
-    // document.querySelector('.' + this.props.toggleTarget).classList.toggle(this.props.targetClassNameToggled);
-    console.log('.' + this.props.toggleTarget)
+    console.log('.' + this.props.toggleTarget);
     document.querySelector('.nav-list').classList.toggle('collapsed');
+    document.querySelector('main').classList.toggle('blur');
   }
   componentDidUpdate (prevProps, prevState) {
     this.setState(prevState => ({
@@ -53,7 +46,7 @@ export class ToggleTrigger extends Component {
     // targetClassNameToggled='collapsed'
     // toggledOnInit='true'
     var toggleClassName = this.props.className;
-    if (this.isToggled || Boolean(this.props.toggledOnInit)) {
+    if (this.isToggled || !Boolean(this.props.toggledOnInit)) {
       // is toggled.
       toggleClassName += ' ' + this.props.classNameOnToggled;
     }

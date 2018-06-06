@@ -7,9 +7,36 @@ body {
   font-family:'Work Sans';
   line-height: 1rem;
 }
+.card { padding:1rem; }
+h1 { font-size: 48px; font-weight:200; letter-spacing: -1.5px; font-family:'Archivo'; }
+h2 { font-size: 60px; font-weight:200; letter-spacing: -0.5px;  font-family:'Archivo'; }
+h3 { font-size: 48px; font-weight:400; letter-spacing:  0.0px;  font-family:'Archivo'; }
+h4 { font-size: 34px; font-weight:500; letter-spacing:  0.25px;  font-family:'Archivo'; }
+h5 { font-size: 24px; font-weight:500; letter-spacing:  0.0px;  font-family:'Archivo';  }
+h6 { font-size: 20px; font-weight:500; letter-spacing:  0.15px; font-family:'Archivo';  }
+.subtitle { font-size:16px; font-weight:500; letter-spacing: 0.1px; font-family:'Archivo'; }
+p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+body {
+  font-size:14px; font-weight:400; letter-spacing: 0.5px;
+}
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, nav {
   font-family:'Archivo';
+  line-height:1em;
+}
+.nav-list a {
+  font-size:1.125rem;
+  font-weight:500;
+  letter-spacing:0.75px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: right;
+}
+.nav-list a span {
+  text-transform:uppercase;
 }
 // iphone x,  iphone 6, galaxy s5, note 6 - like devices
 @media (min-width: 375px) {

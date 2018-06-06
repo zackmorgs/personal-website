@@ -1,19 +1,46 @@
 $base_blue:#253137;
 $text_white:#D7DCDE;
 $brand_red:#F44336;
-
+$menu_item_bg:#ABD1D0;
+$toggle_bg:#3A2A59;
+$menu_item_text:rgb(242, 89, 81);
 body {
   background-color:$base_blue;
   color:$text_white;
 }
 // <navigation>
-nav {
-  background-color:#151D21;
-}
 
-.branding {
-  a {
-    color:$brand_red;
+nav {
+  .toggle {
+    color:$text_white;
+    background-color:$toggle_bg;
   }
 }
+.branding {
+  a {
+    color:$text_white;
+  }
+}
+.nav-list {
+  li {
+    background-color:$menu_item_bg;
+  }
+  a {
+    color:$menu_item_text;
+    background-color:$menu_item_bg;
+    a:link {
+      color:$menu_item_text;
+    }
+    &:active {
+      color:$menu_item_text;
+    }
+    &:hover {
+      color:$menu_item_text;
+    }
+    &:visited {
+      color:$menu_item_text;
+    }
+  }
+}
+
 // </navigation>
