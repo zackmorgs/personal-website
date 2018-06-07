@@ -8,6 +8,29 @@ $base_blue:#253137;
   background-color:white;
 
 }
+.porfolio-thumbnail {
+
+}
+.thumbs {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+.thumb {
+
+}
+.graphic {
+  overflow-y:hidden;
+  overflow-y: hidden;
+  max-height: 6rem;
+  img {
+    overflow-y: hidden;
+    max-height: 6rem;
+  }
+}
+.caption {
+  background-color:;
+}
 .site-info {
   padding:5px;
   background-color:#111A1F;
@@ -48,7 +71,20 @@ $base_blue:#253137;
 
   }
 }
+.language-list {
+  list-style-type:none;
+  margin:0;
+  margin-top:1em;
+  padding:0;
+  display: flex;
+  // background-color:pink;
 
+  li {
+
+    font-size:12px;
+
+  }
+}
 .site-thumbnail {
   background-color:#DBEBEA;
   color:#111A1F;

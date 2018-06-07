@@ -1,0 +1,544 @@
+[{
+	"name": "American Academy of Sleep Medicine",
+	"url": "https://aasm.org/",
+	"actual_employer": "American Academy of Sleep Medicine",
+	"year": "2013, 2014",
+	"folder_path": "./aasm/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"logo": "https://j2vjt3dnbra3ps7ll1clb4q2-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/aasm_logo_desktop_@2x.png",
+	"sources": [{
+		"name": "Internship",
+		"description": "During my internship at AASM I was occasionally tasked to do maintenance to their official site. I was still learning their technology stack at the time so this provided an excellent learning experience with those technologies."
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["Microsoft SQL Server", "Visual Basic", "C#", "HTML", "JavaScript", "CSS", "XML"],
+		"frameworks": ["ASP.NET", "Google Analytics"]
+	}
+}, {
+	"name": "SLEEP Meeting",
+	"url": "http://www.sleepmeeting.org/",
+	"actual_employer": "American Academy of Sleep Medicine",
+	"year": "2013",
+	"folder_path": "./aasm/",
+	"projects": [{
+		"name": "Sleep Meeting 2013 Website",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": ["SiteFinity"],
+		"languages": ["Microsoft SQL Server", "Visual Basic", "C#", "HTML", "JavaScript", "CSS", "XML"],
+		"frameworks": ["ASP.NET", "Modernizr", "jQuery", "Google Analytics"]
+	}
+}, {
+	"name": "Beckers School Supplies",
+	"url": "https://www.shopbecker.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./beckers/",
+	"projects": [{
+		"name": "",
+		"media": [{
+				"graphic": "/img/beckers/screenshots/cart_desktop.png",
+				"caption": ""
+			},
+			{
+				"graphic": "/img/beckers/screenshots/cart_mobile.png",
+				"caption": ""
+			},
+			{
+				"graphic": "/img/beckers/screenshots/desktop_account-billing.png",
+				"caption": ""
+			},
+			{
+				"graphic": "/img/beckers/screenshots/desktop_account-shipping.png",
+				"caption": ""
+			},
+			{
+				"graphic": "/img/beckers/screenshots/desktop_guest-billing.png",
+				"caption": ""
+			},
+			{
+				"graphic": "/img/beckers/screenshots/desktop_guest-shipping.png",
+				"caption": ""
+			},
+			{
+				"graphic": "/img/beckers/screenshots/login_desktop.png",
+				"caption": ""
+			},
+			{
+				"graphic": "/img/beckers/screenshots/login_mobile.png",
+				"caption": ""
+			},
+			{
+				"graphic": "/img/beckers/screenshots/mobile_account-billing.png",
+				"caption": ""
+			},
+			{
+				"graphic": "/img/beckers/screenshots/mobile_account-shipping.png",
+				"caption": ""
+			},
+			{
+				"graphic": "/img/beckers/screenshots/mobile_guest-billing.png",
+				"caption": ""
+			},
+			{
+				"name": "/img/beckers/screenshots/mobile_guest-shipping.png",
+				"caption": ""
+			},
+			{
+				"name": "/img/beckers/screenshots/review_desktop.png",
+				"caption": ""
+			},
+			{
+				"name": "/img/beckers/screenshots/review_mobile.png",
+				"caption": ""
+			}
+		]
+	}],
+	"technology": {
+		"languages": ["JavaScript", "CSS", "HTML"],
+		"frameworks": ["VWO", "jQuery", "Google Analytics"]
+	}
+}, {
+	"name": "Bryn Mawr Medical Specialists Association",
+	"url": "http://bmmsa.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./bmmsa/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": "Wordpress",
+		"languages": ["PHP", "HTML", "CSS", "JavaScript"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "Buy Auto Parts",
+	"url": "https://www.buyautoparts.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+  "folder_path": "./buy-auto-parts/",
+  "logo":"https://www.buyautoparts.com/images/BAP-HeaderRedesign-Logo.png",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "/img/buy-auto-parts/cart/BAP-CartPagePresentation-variation.png",
+			"caption": "Variation"
+		},{
+      "graphic": "/img/buy-auto-parts/cart/BAP-CartPagePresentation-control.png",
+      "caption": "Control"
+    }]
+	}],
+	"technology": {
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "Surgent",
+	"url": "https://www.surgentcpe.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./cpenow/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "/img/cpenow/cpe-navigationtest-variation-updatecourses.png",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "ePromos Promotional Products",
+	"url": "https://www.epromos.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./epromos/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "/img/epromos/EP-customize-desktop-control.png",
+			"caption": "Lorem ipsum dolor sit amet, erat tincidunt luctus in nulla."
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "Evan-Moor",
+	"url": "https://www.evan-moor.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./evan-moor/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+},
+{
+	"name": "filtersfast",
+	"url": "https://www.filtersfast.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./filtersfast/",
+	"projects": [{
+    "media":[{
+
+    }]
+  }],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+},
+{
+	"name": "FoodyDirect",
+	"url": "https://www.foodydirect.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./foody-direct/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "Footwear etc.",
+	"url": "https://www.footwearetc.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./footwear-etc/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "Leonisa",
+	"url": "https://www.leonisa.com/en/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./leonisa/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "Net Direct Merchants",
+	"url": "https://www.netdirectmerchants.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./net-direct-merchants/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "NorthShore Care Supply",
+	"url": "https://www.northshorecare.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./north-shore-care/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "Polynesian Cultural Center",
+	"url": "https://www.polynesia.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./polynesia/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "Reading Glasses.com",
+	"url": "https://www.readingglasses.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./trinity-insight",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "Rockler Companies, Inc.",
+	"url": "http://www.rockler.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./rockler/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "Schneiders ",
+	"url": "https://www.sstack.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./schneiders",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "Servers Direct",
+	"url": "http://www.serversdirect.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./servers-direct/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "Skis.com",
+	"url": "http://www.skis.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./skis.com/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "Sure Fit Inc.",
+	"url": "http://www.surefit.net/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./surefit/",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "Trinity Insight",
+	"url": "https://www.trinityinsight.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./trinity-insight",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": "WordPress",
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "American Muscle",
+	"url": "https://www.americanmuscle.com/",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./turn5/american-muscle/",
+
+	"projects": [{
+			"name": "Mobile Product Page Layout Test (1 of 2)",
+			"media": [{
+					"graphic": "/img/american-muscle/browsing content - anchors.png",
+					"caption": ""
+				},
+				{
+					"graphic": "/img/american-muscle/Browsing-Control.png",
+					"caption": ""
+				},
+				{
+					"graphic": "/img/american-muscle/landing page - anchor links - resized.png",
+					"caption": ""
+				},
+				{
+					"graphic": "/img/american-muscle/landing page - anchor links.png",
+					"caption": "/img/american-muscle/landing page - control.png"
+				},
+				{
+					"graphic": "/img/american-muscle/v1 - landing page - collapsed - iphone 6 size.png",
+					"caption": ""
+				},
+				{
+					"graphic": "/img/american-muscle/v1 - landing page - collapsed copy.png",
+					"caption": ""
+				}
+			]
+		},
+		{
+			"name": "Mobile Prodct Page Layout Test (2nd)",
+			"media": [{
+					"graphic": "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-control.png",
+					"caption": "Control"
+				},
+				{
+					"graphic": "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation2.png",
+					"caption": "Variation"
+				},
+				{
+					"graphic": "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation3.png",
+					"caption": ""
+				},
+				{
+					"graphic": "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4 (1).png",
+					"caption": ""
+				},
+				{
+					"graphic": "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4.png",
+					"caption": "/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Control.png"
+				},
+				{
+					"graphic": "/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Variation.png",
+					"caption": ""
+				}
+			]
+		}
+	],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}, {
+	"name": "WebEyeCare.com",
+	"url": "https://www.webeyecare.com/Default.asp",
+	"actual_employer": "Trinity Insight",
+	"year": "2016",
+	"folder_path": "./web-eye-care",
+	"projects": [{
+		"name": "",
+		"media": [{
+			"graphic": "",
+			"caption": ""
+		}]
+	}],
+	"technology": {
+		"cms": [],
+		"languages": ["JavaScript", "HTML", "CSS"],
+		"frameworks": ["jQuery"]
+	}
+}]

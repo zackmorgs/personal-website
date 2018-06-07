@@ -1,10 +1,6 @@
-// 1. Grid Setup
 body {
   box-sizing:border-box;
-  // transition:all 1s ease-in-out;
 }
-
-// 2. Grid Placement
 .portfolio-grid {
   display:grid;
   grid-template-columns: repeat(2, [col-start] 1fr);
@@ -31,18 +27,24 @@ footer {
 
 //
 @media (min-width: 425px) {
+  .portfolio-grid {
+    display:grid;
+    grid-template-columns: repeat(3, [col-start] 1fr);
+    grid-template-rows: repeat(24, [row-start] 1fr);
+    grid-auto-rows: max(135px);
+    grid-gap:0px;
+  }
 }
 
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .portfolio-grid {
-    grid-template-columns: repeat(3, [col-start] 1fr);
+    grid-template-columns: repeat(4, [col-start] 1fr);
     grid-template-rows: repeat(24, [row-start] 1fr);
     grid-auto-rows: max(135px);
     grid-gap:0px;
@@ -53,9 +55,9 @@ footer {
 // note: iPad Pro hath been targeted within
 @media (min-width: 992px) {
 
-  body {
+  .portfolio-grid {
     max-height:100%;
-    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-template-columns: repeat(5, [col-start] 1fr);
     grid-template-rows: repeat(8, [row-start] 1fr);
     grid-auto-rows: max(135px);
   }

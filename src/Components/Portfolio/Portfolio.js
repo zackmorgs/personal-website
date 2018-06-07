@@ -3,12 +3,14 @@ import Sites from './../../json/sites_worked.json';
 // import Filepaths from './../../json/public.json';
 import './../Global/portfolio.css';
 
+
 export class Portfolio extends Component {
   constructor (props) {
     super(props);
     console.log('Portfolio => constructor (props)', props);
     // this.PortfolioItems = this.PortfolioItems.bind();
   }
+
   // componentWillMount () {
   //   // var _Sites = Sites;
   //   this.PortolioItems = Sites.map((Site) =>
@@ -42,31 +44,56 @@ export class PortfolioItem extends Component {
     var Site = this.props.Site;
 
     const Languages = Site.technology.languages.map((language) =>
-      <li>{language}</li>
+      {
+        if (language === 'HTML') {
+          return (<li>{language}</li>)
+        } else if (language === 'CSS') {
+          return (<li className='lang-css'></li>)
+        } else if (language === 'JavaScript') {
+          return (<li className='lang-js'></li>)
+        }
+      }
     );
-    // const LanguageList = (Languages) => (
-    //   <ul>{Languages}</ul>
-    // );
+
+    var Medias = Site.projects[0].media.map((media,index) =>
+    {
+      if (index === 0) {
+        return (
+          <li className='thumb'>
+          <div className='graphic'><img src={media.graphic} /></div>
+          <div>{media.caption}</div>
+        </li>
+        )
+      } else {
+        return (
+          <li className='thumb hidden'>
+          <div className='graphic'><img src={media.graphic} alt={Site.name}/></div>
+          <div>{media.caption}</div>
+        </li>
+        )
+      }
+    }
+    );
     console.log(Site);
     return (
       <div className='portfolio-item'>
         {/* <PortfolioThumnnail DataSource={Site} /> */}
         <div className='portfolio-thumbnail'>
           <ul className='thumbs'>
-            [list of images please]
-            [{JSON.stringify(Site.projects)}]
+            {Medias}
           </ul>
           {/* <img src='http://via.placeholder.com/600x600' /> */}
         </div>
         <div className='site-info'>
-          <a href={Site.url}>
+          {/* <a href={Site.url}> */}
+          <a>
             <div className='site-logo' style={
-              {'backgroundImage': 'url(' + 'http://via.placeholder.com/150x150' + ')'}
+              {'backgroundImage': 'url(' + Site.logo + ')'}
             } />
             <div className='site-name'>
               <span className=''>{Site.name}</span>
               <span className=''>{Site.year}</span>
-              <span></span>
+              <span />
               {/* <a href={Site.url}>[link]</a> */}
               <ul className='language-list'>
                 {Languages}
@@ -78,6 +105,19 @@ export class PortfolioItem extends Component {
     );
   }
 }
+
+// export class PortfolioMedia extends Component {
+//   constructor (props){
+//     super(props);
+
+//   }
+//   render(){
+//     return (
+
+//     )
+//   }
+// }
+
 
 export class PortfolioThumnnail extends Component {
   constructor (props) {
@@ -92,13 +132,6 @@ export class PortfolioThumnnail extends Component {
   }
 
   render (props) {
-    // const thumnails = this.props.projects.media.map(function (media) {
-    { /* <li className='thumb hidden'>
-        <span>{media.graphic}</span>
-        <span>{media.caption}</span>
-      </li>; */ }
-    // });
-
     return (
       <span>{JSON.stringify(this.props.DataSource)}</span>
     );
