@@ -4,6 +4,7 @@
   "actual_employer": "American Academy of Sleep Medicine",
   "year": "2013, 2014",
   "folder_path":"./aasm/",
+  "logo":"https://j2vjt3dnbra3ps7ll1clb4q2-wpengine.netdna-ssl.com/wp-content/uploads/2017/08/mobile_logo.png",
   "projects":[{
     "name" : "Internship",
     "description" : "During my internship at AASM I was occasionally tasked to do maintenance to their official site. I was still learning their technology stack at the time so this provided an excellent learning experience with those technologies."
@@ -37,7 +38,13 @@
   "technology": {
     "languages": [ "JavaScript", "CSS", "HTML" ],
     "frameworks": [ "VWO","jQuery", "Google Analytics" ]
-  }
+  },
+  "projects":[
+    {
+      "name" : "",
+      "media":
+    }
+  ]
 }, {
   "name": "Bryn Mawr Medical Specialists Association",
   "url": "http://bmmsa.com/",
@@ -252,6 +259,66 @@
   "actual_employer": "Trinity Insight",
   "year": "2016",
   "folder_path":"./turn5/american-muscle/",
+  "projects":[
+    {
+      "name" : "Mobile Product Page Layout Test (1 of 2)",
+      "media" : [
+        {
+          "graphic" : "/public/img/american-muscle/browsing content - anchors.png",
+          "caption" : ""
+        },
+        {
+          "graphic" : "/public/img/american-muscle/Browsing-Control.png",
+          "caption" : ""
+        },
+        {
+          "graphic" :"/public/img/american-muscle/landing page - anchor links - resized.png",
+          "caption" :""
+        },
+        {
+          "graphic" :"/public/img/american-muscle/landing page - anchor links.png"
+          "caption" :"/public/img/american-muscle/landing page - control.png"
+        },
+        {
+          "graphic":"/public/img/american-muscle/v1 - landing page - collapsed - iphone 6 size.png"
+          "caption":""
+        },
+        {
+          "graphic":"/public/img/american-muscle/v1 - landing page - collapsed copy.png",
+          "caption":""
+        }
+      ]
+    },
+    {
+      "name" : "Mobile Prodct Page Layout Test (2nd)",
+      "media" : [
+        {
+          "graphic":"/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-control.png",
+          "caption":"Control"
+        },
+        {
+          "graphic":"/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation2.png",
+          "caption":"Variation"
+        },
+        {
+          "graphic":"/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation3.png",
+          "caption":""
+        },
+        {
+          "graphic":"/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4 (1).png",
+          "caption":""
+        },
+        {
+          "graphic":"/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4.png",
+          "caption":"/public/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Control.png"
+        },
+        {
+          "graphic":"/public/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Variation.png",
+          "caption":""
+        }
+      ]
+    }
+  ]
   "technology": {
     "cms": [],
     "languages": ["JavaScript", "HTML", "CSS"],

@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { Navigation, NavBar, NavList, NavItem, NavLink, NavText } from './../Navigation/Navigation';
 import { ToggleTrigger } from './../ToggleTrigger/ToggleTrigger';
-// import Portfolio from './../../json/public.json';
-// import Portfolio from './../../../public/index.txt';
-// import FrontPageListing ./../../..json/front-page.json';
 import { Portfolio } from './../Portfolio/Portfolio.js';
 
 // import logo from './logo.svg';
@@ -59,13 +56,6 @@ class App extends Component {
                 </NavText>
               </NavLink>
             </NavItem>
-            {/* <NavItem>
-              <NavLink href='/test'>
-                <NavText>
-                  {'projects'}
-                </NavText>
-              </NavLink>
-            </NavItem> */}
             <NavItem>
               <NavLink href='/test'>
                 <NavText>
@@ -75,25 +65,15 @@ class App extends Component {
             </NavItem>
           </NavList>
         </Navigation>
-        {/* <header role='banner'>
-          <h1>Zack Morgenthaler</h1>
-          <p>multidisciplinary web developer</p>
-        </header> */}
         <main>
-          <header className='about enter-right exited overlay'>
-            <div className='hero'>
+          {/* <header className='about enter-right exited overlay'>
+            <hrgroup className='hero'>
               <h1>Zack Morgenthaler</h1>
               <span className='subtitle'>fullstack web developer</span>
-              <p>Uno tenerem et zenith quolores. Yearling excelcior!</p>
-            </div>
-          </header>
+              <p>Hi! I'm Zack. I'm a fullstack developer with a strong background in design.</p>
+            </hrgroup>
+          </header> */}
           <Portfolio />
-          {/* // ex. output for now. */}
-          {/* <div className='portfolio-grid'>
-            <div className='portfolio-item'>
-              <Portfolio />
-            </div>
-          </div> */}
         </main>
         <footer>
           <p>this is the footer :D</p>

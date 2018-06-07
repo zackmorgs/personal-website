@@ -1,0 +1,55 @@
+$base_blue:#253137;
+
+.portfolio-grid {
+  display: grid;
+}
+.porfolio-item {
+  border: 1px solid black;
+  background-color:white;
+
+}
+.site-info {
+  padding:5px;
+  background-color:#111A1F;
+
+  &> a {
+    color:#D7DCDE;
+    text-decoration: none;
+    // border-bottom:1px solid #D7DCDE;
+    font-size:14px;
+    display:flex;
+  }
+}
+.site-logo {
+  min-height:50px;
+  min-width:50px;
+  max-width:50%;
+  height:auto;
+  background-origin: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  img {
+    width: 100%;
+    height:auto;
+  }
+}
+.site-name {
+  padding-left: 10px;
+  max-width:75%;
+  font-size:12px;
+  line-height:1em;
+  color:#ABD1D0;
+  font-weight:500;
+  a {
+
+  }
+  span, a {
+    display:block;
+
+  }
+}
+
+.site-thumbnail {
+  background-color:#DBEBEA;
+  color:#111A1F;
+}

@@ -19,11 +19,12 @@ export class Navigation extends Component {
   }
   handleClick (prevState) {
     // document.querySelector('nav').className = 'opened';
+
   }
   render (props) {
     console.log('Navigation => render(props)', props);
     return (
-      <nav onClick={this.handleClick()}>{this.props.children}</nav>
+      <nav>{this.props.children}</nav>
     );
   }
 }
@@ -54,7 +55,11 @@ export class NavItem extends Component {
   }
   render (props) {
     console.log('NavItem => render (props)', this.props);
-    return (<li className={this.props.className}>{ this.props.children }</li>);
+    if (typeof this.props.className === 'undefined') {
+      return (<li className='nav-item'>{ this.props.children }</li>);
+    } else {
+      return (<li className={this.props.className}>{ this.props.children }</li>);
+    }
   }
 }
 export class NavLink extends Component {

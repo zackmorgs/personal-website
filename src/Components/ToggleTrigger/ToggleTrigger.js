@@ -30,7 +30,8 @@ export class ToggleTrigger extends Component {
     // give our target the correct class
     console.log('.' + this.props.toggleTarget);
     document.querySelector('.nav-list').classList.toggle('collapsed');
-    document.querySelector('main').classList.toggle('blur');
+    document.body.classList.toggle('navigation-open');
+    // document.querySelector('main').classList.toggle('blur');
   }
   componentDidUpdate (prevProps, prevState) {
     this.setState(prevState => ({

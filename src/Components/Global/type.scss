@@ -31,12 +31,12 @@ h1, h2, h3, h4, nav {
   font-size:1.125rem;
   font-weight:500;
   letter-spacing:0.75px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-decoration: none;
-  text-align: right;
+  text-align: center;
 }
-.nav-list a span {
-  text-transform:uppercase;
+.nav-list a {
+  // text-transform:uppercase;
 }
 // iphone x,  iphone 6, galaxy s5, note 6 - like devices
 @media (min-width: 375px) {
