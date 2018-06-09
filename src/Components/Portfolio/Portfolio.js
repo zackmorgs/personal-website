@@ -3,7 +3,7 @@ import AllSites from './../../json/sites_worked.json';
 // import Filepaths from './../../json/public.json';
 import './../Global/portfolio.css';
 import Icon from './../Icon/Icon';
-import SuperString from '../SuperString/SuperString';
+import CssFriendlyString from '../CssFriendlyString/CssFriendlyString';
 
 export class Portfolio extends Component {
   constructor (props) {
@@ -92,7 +92,7 @@ export class PortfolioItem extends Component {
     console.log(Site);
 
     return (
-      <div id={SuperString(Site.name).replaceAll(' ', '_').replaceAll('.', '_dot_').replaceAll(',', '').replaceAll('-', '_')} className='portfolio-item'>
+      <div id={CssFriendlyString(Site.name)} className='portfolio-item'>
         {/* <PortfolioThumnnail DataSource={Site} /> */}
         <div className='portfolio-thumbnail'>
           {/* <img src={this.props.Site.projects[0]} />> */}
