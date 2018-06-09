@@ -1,4 +1,4 @@
-# my personal website
+# My Personal Website
 
 This is mirrored to my digital ocean server currently at  I just cd build && serve on there.
 
