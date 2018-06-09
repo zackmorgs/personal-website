@@ -15,36 +15,46 @@ class SantizedInput {
 class Git {
   constructor (_path, origin) {
     console.log('Git()');
-    this.props.path = _path;
-    this.props.origin = _origin;
+    this.props.InstallPath = _path;
+    this.props.Origin = _origin;
+    Install();
+  }
+  Install() {
+    if ()
+    this.props.InstallProcess = child_process.exec('cd ~/ && git clone ' + this.Origin)
   }
   Deploy () {
     console.log("Deploy()");
+    this.props.DeployProcess = child_process.exec('cd ~/portfolio-project/ && npm run deploy');
+    this.AwaitUpdate();
   }
   Sync () {
     console.log('Syncing..')
-    child_process.exec('sudo rm ~/');
-  }
-  Await () {
-    console.log('awaiting git update.');
+    this.props.DeployProcess.
+    child_process.exec('sudo rm ~/').exec('');
+
   }
   CheckIfShouldUpdate() {
     console.log('Checking if should re-clone to Github (master) branch.')
     var git = {};
     git.status = function () {
       return
-    }()
+    }
     if () {
       return true;
     } else {
       return false;
     }
   }
-  Watch () {
-    setInterval(this.CheckIfShouldUpdate(), 1000);
+  AwaitUpdate(polling_rate) {
+    console.log('awaiting git update.');
+    this.Watch(polling_rate ? pollingrate || 1000);
+  }
+  Watch (polling_rate) {
+    setInterval(this.CheckIfShouldUpdate(), polling_rate);
   }
 }
 
 
-var personal_website = new Git();
-personal_website.Watch();
+var PersonalWebsite = new Git("~/", 'https://github.com/zackmorgs/personal-website');
+PersonalWebsite.Watch();
