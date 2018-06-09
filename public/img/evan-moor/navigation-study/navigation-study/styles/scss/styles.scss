@@ -9,7 +9,7 @@ div#ssmi_get_an_email_sidebar_image {
 }
 
 /*
- * Reset control content 
+ * Reset control content
  */
 
 #main-nav * {
@@ -20,10 +20,10 @@ div#ssmi_get_an_email_sidebar_image {
 	padding-bottom: 6px;
 	display: inline-block;
 }
-#main-nav.ti-nav ul.first, 
-#main-nav.ti-nav ul.first li, 
-#main-nav.ti-nav ul.first, 
-#main-nav.ti-nav ul.first a.long-cat { 
+#main-nav.ti-nav ul.first,
+#main-nav.ti-nav ul.first li,
+#main-nav.ti-nav ul.first,
+#main-nav.ti-nav ul.first a.long-cat {
 	height:auto;
 }
 
@@ -110,13 +110,13 @@ div#ssmi_get_an_email_sidebar_image {
 			}
 		}
 		& > li {
-			position: static; // 
+			position: static; //
 			& > a {
 				background-color:RGBA(24, 86, 124, 1.00);
 			}
 		}
 	}
-	
+
 	ul.mega-nav-container {
 		margin-top: 0px;
 		margin-bottom: 0px;
@@ -168,11 +168,11 @@ div#ssmi_get_an_email_sidebar_image {
 		}
 		// itself - more conditions
 		a.mega-nav-trigger {
-			
+
 			&:hover {
 				background-color:#F4F3F3;
 				background-color:RGBA(244, 243, 243, 1.00) !important;
-				
+
 				.mega-nav {
 					opacity:1.0;
 					box-shadow: inset 15px 11px 128px rgba(221, 221, 221, 0.15);
@@ -214,8 +214,8 @@ div#ssmi_get_an_email_sidebar_image {
 				opacity: 0.0;;
 				transition: opacity .3s ease-in-out !important;
 				//transform: translateX(100%);
-				
-	
+
+
 			}
 			&:hover .mega-nav {
 				opacity: 1.0;
@@ -240,7 +240,7 @@ div#ssmi_get_an_email_sidebar_image {
 				// language
 			}
 			&[href="/c/108/writing"] {
-				
+
 			}
 		}
 		.nav-group-title {
@@ -254,7 +254,7 @@ div#ssmi_get_an_email_sidebar_image {
 			margin: 0px 0px 16px 6px;
 			border-bottom: 1px solid #f8b456;
 			max-width: 95%;
-			
+
 			h3 {
 				font-size: 24px;
 				display: inline-block;
@@ -300,7 +300,7 @@ div#ssmi_get_an_email_sidebar_image {
 				.item {
 					width: auto;
 					a {
-	
+
 						color:RGBA(0, 136, 204, 1.00);
 		    			background-color:initial;
 		    			// color: black;
@@ -331,7 +331,7 @@ div#ssmi_get_an_email_sidebar_image {
 		    			// padding: 8px 10px 14px 10px;
 		    			padding: 8px 10px 10px 10px;
 		    			text-align: center;
-		    			
+
 		    			margin-right: 10px;
 		    			border-radius: 2px;
 		    			color:RGBA(102, 102, 102, 1.00);
@@ -343,7 +343,7 @@ div#ssmi_get_an_email_sidebar_image {
 		    		}
 		    	}
 		    }
-		    &.nav-group-topic, 
+		    &.nav-group-topic,
 		    &.nav-group-format {
 		    	.items {
 		    		.item {
@@ -366,7 +366,7 @@ div#ssmi_get_an_email_sidebar_image {
 		    		}
 		    	}
 		    }
-		}	
+		}
 	}
 	li:hover > .mega-nav-container {
 		opacity:1.0;

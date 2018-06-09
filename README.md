@@ -1,6 +1,8 @@
 # my personal website
 
-I'm currently uploading it to my digital ocean server.
+This is mirrored to my digital ocean server currently at  I just cd build && serve on there.
+
+If you're curious, '''clone''' this and '''sudo npm ''' inside the same directory package.json exists in.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 

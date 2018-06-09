@@ -4,15 +4,23 @@
 @import "./type.scss";
 @import "./colors.scss";
 @import "./grid.scss";
-body * {
-  box-sizing:border-box;
+
+// scss lint : universal selector slow. whelp i like borderbox so get over it.
+body {
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
 }
 
-.hidden {
-  display:none !important;
-  height:0px !important;
-  width:0px !important;
+// instead of using important, i make the .hidden class require specificicity.
+div, ul, li {
+  &.hidden {
+    display:none;
+    height:0px;
+    width:0px;
+  }
 }
+
 body {
   box-sizing: border-box;
   max-width: 100%;
