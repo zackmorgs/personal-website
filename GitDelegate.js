@@ -16,6 +16,7 @@ import * as child from 'child_process';
 export class GitDelegate {
   constructor (_path, _origin, _gitsync) {
     console.log('Git()');
+    console.log('test');
     this.props.InstallPath = _path;
     this.props.Origin = _origin;
     this.shouldUpdate = false;
