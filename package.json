@@ -2,8 +2,9 @@
   "name": "zackmorgs.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://zackmorgs.github.io/build",
+  "homepage": "http://zackmorgs.github.io/build",
   "dependencies": {
+    "git-state": "^4.0.0",
     "jsonfile": "^4.0.0",
     "node-sass-chokidar": "^1.3.0",
     "normalize.css": "^8.0.0",

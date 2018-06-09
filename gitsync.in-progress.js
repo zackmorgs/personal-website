@@ -20,7 +20,11 @@ class Git {
     Install();
   }
   Install() {
-    if ()
+    var shouldInstall =
+    if (child_process) {
+
+    }
+
     this.props.InstallProcess = child_process.exec('cd ~/ && git clone ' + this.Origin)
   }
   Deploy () {
