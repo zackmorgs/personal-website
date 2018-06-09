@@ -34,6 +34,6 @@
     "babel-preset-react": "^6.24.1",
     "eslint-plugin-react": "^7.8.2",
     "gh-pages": "^1.2.0",
-    "semistanard": "6.1.0"
+    "semistandard": "6.1.0"
   }
 }
