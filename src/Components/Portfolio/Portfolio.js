@@ -12,27 +12,23 @@ export class Portfolio extends Component {
     console.log('Portfolio => constructor (props)', props);
     // this.PortfolioItems = this.PortfolioItems.bind();
   }
-
   // componentWillMount () {
   //   // var _Sites = Sites;
   //   this.PortolioItems = Sites.map((Site) =>
   //     <PortfolioItem Name={Site.name} Url={Site.url} />
   //   );
   // }
-
   render () {
     // var PortfolioItemListing = function () {
-
     // };
-
-    var Sites = [];
+    var SitesDisplayed = [];
     AllSites.forEach(function (Site) {
       if (Site.display_portfolio_view) {
-        Sites.push(Site);
+        SitesDisplayed.push(Site);
       }
     });
     // Sites.splice(SitesDisplayed);
-    const PorfolioListing = Sites.map((Site, Index) =>
+    const PorfolioListing = SitesDisplayed.map((Site, Index) =>
       <PortfolioItem Site={Site} key={Index}/>
     );
     return (
@@ -42,20 +38,36 @@ export class Portfolio extends Component {
     );
   }
 }
-export class Thumnail extends Component {
+export class Thumbnail extends Component {
   constructor (props) {
     super(props);
-    console.log('Thumnail => constructor (props)', props);
+    console.log('Thumbnail => constructor (props)', props);
     // this.media = props.media;
     // this.name = props.name;
   }
   render () {
-    return (
-      <li className='thumb hidden'>
-        <div className='graphic'><img src={this.props.media.graphic} alt={this.props.name} /></div>
-        <div className='caption'>{this.props.media.caption}</div>
-      </li>
-    );
+    // we need to hide the other images initially.
+    var thumbnailClassName = 'thumb';
+    thumbnailClassName += ' ' + this.media.content_type;
+    if (this.props.index === 0) {
+      return (
+        <li className={thumbnailClassName}>
+          <div className='graphic ${this.props..}'>
+            <img src={this.props.media.graphic} alt={this.props.media.caption} />
+          </div>
+          <div className='caption-container'>
+            <p>{this.props.media.caption}</p>
+          </div>
+        </li>
+      );
+    } else {
+      return (
+        <li className={thumbnailClassName}>
+          <div className='graphic hidden'><img src={this.props.media.graphic} alt={this.props.Site.name} /></div>
+          <div className='caption hidden'>{this.props.media.caption}</div>
+        </li>
+      );
+    }
   }
 }
 export class PortfolioItem extends Component {
@@ -68,29 +80,12 @@ export class PortfolioItem extends Component {
     console.log('PortfolioItem => render (props)', props);
     var Site = this.props.Site;
 
-    const Languages = Site.technology.languages.map((language) =>{
+    const Languages = Site.technology.languages.map((language) => {
       return (<li className='lang'><Icon IconName={language} /></li>)
     });
 
-    var Medias = Site.projects[0].media.map((media,index) =>
-    {
-      if (index === 0) {
-        return (
-          <li className='thumb'>
-            <div className='graphic'>
-              <img src={media.graphic} alt={media.caption} />
-            </div>
-            <div>{media.caption}</div>
-          </li>
-        );
-      } else {
-        return (
-          <li className='thumb hidden'>
-            <div className='graphic'><img src={media.graphic} alt={Site.name} /></div>
-            <div className='caption'>{media.caption}</div>
-          </li>
-        );
-      }
+    var Medias = Site.projects[0].media.map((media,index) => {
+      return <Thumbnail media={media} index={index} Site={Site}/>
     }
     );
     console.log(Site);
@@ -99,7 +94,8 @@ export class PortfolioItem extends Component {
       <div id={Site.name.replaceAll(' ','_').replaceAll('.','_dot_').replaceAll(',','').replaceAll('-','_')} className='portfolio-item'>
         {/* <PortfolioThumnnail DataSource={Site} /> */}
         <div className='portfolio-thumbnail'>
-          <ul className='thumbs'>
+          {/* <img src={this.props.Site.projects[0]} />> */}
+          <ul className='thumbs hidden'>
             {Medias}
           </ul>
           {/* <img src='http://via.placeholder.com/600x600' /> */}
