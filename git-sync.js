@@ -17,7 +17,7 @@ git.isGit(path, function (exists) {
         var PersonalWebsite = new GitDelegate(path, origin, that);
         PersonalWebsite.Deploy();
       }
-      console.log(result)
+      console.log(result);
       // => { branch: 'master',
       //      ahead: 0,
       //      dirty: 9,

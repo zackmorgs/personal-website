@@ -53,8 +53,7 @@ export class GitDelegate {
   }
   Deploy () {
     console.log('Deploying...');
-    this.props.ReadyDeployProcess = child.exec('cd ~/portfolio-project/ && npm run ready-deploy').on('connected', function () {
-      this.props.DeployProcess = child.exec('cd build && serve');
+    this.props.ReadyDeployProcess = child.exec('cd ~/portfolio-project/ && npm run ready-deploy').on('finished', function () {
       this.AwaitUpdate();
     });
   }
@@ -68,14 +67,13 @@ export class GitDelegate {
       this.Deploy();
     });
   }
-  checkIfShouldUpdate() {
-    console.log('Checking if should re-clone to Github (master) branch...')
+  checkIfShouldUpdate () {
+    console.log('Checking if should re-clone to Github (master) branch...');
     if (this.shouldUpdate()) {
       this.Install(); // yes it double checks oh well.
     }
-
   }
-  AwaitUpdate() {
+  AwaitUpdate () {
     console.log('awaiting git update.');
     this.Watch(1000);
   }
