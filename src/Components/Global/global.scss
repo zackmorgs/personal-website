@@ -4,14 +4,21 @@
 @import "./type.scss";
 @import "./colors.scss";
 @import "./grid.scss";
+body * {
+  box-sizing:border-box;
+}
+
 .hidden {
   display:none;
+  height:0px;
+  width:0px;
 }
 body {
   box-sizing: border-box;
   max-width: 100%;
   overflow-x:hidden;
 }
+
 // < Navigation >
 nav {
   position:sticky;
@@ -34,6 +41,7 @@ nav {
 main {
   // margin-top: -81px;
   transition:filter 1s ease-in-out;
+  padding: .25rem;
 }
 .navigation-open nav {
   z-index:2;

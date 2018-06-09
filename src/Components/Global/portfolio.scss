@@ -4,11 +4,14 @@ $base_blue:#253137;
   display: grid;
 }
 .porfolio-item {
+  grid-auto-columns:min-content;
   border: 1px solid black;
   background-color:white;
-
+  padding:0.25rem;
+  overflow-y: hidden;
 }
-.porfolio-thumbnail {
+
+.portfolio-thumbnail {
 
 }
 .thumbs {
@@ -20,56 +23,58 @@ $base_blue:#253137;
 
 }
 .graphic {
+  // max-height: 93px;
+  display:block;
   overflow-y:hidden;
-  overflow-y: hidden;
-  max-height: 6rem;
   img {
-    overflow-y: hidden;
-    max-height: 6rem;
+    // overflow-y: hidden;
+    // max-height: 6rem;
+    // margin:0 auto;
+    // padding: .25rem;
+    display: block;
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
   }
 }
 .caption {
-  background-color:;
+  background-color:white;
 }
 .site-info {
-  padding:5px;
-  background-color:#111A1F;
-
-  &> a {
-    color:#D7DCDE;
-    text-decoration: none;
-    // border-bottom:1px solid #D7DCDE;
-    font-size:14px;
-    display:flex;
-  }
+  color:#D7DCDE;
+  text-decoration: none;
+  font-size:12px;
+  display:flex;
+  padding: .5rem;
 }
 .site-logo {
-  min-height:50px;
-  min-width:50px;
-  max-width:50%;
-  height:auto;
+  padding: .5rem;
+  width:auto;
   background-origin: border-box;
   background-size: contain;
   background-repeat: no-repeat;
+  max-width:4rem;
+  display:block;
   img {
     width: 100%;
     height:auto;
   }
 }
 .site-name {
-  padding-left: 10px;
-  max-width:75%;
-  font-size:12px;
+
   line-height:1em;
   color:#ABD1D0;
   font-weight:500;
+  display:block;
   a {
-
   }
   span, a {
     display:block;
-
   }
+}
+.site-years-worked {
+  display:block;
 }
 .language-list {
   list-style-type:none;
@@ -88,4 +93,20 @@ $base_blue:#253137;
 .site-thumbnail {
   background-color:#DBEBEA;
   color:#111A1F;
+}
+
+.lang {
+  svg {
+    max-width:1rem;
+  }
+}
+
+.info-work {
+  margin-left:auto;
+  padding:0.25rem;
+  vertical-align:top;
+  img {
+    width: 100%;
+    height:auto;
+  }
 }

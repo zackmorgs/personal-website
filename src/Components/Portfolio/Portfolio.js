@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import Sites from './../../json/sites_worked.json';
+import AllSites from './../../json/sites_worked.json';
 // import Filepaths from './../../json/public.json';
 import './../Global/portfolio.css';
+import Icon from './../Icon/Icon';
+import String from './../String/String';
 
 
 export class Portfolio extends Component {
@@ -22,8 +24,16 @@ export class Portfolio extends Component {
     // var PortfolioItemListing = function () {
 
     // };
-    const PorfolioListing = Sites.map((Site) =>
-      <PortfolioItem Site={Site} />
+
+    var Sites = [];
+    AllSites.forEach(function (Site) {
+      if (Site.display_portfolio_view) {
+        Sites.push(Site);
+      }
+    });
+    // Sites.splice(SitesDisplayed);
+    const PorfolioListing = Sites.map((Site, Index) =>
+      <PortfolioItem Site={Site} key={Index}/>
     );
     return (
       <div className='portfolio-grid'>
@@ -32,7 +42,22 @@ export class Portfolio extends Component {
     );
   }
 }
-
+export class Thumnail extends Component {
+  constructor (props) {
+    super(props);
+    console.log('Thumnail => constructor (props)', props);
+    // this.media = props.media;
+    // this.name = props.name;
+  }
+  render () {
+    return (
+      <li className='thumb hidden'>
+        <div className='graphic'><img src={this.props.media.graphic} alt={this.props.name} /></div>
+        <div className='caption'>{this.props.media.caption}</div>
+      </li>
+    );
+  }
+}
 export class PortfolioItem extends Component {
   constructor (props) {
     super(props);
@@ -43,40 +68,35 @@ export class PortfolioItem extends Component {
     console.log('PortfolioItem => render (props)', props);
     var Site = this.props.Site;
 
-    const Languages = Site.technology.languages.map((language) =>
-      {
-        if (language === 'HTML') {
-          return (<li>{language}</li>)
-        } else if (language === 'CSS') {
-          return (<li className='lang-css'></li>)
-        } else if (language === 'JavaScript') {
-          return (<li className='lang-js'></li>)
-        }
-      }
-    );
+    const Languages = Site.technology.languages.map((language) =>{
+      return (<li className='lang'><Icon IconName={language} /></li>)
+    });
 
     var Medias = Site.projects[0].media.map((media,index) =>
     {
       if (index === 0) {
         return (
           <li className='thumb'>
-          <div className='graphic'><img src={media.graphic} /></div>
-          <div>{media.caption}</div>
-        </li>
-        )
+            <div className='graphic'>
+              <img src={media.graphic} alt={media.caption} />
+            </div>
+            <div>{media.caption}</div>
+          </li>
+        );
       } else {
         return (
           <li className='thumb hidden'>
-          <div className='graphic'><img src={media.graphic} alt={Site.name}/></div>
-          <div>{media.caption}</div>
-        </li>
-        )
+            <div className='graphic'><img src={media.graphic} alt={Site.name} /></div>
+            <div className='caption'>{media.caption}</div>
+          </li>
+        );
       }
     }
     );
     console.log(Site);
+
     return (
-      <div className='portfolio-item'>
+      <div id={Site.name.replaceAll(' ','_').replaceAll('.','_dot_').replaceAll(',','').replaceAll('-','_')} className='portfolio-item'>
         {/* <PortfolioThumnnail DataSource={Site} /> */}
         <div className='portfolio-thumbnail'>
           <ul className='thumbs'>
@@ -85,21 +105,17 @@ export class PortfolioItem extends Component {
           {/* <img src='http://via.placeholder.com/600x600' /> */}
         </div>
         <div className='site-info'>
-          {/* <a href={Site.url}> */}
-          <a>
-            <div className='site-logo' style={
-              {'backgroundImage': 'url(' + Site.logo + ')'}
-            } />
-            <div className='site-name'>
-              <span className=''>{Site.name}</span>
-              <span className=''>{Site.year}</span>
-              <span />
-              {/* <a href={Site.url}>[link]</a> */}
-              <ul className='language-list'>
-                {Languages}
-              </ul>
-            </div>
-          </a>
+          <div className='site-logo'>
+            <img src={Site.logo} alt={Site.name}/>
+          </div>
+          <div className='info-work'>
+            <span className='site-name' className=''>{Site.name}</span>
+            <span className='site-years-worked'>{Site.year}</span>
+            <ul className='language-list'>
+              {Languages}
+            </ul>
+          </div>
+          {/* <a href={Site.url}>[link]</a> */}
         </div>
       </div>
     );

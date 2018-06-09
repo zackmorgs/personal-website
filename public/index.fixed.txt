@@ -1,427 +1,427 @@
-/public/favicon.ico
-/public/get-files.cmd
-/public/index.html
-/public/index.json
-/public/manifest.json
-/public/img/grid-template.psd
-/public/img/american-muscle/browsing content - anchors.png
-/public/img/american-muscle/Browsing-Control.png
-/public/img/american-muscle/landing page - anchor links - resized.png
-/public/img/american-muscle/landing page - anchor links.png
-/public/img/american-muscle/landing page - control.png
-/public/img/american-muscle/v1 - landing page - collapsed - iphone 6 size.png
-/public/img/american-muscle/v1 - landing page - collapsed copy.png
-/public/img/american-muscle/v1 - landing page - collapsed.png
-/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-control.png
-/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation2.png
-/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation3.png
-/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4 (1).png
-/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4.png
-/public/img/american-muscle/mobile-pdp-1/Avara.ttf
-/public/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Control.png
-/public/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Variation.png
-/public/img/beckers/.DS_Store
-/public/img/beckers/readMe.pdf
-/public/img/beckers/script.js
-/public/img/beckers/style.css
-/public/img/beckers/images/bss-mobile-checkout-sprite.png
-/public/img/beckers/rendered_HTML/account-billing.html
-/public/img/beckers/rendered_HTML/account-shipping.html
-/public/img/beckers/rendered_HTML/cart.html
-/public/img/beckers/rendered_HTML/guest-billing.html
-/public/img/beckers/rendered_HTML/guest-shipping.html
-/public/img/beckers/rendered_HTML/login.html
-/public/img/beckers/rendered_HTML/review.html
-/public/img/beckers/screenshots/cart_desktop.png
-/public/img/beckers/screenshots/cart_mobile.png
-/public/img/beckers/screenshots/desktop_account-billing.png
-/public/img/beckers/screenshots/desktop_account-shipping.png
-/public/img/beckers/screenshots/desktop_guest-billing.png
-/public/img/beckers/screenshots/desktop_guest-shipping.png
-/public/img/beckers/screenshots/login_desktop.png
-/public/img/beckers/screenshots/login_mobile.png
-/public/img/beckers/screenshots/mobile_account-billing.png
-/public/img/beckers/screenshots/mobile_account-shipping.png
-/public/img/beckers/screenshots/mobile_guest-billing.png
-/public/img/beckers/screenshots/mobile_guest-shipping.png
-/public/img/beckers/screenshots/review_desktop.png
-/public/img/beckers/screenshots/review_mobile.png
-/public/img/bmmsa/screens/BMMSA-HeaderRedesign-header.jpg
-/public/img/bmmsa/screens/BMMSA-HeaderRedesign-primaryNav.jpg
-/public/img/bmmsa/screens/BMMSA-HeaderRedesign-secondaryNav.jpg
-/public/img/bmmsa/screens/bmmsa.com-iphone5-control--open.png
-/public/img/bmmsa/screens/bmmsa.com-iphone5-control.png
-/public/img/buy-auto-parts/cart/BAP-CartPagePresentation-control.png
-/public/img/buy-auto-parts/cart/BAP-CartPagePresentation-variation.png
-/public/img/cpenow/control.png
-/public/img/cpenow/cpe-navigationtest-variation-updatecourses.png
-/public/img/cpenow/variation-accounting.png
-/public/img/cpenow/variation-ethics.png
-/public/img/cpenow/variation-tax.png
-/public/img/cpenow/variation-updatecourses.png
-/public/img/cpenow/variation.png
-/public/img/epromos/EP-customize-desktop-control.png
-/public/img/epromos/EP-customize-desktop-variation-2locations.png
-/public/img/epromos/EP-customize-desktop-variation-contact.png
-/public/img/epromos/EP-customize-desktop-variation-image-text.png
-/public/img/epromos/EP-customize-mobile-control.png
-/public/img/epromos/EP-customize-mobile-variation.png
-/public/img/evan-moor/navigation-study.zip
-/public/img/evan-moor/navigation-study/EM-Navigation-Closed.png
-/public/img/evan-moor/navigation-study/EM-Navigation-Desktop-Control.png
-/public/img/evan-moor/navigation-study/EM-Navigation-Variation-Tier-1.png
-/public/img/evan-moor/navigation-study/EM-Navigation-Variation-Tier-2.png
-/public/img/evan-moor/navigation-study/navigation-study/.DS_Store
-/public/img/evan-moor/navigation-study/navigation-study/css
-/public/img/evan-moor/navigation-study/navigation-study/mock.png
-/public/img/evan-moor/navigation-study/navigation-study/nav_model.beautified.json
-/public/img/evan-moor/navigation-study/navigation-study/nav_model.json
-/public/img/evan-moor/navigation-study/navigation-study/nav_model.min.json
-/public/img/evan-moor/navigation-study/navigation-study/output_test.html
-/public/img/evan-moor/navigation-study/navigation-study/output_test.pretty.html
-/public/img/evan-moor/navigation-study/navigation-study/test.json
-/public/img/evan-moor/navigation-study/navigation-study/ti-script.js
-/public/img/evan-moor/navigation-study/navigation-study/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/mega-nav-bg.scssc
-/public/img/evan-moor/navigation-study/navigation-study/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/sprites.scssc
-/public/img/evan-moor/navigation-study/navigation-study/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/styles.scssc
-/public/img/evan-moor/navigation-study/navigation-study/html-playground/grade_html.html
-/public/img/evan-moor/navigation-study/navigation-study/html-playground/sub_menu_prototype.html
-/public/img/evan-moor/navigation-study/navigation-study/html-playground/sub_menu_prototype_summary.html
-/public/img/evan-moor/navigation-study/navigation-study/sprites/EM-Navigation-Sprite-2X.png
-/public/img/evan-moor/navigation-study/navigation-study/sprites/EM-Navigation-Study-Grey-Icon-Sprite.png
-/public/img/evan-moor/navigation-study/navigation-study/sprites/EM-Navigation-Study-Sprite.png
-/public/img/evan-moor/navigation-study/navigation-study/styles/.DS_Store
-/public/img/evan-moor/navigation-study/navigation-study/styles/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/mega-nav-bg.scssc
-/public/img/evan-moor/navigation-study/navigation-study/styles/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/sprites.scssc
-/public/img/evan-moor/navigation-study/navigation-study/styles/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/styles.scssc
-/public/img/evan-moor/navigation-study/navigation-study/styles/css/mega-nav-bg.css
-/public/img/evan-moor/navigation-study/navigation-study/styles/css/mega-nav-bg.css.map
-/public/img/evan-moor/navigation-study/navigation-study/styles/css/sprites.css
-/public/img/evan-moor/navigation-study/navigation-study/styles/css/sprites.css.map
-/public/img/evan-moor/navigation-study/navigation-study/styles/css/styles.css
-/public/img/evan-moor/navigation-study/navigation-study/styles/css/styles.css.map
-/public/img/evan-moor/navigation-study/navigation-study/styles/scss/.DS_Store
-/public/img/evan-moor/navigation-study/navigation-study/styles/scss/mega-nav-bg
-/public/img/evan-moor/navigation-study/navigation-study/styles/scss/mega-nav-bg.scss
-/public/img/evan-moor/navigation-study/navigation-study/styles/scss/sprites.scss
-/public/img/evan-moor/navigation-study/navigation-study/styles/scss/styles.scss
-/public/img/evan-moor/navigation-study/__MACOSX/navigation-study/._.DS_Store
-/public/img/evan-moor/navigation-study/__MACOSX/navigation-study/._mock.png
-/public/img/evan-moor/navigation-study/__MACOSX/navigation-study/sprites/._EM-Navigation-Sprite-2X.png
-/public/img/evan-moor/navigation-study/__MACOSX/navigation-study/sprites/._EM-Navigation-Study-Grey-Icon-Sprite.png
-/public/img/evan-moor/navigation-study/__MACOSX/navigation-study/sprites/._EM-Navigation-Study-Sprite.png
-/public/img/evan-moor/navigation-study/__MACOSX/navigation-study/styles/._.DS_Store
-/public/img/evan-moor/navigation-study/__MACOSX/navigation-study/styles/scss/._.DS_Store
-/public/img/footwear-etc/FWE-PPBuyBox-CaseStudy.pdf
-/public/img/footwear-etc/hoka one challenger atr 2 grey - variation.png
-/public/img/footwear-etc/pdp-buy-box-hoka-one-lg.png
-/public/img/footwear-etc/pdp-buy-box-mbt-sport-3-lg.png
-/public/img/footwear-etc/pdp-buy-box-mbt-sport-3-sm.png
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped-sm.psd
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped.psd
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped_0000_Layer-1.png
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped_0001_Layer-0.png
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg.psd
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg_0000_Layer-1.png
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg_0001_Layer-0.png
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b.psd
-/public/img/footwear-etc/pdp-buy-box.psd
-/public/img/footwear-etc/control/hoka one challenger atr 2 grey - control.html
-/public/img/footwear-etc/control/hoka one challenger atr 2 grey - control.png
-/public/img/footwear-etc/control/[european-womens-sizing] mbt sport 3 ping - control.html
-/public/img/footwear-etc/control/[european-womens-sizing] mbt sport 3 ping - control.png
-/public/img/footwear-etc/control/[shoe width] womens new balance walking shoe - control.html
-/public/img/footwear-etc/control/[shoe width] womens new balance walking shoe - control.png
-/public/img/footwear-etc/variation/hoka one challenger atr 2 grey - variation.html
-/public/img/footwear-etc/variation/hoka one challenger atr 2 grey - variation.png
-/public/img/footwear-etc/variation/[european-womens-sizing] mbt sport 3 ping - variation.html
-/public/img/footwear-etc/variation/[european-womens-sizing] mbt sport 3 ping - variation.png
-/public/img/footwear-etc/variation/[shoe width] womens new balance walking shoe - variation.html
-/public/img/footwear-etc/variation/[shoe width] womens new balance walking shoe - variation.png
-/public/img/north-shore-care/product-list.psd
-/public/img/north-shore-care/product-listing/assets/nsc-value-sprite.png
-/public/img/north-shore-care/product-listing/curl/ajax ill have to make
-/public/img/north-shore-care/product-listing/curl/histogramPopup.js
-/public/img/north-shore-care/product-listing/curl/json_example.beautified.json
-/public/img/north-shore-care/product-listing/curl/json_example.json
-/public/img/north-shore-care/product-listing/curl/popup.html
-/public/img/north-shore-care/product-listing/curl/popup.pretty.html
-/public/img/north-shore-care/product-listing/curl/popup.templated.html
-/public/img/north-shore-care/product-listing/curl/product-page_curled.html
-/public/img/north-shore-care/product-listing/curl/scripts/chartbeat.beautified.js
-/public/img/north-shore-care/product-listing/curl/scripts/chartbeat.js
-/public/img/north-shore-care/product-listing/curl/scripts/garbage-file-name.js
-/public/img/north-shore-care/product-listing/curl/scripts/inline-script.js
-/public/img/north-shore-care/product-listing/curl/scripts/live_engage.js
-/public/img/north-shore-care/product-listing/dev/banner_template.html
-/public/img/north-shore-care/product-listing/dev/faf.html
-/public/img/north-shore-care/product-listing/dev/fake-review.html
-/public/img/north-shore-care/product-listing/dev/modal-auto-ship.html
-/public/img/north-shore-care/product-listing/dev/modal-auto-ship.min.html
-/public/img/north-shore-care/product-listing/dev/modal-returns.html
-/public/img/north-shore-care/product-listing/dev/modal-returns.min.html
-/public/img/north-shore-care/product-listing/dev/modal-ship-MODIFIED.html
-/public/img/north-shore-care/product-listing/dev/modal-ship-MODIFIED.min.html
-/public/img/north-shore-care/product-listing/dev/modal-ship.html
-/public/img/north-shore-care/product-listing/dev/modal-ship.min.html
-/public/img/north-shore-care/product-listing/dev/modal.html
-/public/img/north-shore-care/product-listing/dev/modal.min.html
-/public/img/north-shore-care/product-listing/dev/reind.js
-/public/img/north-shore-care/product-listing/dev/v1.value-messaging.html
-/public/img/north-shore-care/product-listing/dev/v1.value-messaging.min.html
-/public/img/north-shore-care/product-listing/dev/var1.backup.js
-/public/img/north-shore-care/product-listing/dev/var1.css
-/public/img/north-shore-care/product-listing/dev/var1.html
-/public/img/north-shore-care/product-listing/dev/var1.js
-/public/img/north-shore-care/product-listing/dev/var1.less
-/public/img/north-shore-care/product-listing/dev/var2.beautified.js
-/public/img/north-shore-care/product-listing/dev/var2.css
-/public/img/north-shore-care/product-listing/dev/var2.html
-/public/img/north-shore-care/product-listing/dev/var2.js
-/public/img/north-shore-care/product-listing/dev/var2.less
-/public/img/north-shore-care/product-listing/dev/var2.min.html
-/public/img/north-shore-care/product-listing/dev/var2.min.js
-/public/img/north-shore-care/product-listing/mocks/combo-1 [0,0].png
-/public/img/north-shore-care/product-listing/mocks/combo-2 [1,0]-modal .png
-/public/img/north-shore-care/product-listing/mocks/combo-2 [1,0].png
-/public/img/north-shore-care/product-listing/mocks/combo-3 [0,1].png
-/public/img/north-shore-care/product-listing/mocks/combo-4 [1,1].png
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/.DS_Store
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/Control.html
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/nsc-value-sprite.png
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/ReadMe.pdf
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/Script.js
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/Style.css
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/Test.diff
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/Variation.html
-/public/img/north-shore-care/product-listing/__MACOSX/Product Listing Deliverable/._.DS_Store
-/public/img/north-shore-care/product-listing/__MACOSX/Product Listing Deliverable/._nsc-value-sprite.png
-/public/img/north-shore-care/product-listing/__MACOSX/Product Listing Deliverable/._ReadMe.pdf
-/public/img/reading-glasses/RG-GlobalStickyHeaderStudy-control.jpg
-/public/img/reading-glasses/RG-GlobalStickyHeaderStudy-variation.jpg
-/public/img/skis-dot-com/SKI-Combo2-Controlvariation.png
-/public/img/skis-dot-com/SKI-Combo3-Mobile.png
-/public/img/skis-dot-com/SKI-Combo4-Controlvariation.png
-/public/img/skis-dot-com/SKI-Product-Buy-Box-Combo2A.png
-/public/img/skis-dot-com/SKI-Product-Buy-Box-Combo3-controllayout.png
-/public/img/skis-dot-com/SKI-Product-Buy-Box-Combo4-final.png
-/public/img/skis-dot-com/SKI-Product-Buy-Box-Desktop-Control-Final.png
-/public/img/skis-dot-com/SKI-Product-Buy-Box-Helmet-Mobile-Control.png
-/public/img/skis-dot-com/SKI-Product-Buy-Box-Mobile-Combo2.png
-/public/img/skis-dot-com/SKI-Product-Buy-Box-Mobile-Combo4-variationvariation.png
-/public/img/skis-dot-com/SKI-Product-Page-buy-Box-Combo2-Final.png
-/public/img/skis-dot-com/SKI-Product-Page-buy-Box-Combo4-variation.png
-/public/favicon.ico
-/public/get-files.cmd
-/public/index.html
-/public/index.txt
-/public/manifest.json
-/public/img/grid-template.psd
-/public/img/american-muscle/browsing content - anchors.png
-/public/img/american-muscle/Browsing-Control.png
-/public/img/american-muscle/landing page - anchor links - resized.png
-/public/img/american-muscle/landing page - anchor links.png
-/public/img/american-muscle/landing page - control.png
-/public/img/american-muscle/v1 - landing page - collapsed - iphone 6 size.png
-/public/img/american-muscle/v1 - landing page - collapsed copy.png
-/public/img/american-muscle/v1 - landing page - collapsed.png
-/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-control.png
-/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation2.png
-/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation3.png
-/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4 (1).png
-/public/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4.png
-/public/img/american-muscle/mobile-pdp-1/Avara.ttf
-/public/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Control.png
-/public/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Variation.png
-/public/img/beckers/.DS_Store
-/public/img/beckers/readMe.pdf
-/public/img/beckers/script.js
-/public/img/beckers/style.css
-/public/img/beckers/images/bss-mobile-checkout-sprite.png
-/public/img/beckers/rendered_HTML/account-billing.html
-/public/img/beckers/rendered_HTML/account-shipping.html
-/public/img/beckers/rendered_HTML/cart.html
-/public/img/beckers/rendered_HTML/guest-billing.html
-/public/img/beckers/rendered_HTML/guest-billing.html
-/public/img/beckers/rendered_HTML/guest-shipping.html
-/public/img/beckers/rendered_HTML/login.html
-/public/img/beckers/rendered_HTML/review.html
-/public/img/beckers/screenshots/cart_desktop.png
-/public/img/beckers/screenshots/cart_mobile.png
-/public/img/beckers/screenshots/desktop_account-billing.png
-/public/img/beckers/screenshots/desktop_account-shipping.png
-/public/img/beckers/screenshots/desktop_guest-billing.png
-/public/img/beckers/screenshots/desktop_guest-shipping.png
-/public/img/beckers/screenshots/login_desktop.png
-/public/img/beckers/screenshots/login_mobile.png
-/public/img/beckers/screenshots/mobile_account-billing.png
-/public/img/beckers/screenshots/mobile_account-shipping.png
-/public/img/beckers/screenshots/mobile_guest-billing.png
-/public/img/beckers/screenshots/mobile_guest-shipping.png
-/public/img/beckers/screenshots/review_desktop.png
-/public/img/beckers/screenshots/review_mobile.png
-/public/img/bmmsa/screens/BMMSA-HeaderRedesign-header.jpg
-/public/img/bmmsa/screens/BMMSA-HeaderRedesign-primaryNav.jpg
-/public/img/bmmsa/screens/BMMSA-HeaderRedesign-secondaryNav.jpg
-/public/img/bmmsa/screens/bmmsa.com-iphone5-control--open.png
-/public/img/bmmsa/screens/bmmsa.com-iphone5-control.png
-/public/img/buy-auto-parts/cart/BAP-CartPagePresentation-control.png
-/public/img/buy-auto-parts/cart/BAP-CartPagePresentation-variation.png
-/public/img/cpenow/control.png
-/public/img/cpenow/cpe-navigationtest-variation-updatecourses.png
-/public/img/cpenow/variation-accounting.png
-/public/img/cpenow/variation-ethics.png
-/public/img/cpenow/variation-tax.png
-/public/img/cpenow/variation-updatecourses.png
-/public/img/cpenow/variation.png
-/public/img/epromos/EP-customize-desktop-control.png
-/public/img/epromos/EP-customize-desktop-variation-2locations.png
-/public/img/epromos/EP-customize-desktop-variation-contact.png
-/public/img/epromos/EP-customize-desktop-variation-image-text.png
-/public/img/epromos/EP-customize-mobile-control.png
-/public/img/epromos/EP-customize-mobile-variation.png
-/public/img/evan-moor/navigation-study.zip
-/public/img/evan-moor/navigation-study/EM-Navigation-Closed.png
-/public/img/evan-moor/navigation-study/EM-Navigation-Desktop-Control.png
-/public/img/evan-moor/navigation-study/EM-Navigation-Variation-Tier-1.png
-/public/img/evan-moor/navigation-study/EM-Navigation-Variation-Tier-2.png
-/public/img/evan-moor/navigation-study/navigation-study/.DS_Store
-/public/img/evan-moor/navigation-study/navigation-study/css
-/public/img/evan-moor/navigation-study/navigation-study/mock.png
-/public/img/evan-moor/navigation-study/navigation-study/nav_model.beautified.json
-/public/img/evan-moor/navigation-study/navigation-study/nav_model.json
-/public/img/evan-moor/navigation-study/navigation-study/nav_model.min.json
-/public/img/evan-moor/navigation-study/navigation-study/output_test.html
-/public/img/evan-moor/navigation-study/navigation-study/output_test.pretty.html
-/public/img/evan-moor/navigation-study/navigation-study/test.json
-/public/img/evan-moor/navigation-study/navigation-study/ti-script.js
-/public/img/evan-moor/navigation-study/navigation-study/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/mega-nav-bg.scssc
-/public/img/evan-moor/navigation-study/navigation-study/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/sprites.scssc
-/public/img/evan-moor/navigation-study/navigation-study/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/styles.scssc
-/public/img/evan-moor/navigation-study/navigation-study/html-playground/grade_html.html
-/public/img/evan-moor/navigation-study/navigation-study/html-playground/sub_menu_prototype.html
-/public/img/evan-moor/navigation-study/navigation-study/html-playground/sub_menu_prototype_summary.html
-/public/img/evan-moor/navigation-study/navigation-study/sprites/EM-Navigation-Sprite-2X.png
-/public/img/evan-moor/navigation-study/navigation-study/sprites/EM-Navigation-Study-Grey-Icon-Sprite.png
-/public/img/evan-moor/navigation-study/navigation-study/sprites/EM-Navigation-Study-Sprite.png
-/public/img/evan-moor/navigation-study/navigation-study/styles/.DS_Store
-/public/img/evan-moor/navigation-study/navigation-study/styles/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/mega-nav-bg.scssc
-/public/img/evan-moor/navigation-study/navigation-study/styles/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/sprites.scssc
-/public/img/evan-moor/navigation-study/navigation-study/styles/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/styles.scssc
-/public/img/evan-moor/navigation-study/navigation-study/styles/css/mega-nav-bg.css
-/public/img/evan-moor/navigation-study/navigation-study/styles/css/mega-nav-bg.css.map
-/public/img/evan-moor/navigation-study/navigation-study/styles/css/sprites.css
-/public/img/evan-moor/navigation-study/navigation-study/styles/css/sprites.css.map
-/public/img/evan-moor/navigation-study/navigation-study/styles/css/styles.css
-/public/img/evan-moor/navigation-study/navigation-study/styles/css/styles.css.map
-/public/img/evan-moor/navigation-study/navigation-study/styles/scss/.DS_Store
-/public/img/evan-moor/navigation-study/navigation-study/styles/scss/mega-nav-bg
-/public/img/evan-moor/navigation-study/navigation-study/styles/scss/mega-nav-bg.scss
-/public/img/evan-moor/navigation-study/navigation-study/styles/scss/sprites.scss
-/public/img/evan-moor/navigation-study/navigation-study/styles/scss/styles.scss
-/public/img/evan-moor/navigation-study/__MACOSX/navigation-study/._.DS_Store
-/public/img/evan-moor/navigation-study/__MACOSX/navigation-study/._mock.png
-/public/img/evan-moor/navigation-study/__MACOSX/navigation-study/sprites/._EM-Navigation-Sprite-2X.png
-/public/img/evan-moor/navigation-study/__MACOSX/navigation-study/sprites/._EM-Navigation-Study-Grey-Icon-Sprite.png
-/public/img/evan-moor/navigation-study/__MACOSX/navigation-study/sprites/._EM-Navigation-Study-Sprite.png
-/public/img/evan-moor/navigation-study/__MACOSX/navigation-study/styles/._.DS_Store
-/public/img/evan-moor/navigation-study/__MACOSX/navigation-study/styles/scss/._.DS_Store
-/public/img/footwear-etc/FWE-PPBuyBox-CaseStudy.pdf
-/public/img/footwear-etc/hoka one challenger atr 2 grey - variation.png
-/public/img/footwear-etc/pdp-buy-box-hoka-one-lg.png
-/public/img/footwear-etc/pdp-buy-box-mbt-sport-3-lg.png
-/public/img/footwear-etc/pdp-buy-box-mbt-sport-3-sm.png
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped-sm.psd
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped.psd
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped_0000_Layer-1.png
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped_0001_Layer-0.png
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg.psd
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg_0000_Layer-1.png
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg_0001_Layer-0.png
-/public/img/footwear-etc/pdp-buy-box-womens-nb-a-b.psd
-/public/img/footwear-etc/pdp-buy-box.psd
-/public/img/footwear-etc/control/hoka one challenger atr 2 grey - control.html
-/public/img/footwear-etc/control/hoka one challenger atr 2 grey - control.png
-/public/img/footwear-etc/control/[european-womens-sizing] mbt sport 3 ping - control.html
-/public/img/footwear-etc/control/[european-womens-sizing] mbt sport 3 ping - control.png
-/public/img/footwear-etc/control/[shoe width] womens new balance walking shoe - control.html
-/public/img/footwear-etc/control/[shoe width] womens new balance walking shoe - control.png
-/public/img/footwear-etc/variation/hoka one challenger atr 2 grey - variation.html
-/public/img/footwear-etc/variation/hoka one challenger atr 2 grey - variation.png
-/public/img/footwear-etc/variation/[european-womens-sizing] mbt sport 3 ping - variation.html
-/public/img/footwear-etc/variation/[european-womens-sizing] mbt sport 3 ping - variation.png
-/public/img/footwear-etc/variation/[shoe width] womens new balance walking shoe - variation.html
-/public/img/footwear-etc/variation/[shoe width] womens new balance walking shoe - variation.png
-/public/img/north-shore-care/product-list.psd
-/public/img/north-shore-care/product-listing/assets/nsc-value-sprite.png
-/public/img/north-shore-care/product-listing/curl/ajax ill have to make
-/public/img/north-shore-care/product-listing/curl/histogramPopup.js
-/public/img/north-shore-care/product-listing/curl/json_example.beautified.json
-/public/img/north-shore-care/product-listing/curl/json_example.json
-/public/img/north-shore-care/product-listing/curl/popup.html
-/public/img/north-shore-care/product-listing/curl/popup.pretty.html
-/public/img/north-shore-care/product-listing/curl/popup.templated.html
-/public/img/north-shore-care/product-listing/curl/product-page_curled.html
-/public/img/north-shore-care/product-listing/curl/scripts/chartbeat.beautified.js
-/public/img/north-shore-care/product-listing/curl/scripts/chartbeat.js
-/public/img/north-shore-care/product-listing/curl/scripts/garbage-file-name.js
-/public/img/north-shore-care/product-listing/curl/scripts/inline-script.js
-/public/img/north-shore-care/product-listing/curl/scripts/live_engage.js
-/public/img/north-shore-care/product-listing/dev/banner_template.html
-/public/img/north-shore-care/product-listing/dev/faf.html
-/public/img/north-shore-care/product-listing/dev/fake-review.html
-/public/img/north-shore-care/product-listing/dev/modal-auto-ship.html
-/public/img/north-shore-care/product-listing/dev/modal-auto-ship.min.html
-/public/img/north-shore-care/product-listing/dev/modal-returns.html
-/public/img/north-shore-care/product-listing/dev/modal-returns.min.html
-/public/img/north-shore-care/product-listing/dev/modal-ship-MODIFIED.html
-/public/img/north-shore-care/product-listing/dev/modal-ship-MODIFIED.min.html
-/public/img/north-shore-care/product-listing/dev/modal-ship.html
-/public/img/north-shore-care/product-listing/dev/modal-ship.min.html
-/public/img/north-shore-care/product-listing/dev/modal.html
-/public/img/north-shore-care/product-listing/dev/modal.min.html
-/public/img/north-shore-care/product-listing/dev/reind.js
-/public/img/north-shore-care/product-listing/dev/v1.value-messaging.html
-/public/img/north-shore-care/product-listing/dev/v1.value-messaging.min.html
-/public/img/north-shore-care/product-listing/dev/var1.backup.js
-/public/img/north-shore-care/product-listing/dev/var1.css
-/public/img/north-shore-care/product-listing/dev/var1.html
-/public/img/north-shore-care/product-listing/dev/var1.js
-/public/img/north-shore-care/product-listing/dev/var1.less
-/public/img/north-shore-care/product-listing/dev/var2.beautified.js
-/public/img/north-shore-care/product-listing/dev/var2.css
-/public/img/north-shore-care/product-listing/dev/var2.html
-/public/img/north-shore-care/product-listing/dev/var2.js
-/public/img/north-shore-care/product-listing/dev/var2.less
-/public/img/north-shore-care/product-listing/dev/var2.min.html
-/public/img/north-shore-care/product-listing/dev/var2.min.js
-/public/img/north-shore-care/product-listing/mocks/combo-1 [0,0].png
-/public/img/north-shore-care/product-listing/mocks/combo-2 [1,0]-modal .png
-/public/img/north-shore-care/product-listing/mocks/combo-2 [1,0].png
-/public/img/north-shore-care/product-listing/mocks/combo-3 [0,1].png
-/public/img/north-shore-care/product-listing/mocks/combo-4 [1,1].png
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/.DS_Store
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/Control.html
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/nsc-value-sprite.png
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/ReadMe.pdf
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/Script.js
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/Style.css
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/Test.diff
-/public/img/north-shore-care/product-listing/Product Listing Deliverable/Variation.html
-/public/img/north-shore-care/product-listing/__MACOSX/Product Listing Deliverable/._.DS_Store
-/public/img/north-shore-care/product-listing/__MACOSX/Product Listing Deliverable/._nsc-value-sprite.png
-/public/img/north-shore-care/product-listing/__MACOSX/Product Listing Deliverable/._ReadMe.pdf
-/public/img/reading-glasses/RG-GlobalStickyHeaderStudy-control.jpg
-/public/img/reading-glasses/RG-GlobalStickyHeaderStudy-variation.jpg
-/public/img/skis-dot-com/SKI-Combo2-Controlvariation.png
-/public/img/skis-dot-com/SKI-Combo3-Mobile.png
-/public/img/skis-dot-com/SKI-Combo4-Controlvariation.png
-/public/img/skis-dot-com/SKI-Product-Buy-Box-Combo2A.png
-/public/img/skis-dot-com/SKI-Product-Buy-Box-Combo3-controllayout.png
-/public/img/skis-dot-com/SKI-Product-Buy-Box-Combo4-final.png
-/public/img/skis-dot-com/SKI-Product-Buy-Box-Desktop-Control-Final.png
-/public/img/skis-dot-com/SKI-Product-Buy-Box-Helmet-Mobile-Control.png
-/public/img/skis-dot-com/SKI-Product-Buy-Box-Mobile-Combo2.png
-/public/img/skis-dot-com/SKI-Product-Buy-Box-Mobile-Combo4-variationvariation.png
-/public/img/skis-dot-com/SKI-Product-Page-buy-Box-Combo2-Final.png
-/public/img/skis-dot-com/SKI-Product-Page-buy-Box-Combo4-variation.png
+/favicon.ico
+/get-files.cmd
+/index.html
+/index.json
+/manifest.json
+/img/grid-template.psd
+/img/american-muscle/browsing content - anchors.png
+/img/american-muscle/Browsing-Control.png
+/img/american-muscle/landing page - anchor links - resized.png
+/img/american-muscle/landing page - anchor links.png
+/img/american-muscle/landing page - control.png
+/img/american-muscle/v1 - landing page - collapsed - iphone 6 size.png
+/img/american-muscle/v1 - landing page - collapsed copy.png
+/img/american-muscle/v1 - landing page - collapsed.png
+/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-control.png
+/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation2.png
+/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation3.png
+/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4 (1).png
+/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4.png
+/img/american-muscle/mobile-pdp-1/Avara.ttf
+/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Control.png
+/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Variation.png
+/img/beckers/.DS_Store
+/img/beckers/readMe.pdf
+/img/beckers/script.js
+/img/beckers/style.css
+/img/beckers/images/bss-mobile-checkout-sprite.png
+/img/beckers/rendered_HTML/account-billing.html
+/img/beckers/rendered_HTML/account-shipping.html
+/img/beckers/rendered_HTML/cart.html
+/img/beckers/rendered_HTML/guest-billing.html
+/img/beckers/rendered_HTML/guest-shipping.html
+/img/beckers/rendered_HTML/login.html
+/img/beckers/rendered_HTML/review.html
+/img/beckers/screenshots/cart_desktop.png
+/img/beckers/screenshots/cart_mobile.png
+/img/beckers/screenshots/desktop_account-billing.png
+/img/beckers/screenshots/desktop_account-shipping.png
+/img/beckers/screenshots/desktop_guest-billing.png
+/img/beckers/screenshots/desktop_guest-shipping.png
+/img/beckers/screenshots/login_desktop.png
+/img/beckers/screenshots/login_mobile.png
+/img/beckers/screenshots/mobile_account-billing.png
+/img/beckers/screenshots/mobile_account-shipping.png
+/img/beckers/screenshots/mobile_guest-billing.png
+/img/beckers/screenshots/mobile_guest-shipping.png
+/img/beckers/screenshots/review_desktop.png
+/img/beckers/screenshots/review_mobile.png
+/img/bmmsa/screens/BMMSA-HeaderRedesign-header.jpg
+/img/bmmsa/screens/BMMSA-HeaderRedesign-primaryNav.jpg
+/img/bmmsa/screens/BMMSA-HeaderRedesign-secondaryNav.jpg
+/img/bmmsa/screens/bmmsa.com-iphone5-control--open.png
+/img/bmmsa/screens/bmmsa.com-iphone5-control.png
+/img/buy-auto-parts/cart/BAP-CartPagePresentation-control.png
+/img/buy-auto-parts/cart/BAP-CartPagePresentation-variation.png
+/img/cpenow/control.png
+/img/cpenow/cpe-navigationtest-variation-updatecourses.png
+/img/cpenow/variation-accounting.png
+/img/cpenow/variation-ethics.png
+/img/cpenow/variation-tax.png
+/img/cpenow/variation-updatecourses.png
+/img/cpenow/variation.png
+/img/epromos/EP-customize-desktop-control.png
+/img/epromos/EP-customize-desktop-variation-2locations.png
+/img/epromos/EP-customize-desktop-variation-contact.png
+/img/epromos/EP-customize-desktop-variation-image-text.png
+/img/epromos/EP-customize-mobile-control.png
+/img/epromos/EP-customize-mobile-variation.png
+/img/evan-moor/navigation-study.zip
+/img/evan-moor/navigation-study/EM-Navigation-Closed.png
+/img/evan-moor/navigation-study/EM-Navigation-Desktop-Control.png
+/img/evan-moor/navigation-study/EM-Navigation-Variation-Tier-1.png
+/img/evan-moor/navigation-study/EM-Navigation-Variation-Tier-2.png
+/img/evan-moor/navigation-study/navigation-study/.DS_Store
+/img/evan-moor/navigation-study/navigation-study/css
+/img/evan-moor/navigation-study/navigation-study/mock.png
+/img/evan-moor/navigation-study/navigation-study/nav_model.beautified.json
+/img/evan-moor/navigation-study/navigation-study/nav_model.json
+/img/evan-moor/navigation-study/navigation-study/nav_model.min.json
+/img/evan-moor/navigation-study/navigation-study/output_test.html
+/img/evan-moor/navigation-study/navigation-study/output_test.pretty.html
+/img/evan-moor/navigation-study/navigation-study/test.json
+/img/evan-moor/navigation-study/navigation-study/ti-script.js
+/img/evan-moor/navigation-study/navigation-study/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/mega-nav-bg.scssc
+/img/evan-moor/navigation-study/navigation-study/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/sprites.scssc
+/img/evan-moor/navigation-study/navigation-study/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/styles.scssc
+/img/evan-moor/navigation-study/navigation-study/html-playground/grade_html.html
+/img/evan-moor/navigation-study/navigation-study/html-playground/sub_menu_prototype.html
+/img/evan-moor/navigation-study/navigation-study/html-playground/sub_menu_prototype_summary.html
+/img/evan-moor/navigation-study/navigation-study/sprites/EM-Navigation-Sprite-2X.png
+/img/evan-moor/navigation-study/navigation-study/sprites/EM-Navigation-Study-Grey-Icon-Sprite.png
+/img/evan-moor/navigation-study/navigation-study/sprites/EM-Navigation-Study-Sprite.png
+/img/evan-moor/navigation-study/navigation-study/styles/.DS_Store
+/img/evan-moor/navigation-study/navigation-study/styles/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/mega-nav-bg.scssc
+/img/evan-moor/navigation-study/navigation-study/styles/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/sprites.scssc
+/img/evan-moor/navigation-study/navigation-study/styles/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/styles.scssc
+/img/evan-moor/navigation-study/navigation-study/styles/css/mega-nav-bg.css
+/img/evan-moor/navigation-study/navigation-study/styles/css/mega-nav-bg.css.map
+/img/evan-moor/navigation-study/navigation-study/styles/css/sprites.css
+/img/evan-moor/navigation-study/navigation-study/styles/css/sprites.css.map
+/img/evan-moor/navigation-study/navigation-study/styles/css/styles.css
+/img/evan-moor/navigation-study/navigation-study/styles/css/styles.css.map
+/img/evan-moor/navigation-study/navigation-study/styles/scss/.DS_Store
+/img/evan-moor/navigation-study/navigation-study/styles/scss/mega-nav-bg
+/img/evan-moor/navigation-study/navigation-study/styles/scss/mega-nav-bg.scss
+/img/evan-moor/navigation-study/navigation-study/styles/scss/sprites.scss
+/img/evan-moor/navigation-study/navigation-study/styles/scss/styles.scss
+/img/evan-moor/navigation-study/__MACOSX/navigation-study/._.DS_Store
+/img/evan-moor/navigation-study/__MACOSX/navigation-study/._mock.png
+/img/evan-moor/navigation-study/__MACOSX/navigation-study/sprites/._EM-Navigation-Sprite-2X.png
+/img/evan-moor/navigation-study/__MACOSX/navigation-study/sprites/._EM-Navigation-Study-Grey-Icon-Sprite.png
+/img/evan-moor/navigation-study/__MACOSX/navigation-study/sprites/._EM-Navigation-Study-Sprite.png
+/img/evan-moor/navigation-study/__MACOSX/navigation-study/styles/._.DS_Store
+/img/evan-moor/navigation-study/__MACOSX/navigation-study/styles/scss/._.DS_Store
+/img/footwear-etc/FWE-PPBuyBox-CaseStudy.pdf
+/img/footwear-etc/hoka one challenger atr 2 grey - variation.png
+/img/footwear-etc/pdp-buy-box-hoka-one-lg.png
+/img/footwear-etc/pdp-buy-box-mbt-sport-3-lg.png
+/img/footwear-etc/pdp-buy-box-mbt-sport-3-sm.png
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped-sm.psd
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped.psd
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped_0000_Layer-1.png
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped_0001_Layer-0.png
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg.psd
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg_0000_Layer-1.png
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg_0001_Layer-0.png
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b.psd
+/img/footwear-etc/pdp-buy-box.psd
+/img/footwear-etc/control/hoka one challenger atr 2 grey - control.html
+/img/footwear-etc/control/hoka one challenger atr 2 grey - control.png
+/img/footwear-etc/control/[european-womens-sizing] mbt sport 3 ping - control.html
+/img/footwear-etc/control/[european-womens-sizing] mbt sport 3 ping - control.png
+/img/footwear-etc/control/[shoe width] womens new balance walking shoe - control.html
+/img/footwear-etc/control/[shoe width] womens new balance walking shoe - control.png
+/img/footwear-etc/variation/hoka one challenger atr 2 grey - variation.html
+/img/footwear-etc/variation/hoka one challenger atr 2 grey - variation.png
+/img/footwear-etc/variation/[european-womens-sizing] mbt sport 3 ping - variation.html
+/img/footwear-etc/variation/[european-womens-sizing] mbt sport 3 ping - variation.png
+/img/footwear-etc/variation/[shoe width] womens new balance walking shoe - variation.html
+/img/footwear-etc/variation/[shoe width] womens new balance walking shoe - variation.png
+/img/north-shore-care/product-list.psd
+/img/north-shore-care/product-listing/assets/nsc-value-sprite.png
+/img/north-shore-care/product-listing/curl/ajax ill have to make
+/img/north-shore-care/product-listing/curl/histogramPopup.js
+/img/north-shore-care/product-listing/curl/json_example.beautified.json
+/img/north-shore-care/product-listing/curl/json_example.json
+/img/north-shore-care/product-listing/curl/popup.html
+/img/north-shore-care/product-listing/curl/popup.pretty.html
+/img/north-shore-care/product-listing/curl/popup.templated.html
+/img/north-shore-care/product-listing/curl/product-page_curled.html
+/img/north-shore-care/product-listing/curl/scripts/chartbeat.beautified.js
+/img/north-shore-care/product-listing/curl/scripts/chartbeat.js
+/img/north-shore-care/product-listing/curl/scripts/garbage-file-name.js
+/img/north-shore-care/product-listing/curl/scripts/inline-script.js
+/img/north-shore-care/product-listing/curl/scripts/live_engage.js
+/img/north-shore-care/product-listing/dev/banner_template.html
+/img/north-shore-care/product-listing/dev/faf.html
+/img/north-shore-care/product-listing/dev/fake-review.html
+/img/north-shore-care/product-listing/dev/modal-auto-ship.html
+/img/north-shore-care/product-listing/dev/modal-auto-ship.min.html
+/img/north-shore-care/product-listing/dev/modal-returns.html
+/img/north-shore-care/product-listing/dev/modal-returns.min.html
+/img/north-shore-care/product-listing/dev/modal-ship-MODIFIED.html
+/img/north-shore-care/product-listing/dev/modal-ship-MODIFIED.min.html
+/img/north-shore-care/product-listing/dev/modal-ship.html
+/img/north-shore-care/product-listing/dev/modal-ship.min.html
+/img/north-shore-care/product-listing/dev/modal.html
+/img/north-shore-care/product-listing/dev/modal.min.html
+/img/north-shore-care/product-listing/dev/reind.js
+/img/north-shore-care/product-listing/dev/v1.value-messaging.html
+/img/north-shore-care/product-listing/dev/v1.value-messaging.min.html
+/img/north-shore-care/product-listing/dev/var1.backup.js
+/img/north-shore-care/product-listing/dev/var1.css
+/img/north-shore-care/product-listing/dev/var1.html
+/img/north-shore-care/product-listing/dev/var1.js
+/img/north-shore-care/product-listing/dev/var1.less
+/img/north-shore-care/product-listing/dev/var2.beautified.js
+/img/north-shore-care/product-listing/dev/var2.css
+/img/north-shore-care/product-listing/dev/var2.html
+/img/north-shore-care/product-listing/dev/var2.js
+/img/north-shore-care/product-listing/dev/var2.less
+/img/north-shore-care/product-listing/dev/var2.min.html
+/img/north-shore-care/product-listing/dev/var2.min.js
+/img/north-shore-care/product-listing/mocks/combo-1 [0,0].png
+/img/north-shore-care/product-listing/mocks/combo-2 [1,0]-modal .png
+/img/north-shore-care/product-listing/mocks/combo-2 [1,0].png
+/img/north-shore-care/product-listing/mocks/combo-3 [0,1].png
+/img/north-shore-care/product-listing/mocks/combo-4 [1,1].png
+/img/north-shore-care/product-listing/Product Listing Deliverable/.DS_Store
+/img/north-shore-care/product-listing/Product Listing Deliverable/Control.html
+/img/north-shore-care/product-listing/Product Listing Deliverable/nsc-value-sprite.png
+/img/north-shore-care/product-listing/Product Listing Deliverable/ReadMe.pdf
+/img/north-shore-care/product-listing/Product Listing Deliverable/Script.js
+/img/north-shore-care/product-listing/Product Listing Deliverable/Style.css
+/img/north-shore-care/product-listing/Product Listing Deliverable/Test.diff
+/img/north-shore-care/product-listing/Product Listing Deliverable/Variation.html
+/img/north-shore-care/product-listing/__MACOSX/Product Listing Deliverable/._.DS_Store
+/img/north-shore-care/product-listing/__MACOSX/Product Listing Deliverable/._nsc-value-sprite.png
+/img/north-shore-care/product-listing/__MACOSX/Product Listing Deliverable/._ReadMe.pdf
+/img/reading-glasses/RG-GlobalStickyHeaderStudy-control.jpg
+/img/reading-glasses/RG-GlobalStickyHeaderStudy-variation.jpg
+/img/skis-dot-com/SKI-Combo2-Controlvariation.png
+/img/skis-dot-com/SKI-Combo3-Mobile.png
+/img/skis-dot-com/SKI-Combo4-Controlvariation.png
+/img/skis-dot-com/SKI-Product-Buy-Box-Combo2A.png
+/img/skis-dot-com/SKI-Product-Buy-Box-Combo3-controllayout.png
+/img/skis-dot-com/SKI-Product-Buy-Box-Combo4-final.png
+/img/skis-dot-com/SKI-Product-Buy-Box-Desktop-Control-Final.png
+/img/skis-dot-com/SKI-Product-Buy-Box-Helmet-Mobile-Control.png
+/img/skis-dot-com/SKI-Product-Buy-Box-Mobile-Combo2.png
+/img/skis-dot-com/SKI-Product-Buy-Box-Mobile-Combo4-variationvariation.png
+/img/skis-dot-com/SKI-Product-Page-buy-Box-Combo2-Final.png
+/img/skis-dot-com/SKI-Product-Page-buy-Box-Combo4-variation.png
+/favicon.ico
+/get-files.cmd
+/index.html
+/index.txt
+/manifest.json
+/img/grid-template.psd
+/img/american-muscle/browsing content - anchors.png
+/img/american-muscle/Browsing-Control.png
+/img/american-muscle/landing page - anchor links - resized.png
+/img/american-muscle/landing page - anchor links.png
+/img/american-muscle/landing page - control.png
+/img/american-muscle/v1 - landing page - collapsed - iphone 6 size.png
+/img/american-muscle/v1 - landing page - collapsed copy.png
+/img/american-muscle/v1 - landing page - collapsed.png
+/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-control.png
+/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation2.png
+/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation3.png
+/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4 (1).png
+/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4.png
+/img/american-muscle/mobile-pdp-1/Avara.ttf
+/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Control.png
+/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Variation.png
+/img/beckers/.DS_Store
+/img/beckers/readMe.pdf
+/img/beckers/script.js
+/img/beckers/style.css
+/img/beckers/images/bss-mobile-checkout-sprite.png
+/img/beckers/rendered_HTML/account-billing.html
+/img/beckers/rendered_HTML/account-shipping.html
+/img/beckers/rendered_HTML/cart.html
+/img/beckers/rendered_HTML/guest-billing.html
+/img/beckers/rendered_HTML/guest-billing.html
+/img/beckers/rendered_HTML/guest-shipping.html
+/img/beckers/rendered_HTML/login.html
+/img/beckers/rendered_HTML/review.html
+/img/beckers/screenshots/cart_desktop.png
+/img/beckers/screenshots/cart_mobile.png
+/img/beckers/screenshots/desktop_account-billing.png
+/img/beckers/screenshots/desktop_account-shipping.png
+/img/beckers/screenshots/desktop_guest-billing.png
+/img/beckers/screenshots/desktop_guest-shipping.png
+/img/beckers/screenshots/login_desktop.png
+/img/beckers/screenshots/login_mobile.png
+/img/beckers/screenshots/mobile_account-billing.png
+/img/beckers/screenshots/mobile_account-shipping.png
+/img/beckers/screenshots/mobile_guest-billing.png
+/img/beckers/screenshots/mobile_guest-shipping.png
+/img/beckers/screenshots/review_desktop.png
+/img/beckers/screenshots/review_mobile.png
+/img/bmmsa/screens/BMMSA-HeaderRedesign-header.jpg
+/img/bmmsa/screens/BMMSA-HeaderRedesign-primaryNav.jpg
+/img/bmmsa/screens/BMMSA-HeaderRedesign-secondaryNav.jpg
+/img/bmmsa/screens/bmmsa.com-iphone5-control--open.png
+/img/bmmsa/screens/bmmsa.com-iphone5-control.png
+/img/buy-auto-parts/cart/BAP-CartPagePresentation-control.png
+/img/buy-auto-parts/cart/BAP-CartPagePresentation-variation.png
+/img/cpenow/control.png
+/img/cpenow/cpe-navigationtest-variation-updatecourses.png
+/img/cpenow/variation-accounting.png
+/img/cpenow/variation-ethics.png
+/img/cpenow/variation-tax.png
+/img/cpenow/variation-updatecourses.png
+/img/cpenow/variation.png
+/img/epromos/EP-customize-desktop-control.png
+/img/epromos/EP-customize-desktop-variation-2locations.png
+/img/epromos/EP-customize-desktop-variation-contact.png
+/img/epromos/EP-customize-desktop-variation-image-text.png
+/img/epromos/EP-customize-mobile-control.png
+/img/epromos/EP-customize-mobile-variation.png
+/img/evan-moor/navigation-study.zip
+/img/evan-moor/navigation-study/EM-Navigation-Closed.png
+/img/evan-moor/navigation-study/EM-Navigation-Desktop-Control.png
+/img/evan-moor/navigation-study/EM-Navigation-Variation-Tier-1.png
+/img/evan-moor/navigation-study/EM-Navigation-Variation-Tier-2.png
+/img/evan-moor/navigation-study/navigation-study/.DS_Store
+/img/evan-moor/navigation-study/navigation-study/css
+/img/evan-moor/navigation-study/navigation-study/mock.png
+/img/evan-moor/navigation-study/navigation-study/nav_model.beautified.json
+/img/evan-moor/navigation-study/navigation-study/nav_model.json
+/img/evan-moor/navigation-study/navigation-study/nav_model.min.json
+/img/evan-moor/navigation-study/navigation-study/output_test.html
+/img/evan-moor/navigation-study/navigation-study/output_test.pretty.html
+/img/evan-moor/navigation-study/navigation-study/test.json
+/img/evan-moor/navigation-study/navigation-study/ti-script.js
+/img/evan-moor/navigation-study/navigation-study/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/mega-nav-bg.scssc
+/img/evan-moor/navigation-study/navigation-study/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/sprites.scssc
+/img/evan-moor/navigation-study/navigation-study/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/styles.scssc
+/img/evan-moor/navigation-study/navigation-study/html-playground/grade_html.html
+/img/evan-moor/navigation-study/navigation-study/html-playground/sub_menu_prototype.html
+/img/evan-moor/navigation-study/navigation-study/html-playground/sub_menu_prototype_summary.html
+/img/evan-moor/navigation-study/navigation-study/sprites/EM-Navigation-Sprite-2X.png
+/img/evan-moor/navigation-study/navigation-study/sprites/EM-Navigation-Study-Grey-Icon-Sprite.png
+/img/evan-moor/navigation-study/navigation-study/sprites/EM-Navigation-Study-Sprite.png
+/img/evan-moor/navigation-study/navigation-study/styles/.DS_Store
+/img/evan-moor/navigation-study/navigation-study/styles/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/mega-nav-bg.scssc
+/img/evan-moor/navigation-study/navigation-study/styles/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/sprites.scssc
+/img/evan-moor/navigation-study/navigation-study/styles/.sass-cache/1e10b8b34705dd53fc11471c54db06b09a3e583b/styles.scssc
+/img/evan-moor/navigation-study/navigation-study/styles/css/mega-nav-bg.css
+/img/evan-moor/navigation-study/navigation-study/styles/css/mega-nav-bg.css.map
+/img/evan-moor/navigation-study/navigation-study/styles/css/sprites.css
+/img/evan-moor/navigation-study/navigation-study/styles/css/sprites.css.map
+/img/evan-moor/navigation-study/navigation-study/styles/css/styles.css
+/img/evan-moor/navigation-study/navigation-study/styles/css/styles.css.map
+/img/evan-moor/navigation-study/navigation-study/styles/scss/.DS_Store
+/img/evan-moor/navigation-study/navigation-study/styles/scss/mega-nav-bg
+/img/evan-moor/navigation-study/navigation-study/styles/scss/mega-nav-bg.scss
+/img/evan-moor/navigation-study/navigation-study/styles/scss/sprites.scss
+/img/evan-moor/navigation-study/navigation-study/styles/scss/styles.scss
+/img/evan-moor/navigation-study/__MACOSX/navigation-study/._.DS_Store
+/img/evan-moor/navigation-study/__MACOSX/navigation-study/._mock.png
+/img/evan-moor/navigation-study/__MACOSX/navigation-study/sprites/._EM-Navigation-Sprite-2X.png
+/img/evan-moor/navigation-study/__MACOSX/navigation-study/sprites/._EM-Navigation-Study-Grey-Icon-Sprite.png
+/img/evan-moor/navigation-study/__MACOSX/navigation-study/sprites/._EM-Navigation-Study-Sprite.png
+/img/evan-moor/navigation-study/__MACOSX/navigation-study/styles/._.DS_Store
+/img/evan-moor/navigation-study/__MACOSX/navigation-study/styles/scss/._.DS_Store
+/img/footwear-etc/FWE-PPBuyBox-CaseStudy.pdf
+/img/footwear-etc/hoka one challenger atr 2 grey - variation.png
+/img/footwear-etc/pdp-buy-box-hoka-one-lg.png
+/img/footwear-etc/pdp-buy-box-mbt-sport-3-lg.png
+/img/footwear-etc/pdp-buy-box-mbt-sport-3-sm.png
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped-sm.psd
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped.psd
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped_0000_Layer-1.png
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped_0001_Layer-0.png
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg.psd
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg_0000_Layer-1.png
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg_0001_Layer-0.png
+/img/footwear-etc/pdp-buy-box-womens-nb-a-b.psd
+/img/footwear-etc/pdp-buy-box.psd
+/img/footwear-etc/control/hoka one challenger atr 2 grey - control.html
+/img/footwear-etc/control/hoka one challenger atr 2 grey - control.png
+/img/footwear-etc/control/[european-womens-sizing] mbt sport 3 ping - control.html
+/img/footwear-etc/control/[european-womens-sizing] mbt sport 3 ping - control.png
+/img/footwear-etc/control/[shoe width] womens new balance walking shoe - control.html
+/img/footwear-etc/control/[shoe width] womens new balance walking shoe - control.png
+/img/footwear-etc/variation/hoka one challenger atr 2 grey - variation.html
+/img/footwear-etc/variation/hoka one challenger atr 2 grey - variation.png
+/img/footwear-etc/variation/[european-womens-sizing] mbt sport 3 ping - variation.html
+/img/footwear-etc/variation/[european-womens-sizing] mbt sport 3 ping - variation.png
+/img/footwear-etc/variation/[shoe width] womens new balance walking shoe - variation.html
+/img/footwear-etc/variation/[shoe width] womens new balance walking shoe - variation.png
+/img/north-shore-care/product-list.psd
+/img/north-shore-care/product-listing/assets/nsc-value-sprite.png
+/img/north-shore-care/product-listing/curl/ajax ill have to make
+/img/north-shore-care/product-listing/curl/histogramPopup.js
+/img/north-shore-care/product-listing/curl/json_example.beautified.json
+/img/north-shore-care/product-listing/curl/json_example.json
+/img/north-shore-care/product-listing/curl/popup.html
+/img/north-shore-care/product-listing/curl/popup.pretty.html
+/img/north-shore-care/product-listing/curl/popup.templated.html
+/img/north-shore-care/product-listing/curl/product-page_curled.html
+/img/north-shore-care/product-listing/curl/scripts/chartbeat.beautified.js
+/img/north-shore-care/product-listing/curl/scripts/chartbeat.js
+/img/north-shore-care/product-listing/curl/scripts/garbage-file-name.js
+/img/north-shore-care/product-listing/curl/scripts/inline-script.js
+/img/north-shore-care/product-listing/curl/scripts/live_engage.js
+/img/north-shore-care/product-listing/dev/banner_template.html
+/img/north-shore-care/product-listing/dev/faf.html
+/img/north-shore-care/product-listing/dev/fake-review.html
+/img/north-shore-care/product-listing/dev/modal-auto-ship.html
+/img/north-shore-care/product-listing/dev/modal-auto-ship.min.html
+/img/north-shore-care/product-listing/dev/modal-returns.html
+/img/north-shore-care/product-listing/dev/modal-returns.min.html
+/img/north-shore-care/product-listing/dev/modal-ship-MODIFIED.html
+/img/north-shore-care/product-listing/dev/modal-ship-MODIFIED.min.html
+/img/north-shore-care/product-listing/dev/modal-ship.html
+/img/north-shore-care/product-listing/dev/modal-ship.min.html
+/img/north-shore-care/product-listing/dev/modal.html
+/img/north-shore-care/product-listing/dev/modal.min.html
+/img/north-shore-care/product-listing/dev/reind.js
+/img/north-shore-care/product-listing/dev/v1.value-messaging.html
+/img/north-shore-care/product-listing/dev/v1.value-messaging.min.html
+/img/north-shore-care/product-listing/dev/var1.backup.js
+/img/north-shore-care/product-listing/dev/var1.css
+/img/north-shore-care/product-listing/dev/var1.html
+/img/north-shore-care/product-listing/dev/var1.js
+/img/north-shore-care/product-listing/dev/var1.less
+/img/north-shore-care/product-listing/dev/var2.beautified.js
+/img/north-shore-care/product-listing/dev/var2.css
+/img/north-shore-care/product-listing/dev/var2.html
+/img/north-shore-care/product-listing/dev/var2.js
+/img/north-shore-care/product-listing/dev/var2.less
+/img/north-shore-care/product-listing/dev/var2.min.html
+/img/north-shore-care/product-listing/dev/var2.min.js
+/img/north-shore-care/product-listing/mocks/combo-1 [0,0].png
+/img/north-shore-care/product-listing/mocks/combo-2 [1,0]-modal .png
+/img/north-shore-care/product-listing/mocks/combo-2 [1,0].png
+/img/north-shore-care/product-listing/mocks/combo-3 [0,1].png
+/img/north-shore-care/product-listing/mocks/combo-4 [1,1].png
+/img/north-shore-care/product-listing/Product Listing Deliverable/.DS_Store
+/img/north-shore-care/product-listing/Product Listing Deliverable/Control.html
+/img/north-shore-care/product-listing/Product Listing Deliverable/nsc-value-sprite.png
+/img/north-shore-care/product-listing/Product Listing Deliverable/ReadMe.pdf
+/img/north-shore-care/product-listing/Product Listing Deliverable/Script.js
+/img/north-shore-care/product-listing/Product Listing Deliverable/Style.css
+/img/north-shore-care/product-listing/Product Listing Deliverable/Test.diff
+/img/north-shore-care/product-listing/Product Listing Deliverable/Variation.html
+/img/north-shore-care/product-listing/__MACOSX/Product Listing Deliverable/._.DS_Store
+/img/north-shore-care/product-listing/__MACOSX/Product Listing Deliverable/._nsc-value-sprite.png
+/img/north-shore-care/product-listing/__MACOSX/Product Listing Deliverable/._ReadMe.pdf
+/img/reading-glasses/RG-GlobalStickyHeaderStudy-control.jpg
+/img/reading-glasses/RG-GlobalStickyHeaderStudy-variation.jpg
+/img/skis-dot-com/SKI-Combo2-Controlvariation.png
+/img/skis-dot-com/SKI-Combo3-Mobile.png
+/img/skis-dot-com/SKI-Combo4-Controlvariation.png
+/img/skis-dot-com/SKI-Product-Buy-Box-Combo2A.png
+/img/skis-dot-com/SKI-Product-Buy-Box-Combo3-controllayout.png
+/img/skis-dot-com/SKI-Product-Buy-Box-Combo4-final.png
+/img/skis-dot-com/SKI-Product-Buy-Box-Desktop-Control-Final.png
+/img/skis-dot-com/SKI-Product-Buy-Box-Helmet-Mobile-Control.png
+/img/skis-dot-com/SKI-Product-Buy-Box-Mobile-Combo2.png
+/img/skis-dot-com/SKI-Product-Buy-Box-Mobile-Combo4-variationvariation.png
+/img/skis-dot-com/SKI-Product-Page-buy-Box-Combo2-Final.png
+/img/skis-dot-com/SKI-Product-Page-buy-Box-Combo4-variation.png
