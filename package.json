@@ -23,7 +23,7 @@
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive --output-style compressed --source-map-embed",
     "help-sass": "node-sass-chokidar --help",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "scripts-for-later": {
     "eject": "react-scripts eject"
