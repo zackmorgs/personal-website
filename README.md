@@ -1,4 +1,6 @@
-# zackmorgs.github.io
+# my personal website
+
+I'm currently uploading it to my digital ocean server.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
