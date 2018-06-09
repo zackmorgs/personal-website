@@ -1,7 +1,8 @@
 {
-  "name": "zackmorgs.com",
+  "name": "zackmorgs.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage":"http://zackmorgs.github.io/build",
   "dependencies": {
     "jsonfile": "^4.0.0",
     "node-sass-chokidar": "^1.3.0",
@@ -18,9 +19,11 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --output-style compressed",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive --output-style compressed --source-map-embed",
-    "help-sass": "node-sass-chokidar --help"
+    "help-sass": "node-sass-chokidar --help",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "scripts-for-later": {
     "eject": "react-scripts eject"
@@ -29,6 +32,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-react": "^6.24.1",
     "eslint-plugin-react": "^7.8.2",
+    "gh-pages": "^1.2.0",
     "semistanard": "*"
   }
 }

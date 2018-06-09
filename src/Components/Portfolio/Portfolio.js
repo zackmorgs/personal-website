@@ -5,7 +5,6 @@ import './../Global/portfolio.css';
 import Icon from './../Icon/Icon';
 import String from './../String/String';
 
-
 export class Portfolio extends Component {
   constructor (props) {
     super(props);
@@ -29,7 +28,7 @@ export class Portfolio extends Component {
     });
     // Sites.splice(SitesDisplayed);
     const PorfolioListing = SitesDisplayed.map((Site, Index) =>
-      <PortfolioItem Site={Site} key={Index}/>
+      <PortfolioItem Site={Site} key={Index} />
     );
     return (
       <div className='portfolio-grid'>
@@ -52,7 +51,7 @@ export class Thumbnail extends Component {
     if (this.props.index === 0) {
       return (
         <li className={thumbnailClassName}>
-          <div className='graphic ${this.props..}'>
+          <div className='graphic'>
             <img src={this.props.media.graphic} alt={this.props.media.caption} />
           </div>
           <div className='caption-container'>
@@ -81,17 +80,17 @@ export class PortfolioItem extends Component {
     var Site = this.props.Site;
 
     const Languages = Site.technology.languages.map((language) => {
-      return (<li className='lang'><Icon IconName={language} /></li>)
+      return (<li className='lang'><Icon IconName={language} /></li>);
     });
 
-    var Medias = Site.projects[0].media.map((media,index) => {
-      return <Thumbnail media={media} index={index} Site={Site}/>
+    var Medias = Site.projects[0].media.map((media, index) => {
+      return <Thumbnail media={media} index={index} Site={Site} />;
     }
     );
     console.log(Site);
 
     return (
-      <div id={Site.name.replaceAll(' ','_').replaceAll('.','_dot_').replaceAll(',','').replaceAll('-','_')} className='portfolio-item'>
+      <div id={String(Site.name).replaceAll(' ', '_').replaceAll('.', '_dot_').replaceAll(',', '').replaceAll('-', '_')} className='portfolio-item'>
         {/* <PortfolioThumnnail DataSource={Site} /> */}
         <div className='portfolio-thumbnail'>
           {/* <img src={this.props.Site.projects[0]} />> */}
@@ -102,10 +101,10 @@ export class PortfolioItem extends Component {
         </div>
         <div className='site-info'>
           <div className='site-logo'>
-            <img src={Site.logo} alt={Site.name}/>
+            <img src={Site.logo} alt={Site.name} />
           </div>
           <div className='info-work'>
-            <span className='site-name' className=''>{Site.name}</span>
+            <span className='site-name'>{Site.name}</span>
             <span className='site-years-worked'>{Site.year}</span>
             <ul className='language-list'>
               {Languages}
@@ -129,7 +128,6 @@ export class PortfolioItem extends Component {
 //     )
 //   }
 // }
-
 
 export class PortfolioThumnnail extends Component {
   constructor (props) {
