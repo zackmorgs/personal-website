@@ -1,5 +1,5 @@
 import git from 'git-state';
-import {GitDelegate} from './GitDelegate';
+import GitDelegate from './GitDelegate';
 
 // my server's install location on my Digital Ocean account.
 var path = '~/personal-website';
