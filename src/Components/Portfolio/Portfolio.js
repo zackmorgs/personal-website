@@ -3,7 +3,7 @@ import AllSites from './../../json/sites_worked.json';
 // import Filepaths from './../../json/public.json';
 import './../Global/portfolio.css';
 import Icon from './../Icon/Icon';
-import String from './../String/String';
+import SuperString from '../SuperString/SuperString';
 
 export class Portfolio extends Component {
   constructor (props) {
@@ -47,14 +47,16 @@ export class Thumbnail extends Component {
   render () {
     // we need to hide the other images initially.
     var thumbnailClassName = 'thumb';
-    thumbnailClassName += ' ' + this.media.content_type;
+
+    thumbnailClassName += ' ' + this.props.media.content_type;
+
     if (this.props.index === 0) {
       return (
         <li className={thumbnailClassName}>
           <div className='graphic'>
             <img src={this.props.media.graphic} alt={this.props.media.caption} />
           </div>
-          <div className='caption-container'>
+          <div className='caption-container hidden'>
             <p>{this.props.media.caption}</p>
           </div>
         </li>
@@ -63,7 +65,7 @@ export class Thumbnail extends Component {
       return (
         <li className={thumbnailClassName}>
           <div className='graphic hidden'><img src={this.props.media.graphic} alt={this.props.Site.name} /></div>
-          <div className='caption hidden'>{this.props.media.caption}</div>
+          <div className='caption-container hidden'>{this.props.media.caption}</div>
         </li>
       );
     }
@@ -90,16 +92,16 @@ export class PortfolioItem extends Component {
     console.log(Site);
 
     return (
-      <div id={String(Site.name).replaceAll(' ', '_').replaceAll('.', '_dot_').replaceAll(',', '').replaceAll('-', '_')} className='portfolio-item'>
+      <div id={SuperString(Site.name).replaceAll(' ', '_').replaceAll('.', '_dot_').replaceAll(',', '').replaceAll('-', '_')} className='portfolio-item'>
         {/* <PortfolioThumnnail DataSource={Site} /> */}
         <div className='portfolio-thumbnail'>
           {/* <img src={this.props.Site.projects[0]} />> */}
-          <ul className='thumbs hidden'>
+          <ul className='thumbs'>
             {Medias}
           </ul>
           {/* <img src='http://via.placeholder.com/600x600' /> */}
         </div>
-        <div className='site-info'>
+        <div className='site-info hidden'>
           <div className='site-logo'>
             <img src={Site.logo} alt={Site.name} />
           </div>

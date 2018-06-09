@@ -109,3 +109,18 @@ $base_blue:#253137;
     height:auto;
   }
 }
+
+.thumb.mobile {
+  .graphic {
+    max-width:80%;
+    max-height:120px;
+    overflow:hiddden;
+  }
+}
+.thumb.mobile-fullview {
+  .graphic {
+    max-width:80%;
+    max-height:10%;
+    overflow:hiddden;
+  }
+}

@@ -90,22 +90,22 @@
           {
             "header_thumbnail": "",
             "graphic": "/img/american-muscle/Mobile Product Page Test 1/AM-MobilePDPLayoutTest-control.png",
-            "content_type": "mobile",
+            "content_type": "mobile-fullview",
             "caption": "I loved working on this gorgeous site. This is the control variation, meaning it was the version I had to work on top of during the UX test."
           },
           {
             "graphic": "/img/american-muscle/Mobile Product Page Test 1/AM-MobilePDPLayoutTest-variation2.png",
-            "content_type": "mobile",
+            "content_type": "mobile-fullview",
             "caption": ""
           },
           {
             "graphic": "img/american-muscle/Mobile Product Page Test 1/AM-MobilePDPLayoutTest-variation3.png",
-            "content_type": "mobile",
+            "content_type": "mobile-fullview",
             "caption": ""
           },
           {
             "graphic": "/img/american-muscle/Mobile Product Page Test 1/AM-MobilePDPLayoutTest-variation4.png",
-            "content_type": "mobile",
+            "content_type": "mobile-fullview",
             "caption": ""
           }
         ]
@@ -1074,62 +1074,62 @@
         "media": [
           {
             "graphic": "/img/skis-dot-com/SKI-Combo2-Controlvariation.png",
-            "content_type": "",
+            "content_type": "mobile",
             "caption": ""
           },
           {
             "graphic": "/img/skis-dot-com/SKI-Combo3-Mobile.png",
-            "content_type": "",
+            "content_type": "mobile",
             "caption": ""
           },
           {
             "graphic": "/img/skis-dot-com/SKI-Combo4-Controlvariation.png",
-            "content_type": "",
+            "content_type": "mobile",
             "caption": ""
           },
           {
             "graphic": "/img/skis-dot-com/SKI-Product-Buy-Box-Combo2A.png",
-            "content_type": "",
+            "content_type": "mobile",
             "caption": ""
           },
           {
             "graphic": "/img/skis-dot-com/SKI-Product-Buy-Box-Combo3-controllayout.png",
-            "content_type": "",
+            "content_type": "mobile",
             "caption": ""
           },
           {
             "graphic": "/img/skis-dot-com/SKI-Product-Buy-Box-Combo4-final.png",
-            "content_type": "",
+            "content_type": "mobile",
             "caption": ""
           },
           {
             "graphic": "/img/skis-dot-com/SKI-Product-Buy-Box-Desktop-Control-Final.png",
-            "content_type": "",
+            "content_type": "desktop",
             "caption": ""
           },
           {
             "graphic": "/img/skis-dot-com/SKI-Product-Buy-Box-Helmet-Mobile-Control.png",
-            "content_type": "",
+            "content_type": "mobile",
             "caption": ""
           },
           {
             "graphic": "/img/skis-dot-com/SKI-Product-Buy-Box-Mobile-Combo2.png",
-            "content_type": "",
+            "content_type": "mobile",
             "caption": ""
           },
           {
             "graphic": "/img/skis-dot-com/SKI-Product-Buy-Box-Mobile-Combo4-variationvariation.png",
-            "content_type": "",
+            "content_type": "mobile",
             "caption": ""
           },
           {
             "graphic": "/img/skis-dot-com/SKI-Product-Page-buy-Box-Combo2-Final.png",
-            "content_type": "",
+            "content_type": "mobile",
             "caption": ""
           },
           {
             "media": "/img/skis-dot-com/SKI-Product-Page-buy-Box-Combo4-variation.png",
-            "content_type": "",
+            "content_type": "mobile",
             "caption": ""
           }
         ]
