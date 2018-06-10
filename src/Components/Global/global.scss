@@ -38,9 +38,12 @@ nav {
     margin-left:auto;
     border:none;
     padding:1rem;
-    padding:18px 14px 18px 16px;
-    border-bottom-left-radius: 6px;
+    padding:0.75rem 0.5rem 0.5rem;
+    margin-top:0.5rem;
+    margin-right:0.25rem;
+    border-radius: 4px;
     z-index:10;
+    background-color:#D5E9E8;
   }
 }
 .navigation-open {
@@ -53,6 +56,11 @@ main {
 }
 .navigation-open nav {
   z-index:2;
+  background-color: white;
+  height: auto;
+  bottom: 0px;
+  top: 0px;
+  position: absolute;
 }
 .navigation-open  main {
   // margin-top: -273px;

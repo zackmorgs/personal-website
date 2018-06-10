@@ -63,7 +63,7 @@ export class Thumbnail extends Component {
       );
     } else {
       return (
-        <li className={thumbnailClassName}>
+        <li className={thumbnailClassName + ' hidden'}>
           <div className='graphic hidden'><img src={this.props.media.graphic} alt={this.props.Site.name} /></div>
           <div className='caption-container hidden'>{this.props.media.caption}</div>
         </li>

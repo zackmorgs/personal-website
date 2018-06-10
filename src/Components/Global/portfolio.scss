@@ -3,17 +3,20 @@ $base_blue:#253137;
 .portfolio-grid {
   display: grid;
 }
-.porfolio-item {
+.portfolio-item {
   grid-auto-columns:min-content;
-  border: 1px solid black;
-  background-color:white;
-  padding:0.25rem;
-  overflow-y: hidden;
+  grid-auto-rows:min-content;
+  // border: 1px solid black;
+  // background-color:white;
+  padding:.75rem 0.5rem 0rem;
+  // max-height: 20vh;
+  max-height: 6.25rem;
 }
 
 .portfolio-thumbnail {
-
+  overflow-y:hidden;
 }
+
 .thumbs {
   list-style-type:none;
   margin:0;
@@ -90,7 +93,7 @@ $base_blue:#253137;
   }
 }
 .site-thumbnail {
-  background-color:#DBEBEA;
+  // background-color:#DBEBEA;
   color:#111A1F;
 }
 
@@ -111,15 +114,69 @@ $base_blue:#253137;
 }
 
 .thumb.mobile {
+  // border: 7pt solid #92989B;
+  // border-bottom: 45pt solid #92989B;
+  // border-radius: 8px;
+  // border-bottom-left-radius:0;
+  // border-bottom-right-radius:0;
+  padding: 0rem .25rem 0rem;
   .graphic {
-    max-width:80%;
-    max-height:120px;
+    // max-width:80%;
+    // max-height:120px;
+    display:grid;
+    max-width:100%;
+    height:auto;
     overflow:hiddden;
   }
 }
 .thumb.mobile-fullview {
+  padding:6pt 6pt 0;
   .graphic {
-    max-width: 65%;
-    max-height: 89px;
+    // max-width: 65%;
+    // max-height: 20vh;
+    width:100%;
+    height:auto;
   }
+}
+#American_Academy_of_Sleep_Medicine {
+  background-color:#3D4A51;
+}
+#Trinity_Insight{
+  background-color:#FB8C00;
+}
+#American_Muscle{
+  background-color:#ABD1D0;
+}
+#SLEEP_Meeting {
+  background-color:#3A2A59;
+}
+#Beckers_School_Supplies {
+  background-color:#FA5E4F;
+}
+#Bryn_Mawr_Medical_Specialists_Association {
+  background-color:#FDC54C;
+}
+#Buy_Auto_Parts {
+  background-color:#47555C;
+}
+#Surgent {
+
+}
+#ePromos_Promotional_Products {
+
+}
+#Evan_Moor {
+
+}
+#Footwear_etc_ {
+
+}
+#NorthShore_Care_Supply {
+
+}
+#Reading_Glasses_com {
+
+}
+#Skis_com {
+
 }
