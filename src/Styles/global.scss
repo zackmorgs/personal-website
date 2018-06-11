@@ -23,15 +23,11 @@ body {
 // instead of just using .hidden and using display:none important because of specificity overwrites, i make the .hidden class
 // require more specificicity to overrule, it is my hope this behaves as expected more often.
 // this is slower, but my other classes can coexist a bit more peacefully is my theory
-div, ul, li {
-  &.hidden {
-    display:none;
-    height:0px;
-    width:0px;
-  }
+.hidden {
+  display:none !important;
+  height:0px;
+  width:0px;
 }
-
-
 #root {
   overflow:hidden;
 }
@@ -112,9 +108,23 @@ nav {
 }
 
 // </ Navigation >`
-header {
-  padding:0 1rem;
+// header {
+//   padding:0 1rem;
+// }
+.app-overlay {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  // background-color: #F44336;
 }
+
+#about {
+  @extend .app-overlay;
+  padding-top: 3.75rem 1rem 1rem; // bare-minimum padding to clear navigation.
+}
+
 
 main {
   &.blur {
@@ -123,29 +133,35 @@ main {
 }
 
 
-//
 //   Media Queries
-//   (mobile-first, above is 320 and above code)
-
+// Galaxy S5-like query
+@media (min-width: 360px) {}
 // iphone x,  iphone 6, galaxy s5, note 6 - like devices
 @media (min-width: 375px) {}
-
 //
 @media (min-width: 425px) {}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-}
-
+// Specific: iphone 5/SE Landscape
+@media (min-width:568px) and (orientation: landscape) {}
+// Small device landscape generic targeting 576px and up)
+@media (min-width: 576px){}
+// Specific: iphone 6 : landscape
+@media (min-width:667px){}
+// Specific: iphone 6/7/8 landscape
+@media (min-width:736px) and (orientation: landscape) {}
+// Generic for Tablets. ex. iPad portrait starts at 768
+@media (min-width: 768px) {}
+// Specific: iphone X : landscape
+@media (min-width: 812px) and (orientation: landscape) {}
 // Large devices (desktops, 992px and up)
 // note: iPad Pro hath been targeted within
 @media (min-width: 992px) {}
-
+// Specific: iPad Landscape
+@media (min-width: 1024) and (orientation:landscape) {}
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
+// Specific: iPad Pro Landscape
+@media (min-width: 1366px) and (orientation: landscape) {
+}
 
 // this way I have to be less specific in my css calls for faster animation toggles
 @import "./animate.scss";

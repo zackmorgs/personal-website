@@ -68,15 +68,15 @@ class App extends Component {
           </NavList>
         </Navigation>
         <main>
-          <header className="about enter-right exited overlay">
+          <header id="about" className="hidden">
             <hrgroup className="hero">
               <h1>Zack Morgenthaler</h1>
               <h4 className="subtitle">fullstack web developer</h4>
-              <p>
-                Hi! I'm Zack. I'm a fullstack developer with a strong background
-                in design.
-              </p>
             </hrgroup>
+            <p>
+              Hi! I'm Zack. I'm a fullstack developer with a strong background
+              in design.
+            </p>
           </header>
           <Portfolio />
         </main>

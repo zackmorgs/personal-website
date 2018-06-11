@@ -17,41 +17,40 @@
 footer {
 }
 
-
+//   Media Queries
+// Galaxy S5-like query
+@media (min-width: 360px) {
+}
 // iphone x,  iphone 6, galaxy s5, note 6 - like devices
 @media (min-width: 375px) {
+  .portrait-item {
+    max-height: 6rem;
+  }
 }
-
 //
-@media (min-width: 425px) {
-  // .portfolio-grid {
-  //   display:grid;
-  //   grid-template-columns: repeat(3, [col-start] 1fr);
-  //   grid-template-rows: repeat(24, [row-start] 1fr);
-  //   grid-auto-rows: max(135px);
-  //   grid-gap:0px;
-  // }
-}
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-
-}
-
-// Medium devices (tablets, 768px and up)
+@media (min-width: 425px) {}
+// Specific: iphone 5/SE Landscape
+@media (min-width:568px) and (orientation: landscape) {}
+// Small device landscape generic targeting 576px and up)
+@media (min-width: 576px){}
+// Specific: iphone 6 : landscape
+@media (min-width:667px){}
+// Specific: iphone 6/7/8 landscape
+@media (min-width:736px) and (orientation: landscape) {}
+// Generic for Tablets. ex. iPad portrait starts at 768
 @media (min-width: 768px) {
   .portfolio-grid {
     max-height:100%;
     grid-template-columns: repeat(3, [col-start] 1fr);
     grid-template-rows: repeat(5, [row-start] 1fr);
-
-    // grid-auto-rows: max(135px);
   }
-}
 
+}
+// Specific: iphone X : landscape
+@media (min-width: 812px) and (orientation: landscape) {}
 // Large devices (desktops, 992px and up)
 // note: iPad Pro hath been targeted within
 @media (min-width: 992px) {
-
   .portfolio-grid {
     max-height:100%;
     grid-template-columns: repeat(4, [col-start] 1fr);
@@ -59,7 +58,10 @@ footer {
     grid-auto-rows: max(135px);
   }
 }
+// Specific: iPad Landscape
+@media (min-width: 1024) and (orientation:landscape) {}
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-
+@media (min-width: 1200px) {}
+// Specific: iPad Pro Landscape
+@media (min-width: 1366px) and (orientation: landscape) {
 }
