@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import AllSites from './../../json/sites_worked.json';
 // import Filepaths from './../../json/public.json';
-import './../Global/portfolio.css';
 import Icon from './../Icon/Icon';
 import CssFriendlyString from '../CssFriendlyString/CssFriendlyString';
 
@@ -11,12 +10,6 @@ export class Portfolio extends Component {
     console.log('Portfolio => constructor (props)', props);
     // this.PortfolioItems = this.PortfolioItems.bind();
   }
-  // componentWillMount () {
-  //   // var _Sites = Sites;
-  //   this.PortolioItems = Sites.map((Site) =>
-  //     <PortfolioItem Name={Site.name} Url={Site.url} />
-  //   );
-  // }
   render () {
     // var PortfolioItemListing = function () {
     // };
@@ -137,11 +130,8 @@ export class PortfolioThumnnail extends Component {
     console.log('PortfolioThumnail => constructor (props)', props);
   }
 
-  componentWillMount (props) {
-    console.log('PortolfioThumbnail => componentWillMount (props)');
-    // console.log(this.props.Sources);
-    // console.log(JSON.stringify(this.props.Sources));
-  }
+  // console.log(this.props.Sources);
+  // console.log(JSON.stringify(this.props.Sources));
 
   render (props) {
     return (

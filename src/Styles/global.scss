@@ -11,12 +11,14 @@ body {
     box-sizing: border-box;
   }
 }
-@import "./../../../node_modules/normalize.css";
+// @import "normalize.css";
+// @import "./../../../node_modules/normalize.css";
+
 @import "./all-typography-settings.scss";
-@import "./all-colors.scss";
+@import "./all-colors.scss"; // todo: modules. example: '.module-name.colors.scss' should only be imported with the page that includes that module.
 @import "./grid-only.scss";
 
-// instead of just using .hidden and using display:none important because of specificity overwrites, i make the .hidden class 
+// instead of just using .hidden and using display:none important because of specificity overwrites, i make the .hidden class
 // require more specificicity to overrule, it is my hope this behaves as expected more often.
 // this is slower, but my other classes can coexist a bit more peacefully is my theory
 div, ul, li {

@@ -10,16 +10,9 @@ export class ToggleTrigger extends Component {
     };
     this.toggleHandler = this.toggleHandler.bind(this);
   }
-  componentWillReceiveProps (nextProps) {
-    console.log('ToggleTrigger => componentWillReceiveProps (nextProps)', nextProps);
-  }
-  componentWillMount (props) {
-    console.log('ToggleTrigger => componentWillMount(props)', this.props);
-  }
   componentDidMount (props) {
     console.log('ToggleTrigger => componentDidMount()', this.props);
   }
-
   toggleHandler (event) {
     console.log('ToggleTrigger => toggleHandler (event)', event);
     // className='toggle', classNameOnToggled='toggled' toggleTarget='nav-list', targetClassNameToggled='collapsed'
