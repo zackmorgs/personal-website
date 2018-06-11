@@ -122,7 +122,8 @@ nav {
 
 #about {
   @extend .app-overlay;
-  padding-top: 3.75rem 1rem 1rem; // bare-minimum padding to clear navigation.
+  background-color:#F44336;
+  padding: 3.75rem 1rem 1rem;
 }
 
 

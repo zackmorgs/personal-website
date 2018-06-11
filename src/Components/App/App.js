@@ -68,14 +68,14 @@ class App extends Component {
           </NavList>
         </Navigation>
         <main>
-          <header id="about" className="hidden">
-            <hrgroup className="hero">
-              <h1>Zack Morgenthaler</h1>
-              <h4 className="subtitle">fullstack web developer</h4>
-            </hrgroup>
+          <header id="about" className="overlay hidden">
+            <hgroup className="hero">
+              <h1>zack morgenthaler</h1>
+              <h1 className="subtitle">full-stack web developer</h1>
+            </hgroup>
+            <p className="lead">Hi! I'm Zack.</p>
             <p>
-              Hi! I'm Zack. I'm a fullstack developer with a strong background
-              in design.
+              I'm a web developer with a passion for programming and design.
             </p>
           </header>
           <Portfolio />
