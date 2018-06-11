@@ -35,19 +35,19 @@ footer {
   //   grid-gap:0px;
   // }
 }
-
-
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .portfolio-grid {
-    grid-template-columns: repeat(4, [col-start] 1fr);
-    grid-template-rows: repeat(24, [row-start] 1fr);
-    grid-auto-rows: max(135px);
-    grid-gap:0px;
+    max-height:100%;
+    grid-template-columns: repeat(3, [col-start] 1fr);
+    grid-template-rows: repeat(5, [row-start] 1fr);
+
+    // grid-auto-rows: max(135px);
   }
 }
 
@@ -57,7 +57,7 @@ footer {
 
   .portfolio-grid {
     max-height:100%;
-    grid-template-columns: repeat(5, [col-start] 1fr);
+    grid-template-columns: repeat(4, [col-start] 1fr);
     grid-template-rows: repeat(8, [row-start] 1fr);
     grid-auto-rows: max(135px);
   }

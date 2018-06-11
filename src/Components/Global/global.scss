@@ -1,18 +1,24 @@
 // global styles
 // no modules allowed!
-@import "./../../../node_modules/normalize.css";
-@import "./type.scss";
-@import "./colors.scss";
-@import "./grid.scss";
 
 // scss lint : universal selector slow. whelp i like borderbox so get over it.
+// placed here to assist dom model understanding what page will look like
+// this saves me several lines of the box-sizing rule for page load.
 body {
-  *, *:before, *:after {
+  *,
+  *:before,
+  *:after {
     box-sizing: border-box;
   }
 }
+@import "./../../../node_modules/normalize.css";
+@import "./all-typography-settings.scss";
+@import "./all-colors.scss";
+@import "./grid-only.scss";
 
-// instead of using important, i make the .hidden class require specificicity.
+// instead of just using .hidden and using display:none important because of specificity overwrites, i make the .hidden class 
+// require more specificicity to overrule, it is my hope this behaves as expected more often.
+// this is slower, but my other classes can coexist a bit more peacefully is my theory
 div, ul, li {
   &.hidden {
     display:none;
@@ -22,11 +28,13 @@ div, ul, li {
 }
 
 body {
-  box-sizing: border-box;
+  // box-sizing: border-box;
   max-width: 100%;
   overflow-x:hidden;
 }
-
+#root {
+  overflow:hidden;
+}
 // < Navigation >
 nav {
   position:sticky;
@@ -34,6 +42,7 @@ nav {
   right:0px;
   left:0px;
   height: 0px;
+
   .toggle {
     margin-left:auto;
     border:none;
@@ -44,14 +53,13 @@ nav {
     border-radius: 4px;
     z-index:10;
     background-color:#D5E9E8;
+    box-shadow: 4px 4px 4px #3d4a5152;
   }
 }
 .navigation-open {
 
 }
 main {
-  // margin-top: -81px;
-  transition:filter 1s ease-in-out;
 
 }
 .navigation-open nav {
@@ -63,14 +71,14 @@ main {
   position: absolute;
 }
 .navigation-open  main {
-  // margin-top: -273px;
-  filter:blur(1rem);
-
 }
 .navbar {
   display: flex;
   align-items: stretch;
   background:transparent;
+  background-color:rgba(255,255,255,0.25);
+  padding: 0 0 .5rem;
+
 }
 .nav-list {
   margin: 0;
@@ -88,7 +96,7 @@ main {
   transition: all 600ms;
   a {
     // max-height:0px;
-    filter:blur(12px);
+    // filter:blur(12px);
     transition:filter 1s ease-i
   }
   &.collapsed {
@@ -96,7 +104,7 @@ main {
     transform: translateX(0);
     a {
       max-height:fit-content;
-      filter:blur(0px);
+      // filter:blur(0px);
     }
   }
 }
@@ -147,3 +155,6 @@ main {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
+
+// this way I have to be less specific in my css calls for faster animation toggles
+@import "./animate.scss";
