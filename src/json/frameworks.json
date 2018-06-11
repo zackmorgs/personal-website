@@ -1,10 +1,10 @@
 [
   {
-    "name":"React",
-    "languages":["JavaScript"],
-    "category":"front-end",
+    "name": "React",
+    "languages": ["JavaScript"],
+    "category": "front-end",
     "knowledge_level": "",
-    "certificates": []   
+    "certificates": []
   },
   {
     "name": "jQuery",
@@ -14,28 +14,20 @@
     "certificates": []
   },
   {
-    "name":"Bulma",
-    "category":"front-end",
-    "languages":[
-      "CSS", "JS", "HTML"
-    ],
+    "name": "Bulma",
+    "category": "front-end",
+    "languages": ["CSS", "JS", "HTML"],
     "knowledge_level": "",
     "certificates": []
   },
   {
     "name": "Bootstrap",
-    "category":"front-end",
-    "languages": [
-      "CSS", "JS", "HTML"
-    ]
+    "category": "front-end",
+    "languages": ["CSS", "JS", "HTML"]
   },
   {
     "name": "ASP.NET",
-    "languages": [
-      "C#",
-      "Visual Basic",
-      "F#"
-    ],
+    "languages": ["C#", "Visual Basic", "F#"],
     "category": "server-side programming",
     "knowledge_level": "",
     "certificates": []
@@ -88,5 +80,4 @@
     "category": "Command-Line Shell, Scripting Language",
     "knowledge_level": 50
   }
-  
 ]

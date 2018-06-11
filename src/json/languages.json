@@ -1,41 +1,52 @@
-[{
-"name": "HTML",
-"knowledge_level": "9",
-"certificates": []
-}, {
-"name": "CSS",
-"knowledge_level": "9",
-"certificates": []
-}, {
-"name": "JavaScript",
-"knowledge_level": "9",
-"certificates": []
-}, {
-"name": "C#",
-"knowledge_level": "9",
-"certificates": []
-}, {
-"name": "Visual Basic",
-"knowledge_level": "9",
-"certificates": []
-}, {
-"name": "Python",
-"knowledge_level": "9",
-"certificates": []
-}, {
-"name": "C++",
-"knowledge_level": "9",
-"certificates": []
-}, {
-"name": "Java",
-"knowledge_level": "9",
-"certificates": []
-}, {
-"name": "Objective-C",
-"knowledge_level": "9",
-"certificates": []
-}, {
-"name": "Swift",
-"knowledge_level": "9",
-"certificates": []
-}]
+[
+  {
+    "name": "HTML",
+    "knowledge_level": "9",
+    "certificates": []
+  },
+  {
+    "name": "CSS",
+    "knowledge_level": "9",
+    "certificates": []
+  },
+  {
+    "name": "JavaScript",
+    "knowledge_level": "9",
+    "certificates": []
+  },
+  {
+    "name": "C#",
+    "knowledge_level": "9",
+    "certificates": []
+  },
+  {
+    "name": "Visual Basic",
+    "knowledge_level": "9",
+    "certificates": []
+  },
+  {
+    "name": "Python",
+    "knowledge_level": "9",
+    "certificates": []
+  },
+  {
+    "name": "C++",
+    "knowledge_level": "9",
+    "certificates": []
+  },
+  {
+    "name": "Java",
+    "knowledge_level": "9",
+    "certificates": []
+  },
+  {
+    "name": "Objective-C",
+    "knowledge_level": "9",
+    "certificates": []
+  },
+  {
+    "name": "Swift",
+    "knowledge_level": "9",
+    "certificates": []
+  }
+]

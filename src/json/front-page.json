@@ -1,15 +1,11 @@
 {
-  "Front Page" : {
-    "Sites" : [
+  "Front Page": {
+    "Sites": [
       {
-        "Name" : "American Muscle",
-        "Filepaths": [
-          ""
-        ]
+        "Name": "American Muscle",
+        "Filepaths": [""]
       },
-      {
-
-      }
+      {}
     ]
   }
 }

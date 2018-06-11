@@ -20,26 +20,19 @@
         ]
       }
     ],
-    "logo": "https://j2vjt3dnbra3ps7ll1clb4q2-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/aasm_logo_retina_mobile.png",
+    "logo":
+      "https://j2vjt3dnbra3ps7ll1clb4q2-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/aasm_logo_retina_mobile.png",
     "sources": [
       {
         "name": "Internship",
-        "description": "During my internship at AASM I was occasionally tasked to do maintenance to their official site. I was still learning their technology stack at the time so this provided an excellent learning experience with those technologies."
+        "description":
+          "During my internship at AASM I was occasionally tasked to do maintenance to their official site. I was still learning their technology stack at the time so this provided an excellent learning experience with those technologies."
       }
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "Microsoft SQL Server",
-        "C#",
-        "HTML",
-        "JavaScript",
-        "CSS"
-      ],
-      "frameworks": [
-        "ASP.NET",
-        "Google Analytics"
-      ]
+      "languages": ["Microsoft SQL Server", "C#", "HTML", "JavaScript", "CSS"],
+      "frameworks": ["ASP.NET", "Google Analytics"]
     }
   },
   {
@@ -58,21 +51,16 @@
           {
             "graphic": "/img/trinity-insight/current.png",
             "content_type": "desktop",
-            "caption": "During my time interning at Trinity Insight, their current website was undergoing development and their development team was tasked with its development. Though this work initially consisted of porting old content from their previous Wordpress installation I eventually had a hand in it's CSS. I also implemented some very simple components on their site such as their significance calculator."
+            "caption":
+              "During my time interning at Trinity Insight, their current website was undergoing development and their development team was tasked with its development. Though this work initially consisted of porting old content from their previous Wordpress installation I eventually had a hand in it's CSS. I also implemented some very simple components on their site such as their significance calculator."
           }
         ]
       }
     ],
     "technology": {
       "cms": "WordPress",
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -89,22 +77,27 @@
         "media": [
           {
             "header_thumbnail": "",
-            "graphic": "/img/american-muscle/Mobile Product Page Test 1/AM-MobilePDPLayoutTest-control.png",
+            "graphic":
+              "/img/american-muscle/Mobile Product Page Test 1/AM-MobilePDPLayoutTest-control.png",
             "content_type": "mobile-fullview",
-            "caption": "I loved working on this gorgeous site. This is the control variation, meaning it was the version I had to work on top of during the UX test."
+            "caption":
+              "I loved working on this gorgeous site. This is the control variation, meaning it was the version I had to work on top of during the UX test."
           },
           {
-            "graphic": "/img/american-muscle/Mobile Product Page Test 1/AM-MobilePDPLayoutTest-variation2.png",
-            "content_type": "mobile-fullview",
-            "caption": ""
-          },
-          {
-            "graphic": "img/american-muscle/Mobile Product Page Test 1/AM-MobilePDPLayoutTest-variation3.png",
+            "graphic":
+              "/img/american-muscle/Mobile Product Page Test 1/AM-MobilePDPLayoutTest-variation2.png",
             "content_type": "mobile-fullview",
             "caption": ""
           },
           {
-            "graphic": "/img/american-muscle/Mobile Product Page Test 1/AM-MobilePDPLayoutTest-variation4.png",
+            "graphic":
+              "img/american-muscle/Mobile Product Page Test 1/AM-MobilePDPLayoutTest-variation3.png",
+            "content_type": "mobile-fullview",
+            "caption": ""
+          },
+          {
+            "graphic":
+              "/img/american-muscle/Mobile Product Page Test 1/AM-MobilePDPLayoutTest-variation4.png",
             "content_type": "mobile-fullview",
             "caption": ""
           }
@@ -115,32 +108,39 @@
         "media": [
           {
             "header_thumbnail": "",
-            "graphic": "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-control.png",
+            "graphic":
+              "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-control.png",
             "content_type": "mobile",
             "caption": "Control"
           },
           {
-            "graphic": "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation2.png",
+            "graphic":
+              "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation2.png",
             "content_type": "mobile",
             "caption": "Variation"
           },
           {
-            "graphic": "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation3.png",
+            "graphic":
+              "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation3.png",
             "content_type": "mobile",
             "caption": ""
           },
           {
-            "graphic": "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4 (1).png",
+            "graphic":
+              "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4 (1).png",
             "content_type": "mobile",
             "caption": ""
           },
           {
-            "graphic": "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4.png",
+            "graphic":
+              "/img/american-muscle/mobile-pdp-1/AM-MobilePDPLayoutTest-variation4.png",
             "content_type": "mobile",
-            "caption": "/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Control.png"
+            "caption":
+              "/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Control.png"
           },
           {
-            "graphic": "/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Variation.png",
+            "graphic":
+              "/img/american-muscle/sweepsteaks/T5-Sweepstakes-Form-Mobile-Variation.png",
             "content_type": "mobile",
             "caption": ""
           }
@@ -149,14 +149,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -181,22 +175,9 @@
       }
     ],
     "technology": {
-      "cms": [
-        "SiteFinity"
-      ],
-      "languages": [
-        "Microsoft SQL Server",
-        "C#",
-        "HTML",
-        "JavaScript",
-        "CSS"
-      ],
-      "frameworks": [
-        "ASP.NET",
-        "Modernizr",
-        "jQuery",
-        "Google Analytics"
-      ]
+      "cms": ["SiteFinity"],
+      "languages": ["Microsoft SQL Server", "C#", "HTML", "JavaScript", "CSS"],
+      "frameworks": ["ASP.NET", "Modernizr", "jQuery", "Google Analytics"]
     }
   },
   {
@@ -286,16 +267,8 @@
       }
     ],
     "technology": {
-      "languages": [
-        "JavaScript",
-        "CSS",
-        "HTML"
-      ],
-      "frameworks": [
-        "VWO",
-        "jQuery",
-        "Google Analytics"
-      ]
+      "languages": ["JavaScript", "CSS", "HTML"],
+      "frameworks": ["VWO", "jQuery", "Google Analytics"]
     }
   },
   {
@@ -322,7 +295,8 @@
             "caption": ""
           },
           {
-            "graphic": "/img/bmmsa/screens/BMMSA-HeaderRedesign-secondaryNav.jpg",
+            "graphic":
+              "/img/bmmsa/screens/BMMSA-HeaderRedesign-secondaryNav.jpg",
             "content_type": "mobile",
             "caption": ""
           },
@@ -341,15 +315,8 @@
     ],
     "technology": {
       "cms": "Wordpress",
-      "languages": [
-        "PHP",
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["PHP", "HTML", "CSS", "JavaScript"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -366,12 +333,14 @@
         "name": "",
         "media": [
           {
-            "graphic": "/img/buy-auto-parts/cart/BAP-CartPagePresentation-variation.png",
+            "graphic":
+              "/img/buy-auto-parts/cart/BAP-CartPagePresentation-variation.png",
             "content_type": "desktop",
             "caption": "Variation"
           },
           {
-            "graphic": "/img/buy-auto-parts/cart/BAP-CartPagePresentation-control.png",
+            "graphic":
+              "/img/buy-auto-parts/cart/BAP-CartPagePresentation-control.png",
             "content_type": "desktop",
             "caption": "Control"
           }
@@ -379,14 +348,8 @@
       }
     ],
     "technology": {
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -408,7 +371,8 @@
             "caption": ""
           },
           {
-            "graphic": "/img/cpenow/cpe-navigationtest-variation-updatecourses.png",
+            "graphic":
+              "/img/cpenow/cpe-navigationtest-variation-updatecourses.png",
             "content_type": "presentation",
             "caption": ""
           },
@@ -442,14 +406,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -471,17 +429,20 @@
             "caption": ""
           },
           {
-            "graphic": "/img/epromos/EP-customize-desktop-variation-2locations.png",
+            "graphic":
+              "/img/epromos/EP-customize-desktop-variation-2locations.png",
             "content_type": "desktop",
             "caption": ""
           },
           {
-            "graphic": "/img/epromos/EP-customize-desktop-variation-contact.png",
+            "graphic":
+              "/img/epromos/EP-customize-desktop-variation-contact.png",
             "content_type": "desktop",
             "caption": ""
           },
           {
-            "graphic": "/img/epromos/EP-customize-desktop-variation-image-text.png",
+            "graphic":
+              "/img/epromos/EP-customize-desktop-variation-image-text.png",
             "content_type": "desktop",
             "caption": ""
           },
@@ -500,14 +461,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -524,27 +479,32 @@
         "name": "",
         "media": [
           {
-            "graphic": "/img/evan-moor/navigation-study/EM-Navigation-Closed.png",
+            "graphic":
+              "/img/evan-moor/navigation-study/EM-Navigation-Closed.png",
             "content_type": "desktop",
             "caption": ""
           },
           {
-            "graphic": "/img/evan-moor/navigation-study/EM-Navigation-Desktop-Control.png",
+            "graphic":
+              "/img/evan-moor/navigation-study/EM-Navigation-Desktop-Control.png",
             "content_type": "desktop",
             "caption": ""
           },
           {
-            "graphic": "/img/evan-moor/navigation-study/EM-Navigation-Variation-Tier-1.png",
+            "graphic":
+              "/img/evan-moor/navigation-study/EM-Navigation-Variation-Tier-1.png",
             "content_type": "desktop",
             "caption": ""
           },
           {
-            "graphic": "/img/evan-moor/navigation-study/EM-Navigation-Variation-Tier-2.png",
+            "graphic":
+              "/img/evan-moor/navigation-study/EM-Navigation-Variation-Tier-2.png",
             "content_type": "desktop",
             "caption": ""
           },
           {
-            "graphic": "/img/evan-moor/navigation-study/__MACOSX/navigation-study/._mock.png",
+            "graphic":
+              "/img/evan-moor/navigation-study/__MACOSX/navigation-study/._mock.png",
             "content_type": "desktop",
             "caption": ""
           }
@@ -553,14 +513,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -584,14 +538,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -616,14 +564,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -639,7 +581,8 @@
         "name": "",
         "media": [
           {
-            "graphic": "/img/footwear-etc/hoka one challenger atr 2 grey - variation.png",
+            "graphic":
+              "/img/footwear-etc/hoka one challenger atr 2 grey - variation.png",
             "content_type": "",
             "caption": ""
           },
@@ -659,22 +602,26 @@
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped-sm.psd",
+            "graphic":
+              "/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped-sm.psd",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped.psd",
+            "graphic":
+              "/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped.psd",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped_0000_Layer-1.png",
+            "graphic":
+              "/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped_0000_Layer-1.png",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped_0001_Layer-0.png",
+            "graphic":
+              "/img/footwear-etc/pdp-buy-box-womens-nb-a-b-cropped_0001_Layer-0.png",
             "content_type": "",
             "caption": ""
           },
@@ -684,12 +631,14 @@
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg_0000_Layer-1.png",
+            "graphic":
+              "/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg_0000_Layer-1.png",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg_0001_Layer-0.png",
+            "graphic":
+              "/img/footwear-etc/pdp-buy-box-womens-nb-a-b-lg_0001_Layer-0.png",
             "content_type": "",
             "caption": ""
           },
@@ -704,62 +653,74 @@
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/control/hoka one challenger atr 2 grey - control.html",
+            "graphic":
+              "/img/footwear-etc/control/hoka one challenger atr 2 grey - control.html",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/control/hoka one challenger atr 2 grey - control.png",
+            "graphic":
+              "/img/footwear-etc/control/hoka one challenger atr 2 grey - control.png",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/control/[european-womens-sizing] mbt sport 3 ping - control.html",
+            "graphic":
+              "/img/footwear-etc/control/[european-womens-sizing] mbt sport 3 ping - control.html",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/control/[european-womens-sizing] mbt sport 3 ping - control.png",
+            "graphic":
+              "/img/footwear-etc/control/[european-womens-sizing] mbt sport 3 ping - control.png",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/control/[shoe width] womens new balance walking shoe - control.html",
+            "graphic":
+              "/img/footwear-etc/control/[shoe width] womens new balance walking shoe - control.html",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/control/[shoe width] womens new balance walking shoe - control.png",
+            "graphic":
+              "/img/footwear-etc/control/[shoe width] womens new balance walking shoe - control.png",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/variation/hoka one challenger atr 2 grey - variation.html",
+            "graphic":
+              "/img/footwear-etc/variation/hoka one challenger atr 2 grey - variation.html",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/variation/hoka one challenger atr 2 grey - variation.png",
+            "graphic":
+              "/img/footwear-etc/variation/hoka one challenger atr 2 grey - variation.png",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/variation/[european-womens-sizing] mbt sport 3 ping - variation.html",
+            "graphic":
+              "/img/footwear-etc/variation/[european-womens-sizing] mbt sport 3 ping - variation.html",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/variation/[european-womens-sizing] mbt sport 3 ping - variation.png",
+            "graphic":
+              "/img/footwear-etc/variation/[european-womens-sizing] mbt sport 3 ping - variation.png",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/variation/[shoe width] womens new balance walking shoe - variation.html",
+            "graphic":
+              "/img/footwear-etc/variation/[shoe width] womens new balance walking shoe - variation.html",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/footwear-etc/variation/[shoe width] womens new balance walking shoe - variation.",
+            "graphic":
+              "/img/footwear-etc/variation/[shoe width] womens new balance walking shoe - variation.",
             "content_type": "",
             "caption": ""
           }
@@ -768,14 +729,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -800,14 +755,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -832,14 +781,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -855,27 +798,32 @@
         "name": "Product Listing",
         "media": [
           {
-            "graphic": "/img/north-shore-care/product-listing/mocks/combo-1 [0,0].png",
+            "graphic":
+              "/img/north-shore-care/product-listing/mocks/combo-1 [0,0].png",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/north-shore-care/product-listing/mocks/combo-2 [1,0]-modal .png",
+            "graphic":
+              "/img/north-shore-care/product-listing/mocks/combo-2 [1,0]-modal .png",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/north-shore-care/product-listing/mocks/combo-2 [1,0].png",
+            "graphic":
+              "/img/north-shore-care/product-listing/mocks/combo-2 [1,0].png",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/north-shore-care/product-listing/mocks/combo-3 [0,1].png",
+            "graphic":
+              "/img/north-shore-care/product-listing/mocks/combo-3 [0,1].png",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/north-shore-care/product-listing/mocks/combo-4 [1,1].png",
+            "graphic":
+              "/img/north-shore-care/product-listing/mocks/combo-4 [1,1].png",
             "content_type": "",
             "caption": ""
           }
@@ -884,14 +832,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -916,14 +858,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -940,12 +876,14 @@
         "name": "",
         "media": [
           {
-            "graphic": "/img/reading-glasses/RG-GlobalStickyHeaderStudy-control.jpg",
+            "graphic":
+              "/img/reading-glasses/RG-GlobalStickyHeaderStudy-control.jpg",
             "content_type": "",
             "caption": ""
           },
           {
-            "graphic": "/img/reading-glasses/RG-GlobalStickyHeaderStudy-variation.jpg",
+            "graphic":
+              "/img/reading-glasses/RG-GlobalStickyHeaderStudy-variation.jpg",
             "content_type": "",
             "caption": ""
           }
@@ -954,14 +892,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -986,14 +918,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -1018,14 +944,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -1050,14 +970,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -1093,7 +1007,8 @@
             "caption": ""
           },
           {
-            "graphic": "/img/skis-dot-com/SKI-Product-Buy-Box-Combo3-controllayout.png",
+            "graphic":
+              "/img/skis-dot-com/SKI-Product-Buy-Box-Combo3-controllayout.png",
             "content_type": "mobile",
             "caption": ""
           },
@@ -1103,32 +1018,38 @@
             "caption": ""
           },
           {
-            "graphic": "/img/skis-dot-com/SKI-Product-Buy-Box-Desktop-Control-Final.png",
+            "graphic":
+              "/img/skis-dot-com/SKI-Product-Buy-Box-Desktop-Control-Final.png",
             "content_type": "desktop",
             "caption": ""
           },
           {
-            "graphic": "/img/skis-dot-com/SKI-Product-Buy-Box-Helmet-Mobile-Control.png",
+            "graphic":
+              "/img/skis-dot-com/SKI-Product-Buy-Box-Helmet-Mobile-Control.png",
             "content_type": "mobile",
             "caption": ""
           },
           {
-            "graphic": "/img/skis-dot-com/SKI-Product-Buy-Box-Mobile-Combo2.png",
+            "graphic":
+              "/img/skis-dot-com/SKI-Product-Buy-Box-Mobile-Combo2.png",
             "content_type": "mobile",
             "caption": ""
           },
           {
-            "graphic": "/img/skis-dot-com/SKI-Product-Buy-Box-Mobile-Combo4-variationvariation.png",
+            "graphic":
+              "/img/skis-dot-com/SKI-Product-Buy-Box-Mobile-Combo4-variationvariation.png",
             "content_type": "mobile",
             "caption": ""
           },
           {
-            "graphic": "/img/skis-dot-com/SKI-Product-Page-buy-Box-Combo2-Final.png",
+            "graphic":
+              "/img/skis-dot-com/SKI-Product-Page-buy-Box-Combo2-Final.png",
             "content_type": "mobile",
             "caption": ""
           },
           {
-            "media": "/img/skis-dot-com/SKI-Product-Page-buy-Box-Combo4-variation.png",
+            "media":
+              "/img/skis-dot-com/SKI-Product-Page-buy-Box-Combo4-variation.png",
             "content_type": "mobile",
             "caption": ""
           }
@@ -1137,14 +1058,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -1169,14 +1084,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   },
   {
@@ -1201,14 +1110,8 @@
     ],
     "technology": {
       "cms": [],
-      "languages": [
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ],
-      "frameworks": [
-        "jQuery"
-      ]
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "frameworks": ["jQuery"]
     }
   }
 ]

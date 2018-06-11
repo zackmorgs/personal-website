@@ -1,3 +1,81 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900");@import url("https://fonts.googleapis.com/css?family=Archivo:regular,italic,500,500italic,600,600italic,700,700italic");html{font-size:18px}body{font-family:'Work Sans';line-height:1rem}.card{padding:1rem}h1{font-size:48px;font-weight:200;letter-spacing:-1.5px;font-family:'Archivo'}h2{font-size:60px;font-weight:200;letter-spacing:-0.5px;font-family:'Archivo'}h3{font-size:48px;font-weight:400;letter-spacing:0.0px;font-family:'Archivo'}h4{font-size:34px;font-weight:500;letter-spacing:0.25px;font-family:'Archivo'}h5{font-size:24px;font-weight:500;letter-spacing:0.0px;font-family:'Archivo'}h6{font-size:20px;font-weight:500;letter-spacing:0.15px;font-family:'Archivo'}.subtitle{font-size:16px;font-weight:500;letter-spacing:0.1px;font-family:'Archivo'}p{font-size:16px;letter-spacing:0.5px}body{font-size:14px;font-weight:400;letter-spacing:0.5px}h1,h2,h3,h4,nav{font-family:'Archivo';line-height:1em}.nav-list a{font-size:1.125rem;font-weight:500;letter-spacing:0.75px;text-transform:capitalize;text-decoration:none;text-align:center}
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Archivo:regular,italic,500,500italic,600,600italic,700,700italic');
+html {
+  font-size: 18px;
+}
+body {
+  font-family: 'Work Sans';
+  line-height: 1rem;
+}
+.card {
+  padding: 1rem;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 200;
+  letter-spacing: -1.5px;
+  font-family: 'Archivo';
+}
+h2 {
+  font-size: 60px;
+  font-weight: 200;
+  letter-spacing: -0.5px;
+  font-family: 'Archivo';
+}
+h3 {
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-family: 'Archivo';
+}
+h4 {
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  font-family: 'Archivo';
+}
+h5 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  font-family: 'Archivo';
+}
+h6 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  font-family: 'Archivo';
+}
+.subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  font-family: 'Archivo';
+}
+p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+body {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+h1,
+h2,
+h3,
+h4,
+nav {
+  font-family: 'Archivo';
+  line-height: 1em;
+}
+.nav-list a {
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
+}
 
 /*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3JjL0NvbXBvbmVudHMvR2xvYmFsL3R5cGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSJzcmMvQ29tcG9uZW50cy9HbG9iYWwvdHlwZS5zY3NzIgoJXSwKCSJuYW1lcyI6IFtdLAoJIm1hcHBpbmdzIjogIkFBQUEsT0FBTyxDQUFDLGdHQUFJLENBQ1osT0FBTyxDQUFDLCtHQUFJLENBQ1osQUFBQSxJQUFJLEFBQUMsQ0FDSCxTQUFTLENBQUMsSUFBSSxDQUNmLEFBQ0QsQUFBQSxJQUFJLEFBQUMsQ0FDSCxXQUFXLENBQUMsV0FBVyxDQUN2QixXQUFXLENBQUUsSUFBSSxDQUNsQixBQUNELEFBQUEsS0FBSyxBQUFDLENBQUUsT0FBTyxDQUFDLElBQUksQ0FBSSxBQUN4QixBQUFBLEVBQUUsQUFBQyxDQUFFLFNBQVMsQ0FBRSxJQUFJLENBQUUsV0FBVyxDQUFDLEdBQUcsQ0FBRSxjQUFjLENBQUUsTUFBTSxDQUFFLFdBQVcsQ0FBQyxTQUFTLENBQUksQUFDeEYsQUFBQSxFQUFFLEFBQUMsQ0FBRSxTQUFTLENBQUUsSUFBSSxDQUFFLFdBQVcsQ0FBQyxHQUFHLENBQUUsY0FBYyxDQUFFLE1BQU0sQ0FBRyxXQUFXLENBQUMsU0FBUyxDQUFJLEFBQ3pGLEFBQUEsRUFBRSxBQUFDLENBQUUsU0FBUyxDQUFFLElBQUksQ0FBRSxXQUFXLENBQUMsR0FBRyxDQUFFLGNBQWMsQ0FBRyxLQUFLLENBQUcsV0FBVyxDQUFDLFNBQVMsQ0FBSSxBQUN6RixBQUFBLEVBQUUsQUFBQyxDQUFFLFNBQVMsQ0FBRSxJQUFJLENBQUUsV0FBVyxDQUFDLEdBQUcsQ0FBRSxjQUFjLENBQUcsTUFBTSxDQUFHLFdBQVcsQ0FBQyxTQUFTLENBQUksQUFDMUYsQUFBQSxFQUFFLEFBQUMsQ0FBRSxTQUFTLENBQUUsSUFBSSxDQUFFLFdBQVcsQ0FBQyxHQUFHLENBQUUsY0FBYyxDQUFHLEtBQUssQ0FBRyxXQUFXLENBQUMsU0FBUyxDQUFLLEFBQzFGLEFBQUEsRUFBRSxBQUFDLENBQUUsU0FBUyxDQUFFLElBQUksQ0FBRSxXQUFXLENBQUMsR0FBRyxDQUFFLGNBQWMsQ0FBRyxNQUFNLENBQUUsV0FBVyxDQUFDLFNBQVMsQ0FBSyxBQUMxRixBQUFBLFNBQVMsQUFBQyxDQUFFLFNBQVMsQ0FBQyxJQUFJLENBQUUsV0FBVyxDQUFDLEdBQUcsQ0FBRSxjQUFjLENBQUUsS0FBSyxDQUFFLFdBQVcsQ0FBQyxTQUFTLENBQUksQUFDN0YsQUFBQSxDQUFDLEFBQUMsQ0FDQSxTQUFTLENBQUUsSUFBSSxDQUNmLGNBQWMsQ0FBRSxLQUFLLENBQ3RCLEFBQ0QsQUFBQSxJQUFJLEFBQUMsQ0FDSCxTQUFTLENBQUMsSUFBSSxDQUFFLFdBQVcsQ0FBQyxHQUFHLENBQUUsY0FBYyxDQUFFLEtBQUssQ0FDdkQsQUFFRCxBQUFBLEVBQUUsQ0FBRSxFQUFFLENBQUUsRUFBRSxDQUFFLEVBQUUsQ0FBRSxHQUFHLEFBQUMsQ0FDbEIsV0FBVyxDQUFDLFNBQVMsQ0FDckIsV0FBVyxDQUFDLEdBQUcsQ0FDaEIsQUFDRCxBQUFBLFNBQVMsQ0FBQyxDQUFDLEFBQUMsQ0FDVixTQUFTLENBQUMsUUFBUSxDQUNsQixXQUFXLENBQUMsR0FBRyxDQUNmLGNBQWMsQ0FBQyxNQUFNLENBQ3JCLGNBQWMsQ0FBRSxVQUFVLENBQzFCLGVBQWUsQ0FBRSxJQUFJLENBQ3JCLFVBQVUsQ0FBRSxNQUFNLENBQ25CIgp9 */

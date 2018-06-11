@@ -1,14 +1,16 @@
-[{
-  "name" : "Wordpress",
-  "languages":[ "PHP", "MySQL", "CSS" ]
-},
-{
-  "name" : "SiteFinity",
-  "frameworks" : "",
-  "languages" : [ "C#", "XML", "CSS", "JavaScript" ]
-},
-{
-  "name":"Drupal",
-  "frameworks":"",
-  "languages":[]
-}]
+[
+  {
+    "name": "Wordpress",
+    "languages": ["PHP", "MySQL", "CSS"]
+  },
+  {
+    "name": "SiteFinity",
+    "frameworks": "",
+    "languages": ["C#", "XML", "CSS", "JavaScript"]
+  },
+  {
+    "name": "Drupal",
+    "frameworks": "",
+    "languages": []
+  }
+]
