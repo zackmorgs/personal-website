@@ -4,20 +4,22 @@
 // scss lint : universal selector slow. whelp i like borderbox so get over it.
 // placed here to assist dom model understanding what page will look like
 // this saves me several lines of the box-sizing rule for page load.
-body {
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
-// @import "normalize.css";
-// @import "./../../../node_modules/normalize.css";
-
+body {
+  // box-sizing: border-box;
+  max-width: 100%;
+  overflow-x:hidden;
+}
+//@import "/node-modules/normalize.css/normalize.css";
+// ^ this was not working.
+@import "./normalize";
 @import "./all-typography-settings.scss";
 @import "./all-colors.scss"; // todo: modules. example: '.module-name.colors.scss' should only be imported with the page that includes that module.
 @import "./grid-only.scss";
-
 // instead of just using .hidden and using display:none important because of specificity overwrites, i make the .hidden class
 // require more specificicity to overrule, it is my hope this behaves as expected more often.
 // this is slower, but my other classes can coexist a bit more peacefully is my theory
@@ -29,11 +31,7 @@ div, ul, li {
   }
 }
 
-body {
-  // box-sizing: border-box;
-  max-width: 100%;
-  overflow-x:hidden;
-}
+
 #root {
   overflow:hidden;
 }
@@ -59,28 +57,25 @@ nav {
   }
 }
 .navigation-open {
+  nav {
+    z-index:2;
+    background-color: white;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    position: absolute;
+  }
+  main {
+    z-index:0;
+  }
+}
 
-}
-main {
-
-}
-.navigation-open nav {
-  z-index:2;
-  background-color: white;
-  height: auto;
-  bottom: 0px;
-  top: 0px;
-  position: absolute;
-}
-.navigation-open  main {
-}
 .navbar {
   display: flex;
   align-items: stretch;
   background:transparent;
   background-color:rgba(255,255,255,0.25);
   padding: 0 0 .5rem;
-
 }
 .nav-list {
   margin: 0;
@@ -91,7 +86,6 @@ main {
     padding:1rem;
   }
 }
-
 .collapsible {
   transform: translateX(100%);
   max-height:0px;
@@ -113,12 +107,8 @@ main {
 .nav-item {
   margin-top:2rem;
   max-width: 12rem;
-  // margin-left:auto;
   margin: 2rem auto;
-  // border-top-left-radius:6px;
-  // border-bottom-left-radius: 6px;
   border-radius:6px;
-
 }
 
 // </ Navigation >`
@@ -127,7 +117,6 @@ header {
 }
 
 main {
-  // background-color: rgb(254, 187, 0);
   &.blur {
     filter:blur(12px);
   }

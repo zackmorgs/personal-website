@@ -1,4 +1,5 @@
 {
-  "editor.fontFamily": "Operator Mono, Anonymous Pro for Powerline, Fira Code, Operator Mono,  Source Code Pro, Hack, Consolas,  Courier New, monospace",
-  "workbench.colorTheme": "Cobalt2"
+  "editor.fontFamily": "Operator Mono, Fira Code,  Source Code Pro, Hack",
+  "workbench.colorTheme": "Cobalt2",
+  "eslint.enable": true
 }

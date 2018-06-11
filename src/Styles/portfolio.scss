@@ -193,18 +193,16 @@ $base_blue:#253137;
 }
 .graphic {
   box-shadow: 0.25rem 0.5rem 0 rgba(37, 49, 55, 0.25);
-  // border:.25rem solid white;
   img {
-    // border:2pt solid #222;
   }
 }
+
 // iphone x,  iphone 6, galaxy s5, note 6 - like devices
 @media (min-width: 375px) {
   .portfolio-item {
     max-height: 7rem;
   }
 }
-
 //
 @media (min-width: 425px) {
   .portfolio-item {
@@ -227,7 +225,11 @@ $base_blue:#253137;
 
 // Large devices (desktops, 992px and up)
 // note: iPad Pro hath been targeted within
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-height: 15rem;
+  }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}

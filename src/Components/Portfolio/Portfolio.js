@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AllSites from './../../json/sites_worked.json';
 // import Filepaths from './../../json/public.json';
+import './../../Styles/portfolio.css';
 import Icon from './../Icon/Icon';
 import CssFriendlyString from '../CssFriendlyString/CssFriendlyString';
 

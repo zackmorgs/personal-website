@@ -32,16 +32,6 @@ class App extends Component {
               targetClassNameToggled="collapsed"
               toggledOnInit="true"
             >
-              {/* <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
-                <line x1='0' y1='6' x2='24' y2='6' />
-                <line x1='0' y1='12' x2='24' y2='12' />
-                <line x1='0' y1='18' x2='24' y2='18' />
-              </svg> */}
-              {/* <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
-                <line x1='0' y1='6' x2='24' y2='6' transform="rotate(0)" />
-                <line x1='0' y1='12' x2='24' y2='12' opacity="1.0"/>
-                <line x1='0' y1='18' x2='24' y2='18' transform="rotate(0)" />
-              </svg> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -78,13 +68,16 @@ class App extends Component {
           </NavList>
         </Navigation>
         <main>
-          {/* <header className='about enter-right exited overlay'>
-            <hrgroup className='hero'>
+          <header className="about enter-right exited overlay">
+            <hrgroup className="hero">
               <h1>Zack Morgenthaler</h1>
-              <span className='subtitle'>fullstack web developer</span>
-              <p>Hi! I'm Zack. I'm a fullstack developer with a strong background in design.</p>
+              <h4 className="subtitle">fullstack web developer</h4>
+              <p>
+                Hi! I'm Zack. I'm a fullstack developer with a strong background
+                in design.
+              </p>
             </hrgroup>
-          </header> */}
+          </header>
           <Portfolio />
         </main>
         <footer>
