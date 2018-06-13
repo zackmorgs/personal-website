@@ -81,7 +81,7 @@ class App extends Component {
           <Portfolio />
         </main>
         <footer>
-          <p>this is the footer :D</p>
+          <p>2018. Zack Morgenthaler</p>
         </footer>
       </React.Fragment>
     );

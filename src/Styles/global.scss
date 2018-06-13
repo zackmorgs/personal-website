@@ -19,8 +19,12 @@ body {
 @import "./all-typography-settings.scss";
 @import "./all-colors.scss"; // todo: modules. example: '.module-name.colors.scss' should only be imported with the page that includes that module.
 @import "./grid-only.scss";
+@import "./_animate";
 @import "./navigation.scss";
-
+.portfolio-grid{
+  @extend .slideInUp;
+}
+// this way I have to be less specific in my css calls for faster animation toggles
 // instead of just using .hidden and using display:none important because of specificity overwrites, i make the .hidden class
 // require more specificicity to overrule, it is my hope this behaves as expected more often.
 // this is slower, but my other classes can coexist a bit more peacefully is my theory
@@ -63,8 +67,10 @@ main {
 @media (min-width:667px){}
 // Specific: iphone 6/7/8 landscape
 @media (min-width:736px) and (orientation: landscape) {}
-// Generic for Tablets. ex. iPad portrait starts at 768
-@media (min-width: 768px) {}
+// Generic for Tablets. ex. iP\ad portrait starts at 768
+@media (min-width: 768px) {
+
+}
 // Specific: iphone X : landscape
 @media (min-width: 812px) and (orientation: landscape) {}
 // Large devices (desktops, 992px and up)
@@ -77,6 +83,3 @@ main {
 // Specific: iPad Pro Landscape
 @media (min-width: 1366px) and (orientation: landscape) {
 }
-
-// this way I have to be less specific in my css calls for faster animation toggles
-@import "./animate.scss";

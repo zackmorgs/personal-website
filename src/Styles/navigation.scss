@@ -1,9 +1,10 @@
-// @import './Dependency/hamburgers/_sass/hamburgers/types/_collapse';
-// @import './Dependency/hamburgers/_sass/hamburgers/_base';
-// @import './Dependency/hamburgers/'
-// Hamburger
+// Navigation.scss
+// Only children of <nav> may be-eth styled herein.
 nav {
   z-index: 2;
+  position: sticky;
+  top: 0;
+  height: 0px;
 }
 .main {
   transform:translate3d(0px,1000px,0px);
@@ -13,14 +14,6 @@ nav {
   main {
     transform:translate3d(0px,1000px,0px);
   }
-
-}
-.navbar {
-  display: flex;
-  align-items: stretch;
-  background:transparent;
-  // background-color:rgba(255,255,255,0.25);
-  padding: 0 0 .5rem;
 }
 .toggle {
   display: inline-block;
@@ -110,22 +103,22 @@ nav {
   transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-// < Navigation >
-nav {
-  position:sticky;
-  top:0px;
-  right:0px;
-  left:0px;
-  height: 0px;
-
+.navbar {
+  display: flex;
+  align-items: stretch;
+  // background: rgba(213, 233, 232, 0.5);
+  padding: 0 0 .5rem;
+  box-shadow: inset 0px 0px 1rem rgba(37, 49, 55, 0.5);
 }
+// < Navigation >
+
 .navigation-open {
   nav {
     z-index:2;
     height: auto;
     bottom: 0px;
     top: 0px;
-    position: absolute;
+    position: sticky;
   }
   main {
     z-index:0;
@@ -139,15 +132,23 @@ nav {
     display:block;
     padding:1rem;
   }
+  a, a:visited {
+    color:#D5E9E8;
+    text-shadow:2px 2px 2px #FA7C00;
+  }
+}
+.nav-item {
+  // background-color:#535D64;
+  background-color:#FB8C00;
 }
 .collapsible {
   max-height:0px;
   max-width:100%;
   transition: transform 300ms;
   overflow:hidden;
-  transform: translateY(-300%);
+  // transform: translateY(-100%);
   background-color:#253137;
-  padding-top: 3rem;
+  background-color:transparent;
   span {
     // color:white;
   }
@@ -156,15 +157,16 @@ nav {
     transition:filter 1s ease-i
   }
   &.collapsed {
-    transform: translateY(0);
+    // transform: translateY(0);
     max-height:100%;
     max-width:100%;
-    position:absolute;
+    position:sticky;
     top: 0px;
     right: 0px;
     left: 0px;
     bottom: 0px;
     display: block;
+    padding-top: 3rem;
     a {
 
       // filter:blur(0px);
@@ -176,8 +178,3 @@ nav {
   margin: 2rem;
   border-radius:6px;
 }
-
-// </ Navigation >`
-// header {
-  //   padding:0 1rem;
-  // }

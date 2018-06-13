@@ -1,7 +1,10 @@
+
 $base_blue:#253137;
 
 .portfolio-grid {
   display: grid;
+  // @extend .animated;
+  // @extend .fadeInUp;
 }
 .portfolio-item {
   grid-auto-columns:min-content;
@@ -175,26 +178,31 @@ $base_blue:#253137;
   box-shadow: 0.25rem 0.5rem 0 rgba(37, 49, 55, 0.25);
 }
 .portfolio-item {
+}
+.portfolio-item {
 
+}
+.portfolio-item.selected {
 }
 // Galaxy S5-like query
 @media (min-width: 360px) {
+
 }
 // iphone x,  iphone 6, galaxy s5, note 6 - like devices
 @media (min-width: 375px) {
-  .portfolio-item {
-    max-height: 6rem;
+  .loaded.portfolio-item {
+    max-height: 6.25rem;
   }
 }
 // @iphone 6/7/8 plus
 @media (min-width:414px) {
-  .portfolio-item {
+  .loaded.portfolio-item {
     max-height: 7rem;
   }
 }
 //
 @media (min-width: 425px) {
-  .portfolio-item {
+  .loaded.portfolio-item {
     max-height: 7rem;
   }
 }
@@ -207,7 +215,10 @@ $base_blue:#253137;
   .portfolio-item {
     grid-auto-columns:1fr 1fr 1fr;
     grid-auto-rows:12rem;
+  }
+  .loaded.portfolio-item {
     max-height: 8rem;
+
   }
   // iPad Portrait Mode.
   @media (orientation: portrait) {
@@ -224,6 +235,12 @@ $base_blue:#253137;
     max-height: 15rem;
   }
 }
-
+@media (min-width:1024) and (orientation: portrait){
+  .portfolio-grid {
+    grid-template-columns: repeat(3, [col-start] 1fr);
+    grid-template-rows: repeat(8, [row-start] 1fr);
+    // grid-auto-rows:auto-rows;
+  }
+}
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}

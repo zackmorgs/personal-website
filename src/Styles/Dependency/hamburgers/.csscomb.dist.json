@@ -27,13 +27,13 @@
     "font-emphasize-position",
     "font-emphasize-style",
     "font-smooth",
-    "line-height"
+    "line-height",
     "position",
     "z-index",
     "top",
     "right",
     "bottom",
-    "left"
+    "left",
     "display",
     "visibility",
     "float",
@@ -48,7 +48,7 @@
     "flex-direction",
     "flex-order",
     "flex-pack",
-    "flex-align"
+    "flex-align",
     "-webkit-box-sizing",
     "-moz-box-sizing",
     "box-sizing",
@@ -67,7 +67,7 @@
     "padding-top",
     "padding-right",
     "padding-bottom",
-    "padding-left"
+    "padding-left",
     "table-layout",
     "empty-cells",
     "caption-side",
@@ -76,7 +76,7 @@
     "list-style",
     "list-style-position",
     "list-style-type",
-    "list-style-image"
+    "list-style-image",
     "content",
     "quotes",
     "counter-reset",
