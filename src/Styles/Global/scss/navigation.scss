@@ -15,6 +15,7 @@ nav {
     transform:translate3d(0px,1000px,0px);
   }
 }
+
 .toggle {
   display: inline-block;
   cursor: pointer;
@@ -138,8 +139,9 @@ nav {
   }
 }
 .nav-item {
-  // background-color:#535D64;
-  background-color:#FB8C00;
+  a {
+    background-color:#FB8C00;
+  }
 }
 .collapsible {
   max-height:0px;

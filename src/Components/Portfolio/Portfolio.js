@@ -1,30 +1,43 @@
 import React, { Component } from 'react';
 import AllSites from './../../json/sites_worked.json';
 // import Filepaths from './../../json/public.json';
-import './../../Styles/portfolio.css';
 import Icon from './../Icon/Icon';
 import CssFriendlyString from '../CssFriendlyString/CssFriendlyString';
 
 export class Portfolio extends Component {
   constructor(props) {
     super(props);
-    //console.log('Portfolio => constructor (props)', props);
-    // this.PortfolioItems = this.PortfolioItems.bind();
-  }
-  render() {
-    // var PortfolioItemListing = function () {
-    // };
+    console.log('Portfolio => constructor (props)', props);
     var SitesDisplayed = [];
-    AllSites.forEach(function(Site) {
+    var SitesNotDisplayed = [];
+    AllSites.forEach(function(Site){
       if (Site.display_portfolio_view) {
         SitesDisplayed.push(Site);
+      } else {
+        // maybe useful later?
+        SitesNotDisplayed.push(Site);
       }
     });
-    // Sites.splice(SitesDisplayed);
-    const PorfolioListing = SitesDisplayed.map((Site, Index) => (
-      <PortfolioItem Site={Site} key={Index} />
-    ));
-    return <div className="portfolio-grid">{PorfolioListing}</div>;
+    this.SitesDisplayed = SitesDisplayed;
+    this.SitesNotDisplayed = SitesNotDisplayed
+  }
+  PortfolioListing(){
+    return (
+      this.SitesDisplayed.map((Site, Index) => (
+        <PortfolioItem Site={Site} key={Index} />
+      ))
+    );
+  }
+  makePortfolio() {
+    return (
+      <div className="portfolio-grid hidden">
+        {this.PortfolioListing()}
+      </div>
+    );
+  }
+  render () {
+    this.makePortfolio()
+    return (this.makePortfolio());
   }
 }
 export class Thumbnail extends Component {

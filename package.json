@@ -8,6 +8,7 @@
     "url": "git+https://github.com/zackmorgs/personal-website"
   },
   "dependencies": {
+    "boilerplate.css": "^1.0.8",
     "hamburgers": "^0.9.3",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.0",
@@ -32,15 +33,15 @@
     "Android >= 4.4",
     "Opera >= 30"
   ],
-
   "scripts": {
     "start": "npm-run-all -p watch-css start-js",
     "start-js": "react-scripts start",
     "build": "npm-run-all build-css build-js",
     "build-js": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ ",
-    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive --source-map-embed",
+    "build-css": "node-sass-chokidar ./src/Styles/Pages/index/scss/index.scss ./src/Styles/Pages/index/css/index.css",
+    "watch-css-old": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive --source-map-embed",
+    "watch-css": "npm run build-css && node-sass-chokidar -w ./src/Styles/Pages/index/scss/ -o ./src/Styles/Pages/index/css/",
     "help-sass": "node-sass-chokidar --help",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build"

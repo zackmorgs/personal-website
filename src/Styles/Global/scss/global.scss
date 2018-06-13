@@ -1,0 +1,56 @@
+// global styles
+// no modules allowed!
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  // box-sizing: border-box;
+  max-width: 100%;
+}
+//@import "/node-modules/normalize.css/normalize.css";
+// ^ this was not working.
+
+// RESETS
+@import "node_modules/boilerplate.css/dist/boilerplate.min";
+@import "./type";
+@import "./colors"; // todo: modules. example: '.module-name.colors.scss' should only be imported with the page that includes that module.
+@import "./navigation";
+@import "./_animate";
+
+.portfolio-grid {
+  @extend .slideInUp;
+}
+// this way I have to be less specific in my css calls for faster animation toggles
+// instead of just using .hidden and using display:none important because of specificity overwrites, i make the .hidden class
+// require more specificicity to overrule, it is my hope this behaves as expected more often.
+// this is slower, but my other classes can coexist a bit more peacefully is my theory
+.hidden {
+  display:none !important;
+  height:0px;
+  width:0px;
+}
+#root {
+}
+.app-overlay {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+}
+#about {
+  @extend .app-overlay;
+  background-color:#F44336;
+  padding: 3.75rem 1rem 1rem;
+}
+main {
+  &.blur {
+    filter:blur(12px);
+  }
+}
+
+@import './global-responsive';
