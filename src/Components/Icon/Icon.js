@@ -6,7 +6,6 @@ export class Icon extends Component {
     super(props);
   }
   render(props) {
-    console.log('they made it this far', props);
     if (this.props.IconName === 'HTML') {
       return (
         <a href="">

@@ -22,6 +22,7 @@ export class ToggleTrigger extends Component {
 
     // give our target the correct class
     console.log('.' + this.props.toggleTarget);
+    // document.querySelector('.toggle').classList.toggle('')
     document.querySelector('.nav-list').classList.toggle('collapsed');
     document.body.classList.toggle('navigation-open');
     // document.querySelector('main').classList.toggle('blur');

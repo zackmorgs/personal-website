@@ -12,14 +12,15 @@
 body {
   // box-sizing: border-box;
   max-width: 100%;
-  overflow-x:hidden;
 }
 //@import "/node-modules/normalize.css/normalize.css";
 // ^ this was not working.
-@import "./normalize";
+@import "./Dependency/normalize.css/normalize.scss";
 @import "./all-typography-settings.scss";
 @import "./all-colors.scss"; // todo: modules. example: '.module-name.colors.scss' should only be imported with the page that includes that module.
 @import "./grid-only.scss";
+@import "./navigation.scss";
+
 // instead of just using .hidden and using display:none important because of specificity overwrites, i make the .hidden class
 // require more specificicity to overrule, it is my hope this behaves as expected more often.
 // this is slower, but my other classes can coexist a bit more peacefully is my theory
@@ -29,111 +30,24 @@ body {
   width:0px;
 }
 #root {
-  overflow:hidden;
 }
-// < Navigation >
-nav {
-  position:sticky;
-  top:0px;
-  right:0px;
-  left:0px;
-  height: 0px;
-
-  .toggle {
-    margin-left:auto;
-    border:none;
-    padding:1rem;
-    padding:0.75rem 0.5rem 0.5rem;
-    margin-top:0.5rem;
-    margin-right:0.25rem;
-    border-radius: 4px;
-    z-index:10;
-    background-color:#D5E9E8;
-    box-shadow: 4px 4px 4px #3d4a5152;
-  }
-}
-.navigation-open {
-  nav {
-    z-index:2;
-    background-color: white;
-    height: auto;
-    bottom: 0px;
-    top: 0px;
-    position: absolute;
-  }
-  main {
-    z-index:0;
-  }
-}
-
-.navbar {
-  display: flex;
-  align-items: stretch;
-  background:transparent;
-  background-color:rgba(255,255,255,0.25);
-  padding: 0 0 .5rem;
-}
-.nav-list {
-  margin: 0;
-  padding:0;
-  list-style-type:none;
-  a {
-    display:block;
-    padding:1rem;
-  }
-}
-.collapsible {
-  transform: translateX(100%);
-  max-height:0px;
-  transition: all 600ms;
-  a {
-    // max-height:0px;
-    // filter:blur(12px);
-    transition:filter 1s ease-i
-  }
-  &.collapsed {
-    max-height:fit-content;
-    transform: translateX(0);
-    a {
-      max-height:fit-content;
-      // filter:blur(0px);
-    }
-  }
-}
-.nav-item {
-  margin-top:2rem;
-  max-width: 12rem;
-  margin: 2rem auto;
-  border-radius:6px;
-}
-
-// </ Navigation >`
-// header {
-//   padding:0 1rem;
-// }
 .app-overlay {
   position:absolute;
   top:0px;
   left:0px;
   right:0px;
   bottom:0px;
-  // background-color: #F44336;
 }
-
 #about {
   @extend .app-overlay;
   background-color:#F44336;
   padding: 3.75rem 1rem 1rem;
 }
-
-
 main {
   &.blur {
     filter:blur(12px);
   }
 }
-
-
 //   Media Queries
 // Galaxy S5-like query
 @media (min-width: 360px) {}

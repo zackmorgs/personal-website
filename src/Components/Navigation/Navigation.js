@@ -1,43 +1,30 @@
 import React, { Component } from 'react';
-// import { CssClassToggler } from './../CssClassToggler/CssClassToggler';
-// import { ToggleTrigger } from './../ToggleTrigger/ToggleTrigger';
+// navigation css is stored in /src/Styles/Global/global.scss
+// future todo: componentize this.
 
-// someday ill learn how to do this, make it validate my stuff for me.
-// class NavigationComponent extends Component {
-//   constructor (props) {
-//     super(props);
-//   }
-// }
 export class Navigation extends Component {
   constructor(props) {
     super(props);
-    console.log('Navigation => constructor (props)', props);
-    this.state = {
-      isToggled: false
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
-  handleClick(prevState) {
-    // document.querySelector('nav').className = 'opened';
   }
   render(props) {
-    console.log('Navigation => render(props)', props);
-    return <nav>{this.props.children}</nav>;
+    //console.log('Navigation => render(props)', props);
+    return React.createElement('nav', this.props);
   }
 }
 export class NavBar extends Component {
   constructor(props) {
     super(props);
-    console.log('NavBar => constructor (props)', this.props);
+    //console.log('NavBar => constructor (props)', this.props);
   }
   render(props) {
-    return <div className={this.props.className}>{this.props.children}</div>;
+    // return <div className={this.props.className}>{this.props.children}</div>;
+    return React.createElement('div', this.props);
   }
 }
 export class NavList extends Component {
   constructor(props) {
     super(props);
-    console.log('NavList => constructor (props)', this.props);
+    //console.log('NavList => constructor (props)', this.props);
     // this.navList = this.navList.createRef();
   }
   render() {
@@ -52,10 +39,10 @@ export class NavList extends Component {
 export class NavItem extends Component {
   constructor(props) {
     super(props);
-    console.log('NavItem => constructor (props)', this.props);
+    //console.log('NavItem => constructor (props)', this.props);
   }
   render(props) {
-    console.log('NavItem => render (props)', this.props);
+    //console.log('NavItem => render (props)', this.props);
     if (typeof this.props.className === 'undefined') {
       return <li className="nav-item">{this.props.children}</li>;
     } else {
@@ -66,7 +53,7 @@ export class NavItem extends Component {
 export class NavLink extends Component {
   constructor(props) {
     super(props);
-    console.log('NavLink => constructor (props)', this.props);
+    //console.log('NavLink => constructor (props)', this.props);
   }
   render(props) {
     return (
@@ -86,6 +73,91 @@ export class NavText extends Component {
     return <span>{this.props.children}</span>;
   }
 }
+
+export class NavHamburger extends Component {
+  constructor(props) {
+    super(props);
+    // this.clickHandlerHamburger = this.clickHandlerHamburger.bind(this);
+    // this.setState({
+    //   toggled: false
+    // }, function () {
+    //   console.log('mysterious setState callback. where does it go?')
+    // });
+    this.clickHandle = this.clickHandle.bind();
+  }
+  clickHandle() {
+    var defaults = function() {
+      window.document.body.classList.toggle('navigation-open');
+      window.quick_storage.nav_toggle.classList.toggle('is-active');
+      window.quick_storage.nav_list.classList.toggle('collapsed');
+    };
+    if (typeof window.quick_storage === 'undefined') {
+      window.quick_storage = {};
+      window.quick_storage.nav_toggle = document.querySelector(
+        '.toggle.hamburger'
+      );
+      window.quick_storage.nav_list = document.querySelector(
+        '.nav-list.collapsible'
+      );
+    }
+    defaults();
+    document.querySelector('.nav-list.collapsible');
+  }
+  // componentWillMount () {
+  //   console.log('componentWillMount','');
+  // }
+  // componentDidMount () {
+  //   console.log('componentDidMount','');
+  // }
+  // componentWillUpdate () {
+  //   console.log('componentWillUpdate','');
+  //   // https://developmentarc.gitbooks.io/react-indepth/content/life_cycle/update/tapping_into_componentwillupdate.html
+
+  // }
+  // componentDidUpdate (prevState,prevProps) {
+  //   console.log('componentDidUpdate (prevState, prevProps)',prevState, prevProps);
+  //   console.log('prevState.toggled', prevState.toggled);
+  //   console.log('this.state.toggled',this.state.toggled);
+  // }
+  // clickHandlerHamburger (prevState) {
+  //   console.log('clickHandlerHamburger (prevState) ', prevState);
+  //   var is_toggled = prevState.toggled;
+  //   this.setState({ toggled : is_toggled }, function () {
+  //     if (is_toggled) {
+  //       return (
+  //         <button className='toggle hamburger hamburger--collapse is-active' onClick={ this.clickHandlerHamburger }>
+  //           <span className='hamburger-box'>
+  //             <span className='hamburger-inner'></span>
+  //           </span>
+  //         </button>
+  //       );
+  //     } else {
+  //       return (
+  //         <button className='toggle hamburger hamburger--collapse' onClick={ this.clickHandlerHamburger }>
+  //           <span className='hamburger-box'>
+  //             <span className='hamburger-inner'></span>
+  //           </span>
+  //         </button>
+  //       );
+  //     }
+  //   });
+  // }
+  render() {
+    return (
+      <button
+        className="toggle hamburger hamburger--collapse"
+        onClick={this.clickHandle}
+        type="button"
+        ref="navigation_hamburger"
+      >
+        <span className="hamburger-box">
+          <span className="hamburger-inner" />
+        </span>
+      </button>
+    );
+  }
+}
+
 export default Navigation;
 // export {
 //   NavList, NavItem, NavLink, NavigationLinkIcon, NavText

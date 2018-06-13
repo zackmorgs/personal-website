@@ -6,19 +6,23 @@ $base_blue:#253137;
 .portfolio-item {
   grid-auto-columns:min-content;
   grid-auto-rows:min-content;
+  transform: translateX(100%);
+  transition:transform 500ms ease-in-out;
+}
+.loaded.portfolio-item {
   // border: 1px solid black;
   // background-color:white;
+  transform: translateX(0%);
   padding:.75rem 0.5rem 0rem;
   padding: 0.5rem 0.5rem 0rem;
   // max-height: 20vh;
   max-height: 8rem;
   box-shadow: inset 2px 2px 2rem #0003;
+  // transition-delay: 100ms;
 }
-
 .portfolio-thumbnail {
   overflow-y:hidden;
 }
-
 .thumbs {
   list-style-type:none;
   margin:0;
@@ -118,9 +122,9 @@ $base_blue:#253137;
   }
 }
 .portfolio-thumbnail {
-  .desktop-zoom img {
-    width:125%;
-  }
+}
+.desktop-zoom img {
+  width:125%;
 }
 #American_Academy_of_Sleep_Medicine {
   background-color:#3D4A51;
@@ -164,14 +168,11 @@ $base_blue:#253137;
 #Skis_com {
   background-color:#221445;
 }
-
 .portfolio-item {
   max-height:5.25rem;
 }
 .graphic {
   box-shadow: 0.25rem 0.5rem 0 rgba(37, 49, 55, 0.25);
-  img {
-  }
 }
 .portfolio-item {
 

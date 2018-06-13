@@ -8,7 +8,7 @@ import CssFriendlyString from '../CssFriendlyString/CssFriendlyString';
 export class Portfolio extends Component {
   constructor(props) {
     super(props);
-    console.log('Portfolio => constructor (props)', props);
+    //console.log('Portfolio => constructor (props)', props);
     // this.PortfolioItems = this.PortfolioItems.bind();
   }
   render() {
@@ -30,7 +30,7 @@ export class Portfolio extends Component {
 export class Thumbnail extends Component {
   constructor(props) {
     super(props);
-    console.log('Thumbnail => constructor (props)', props);
+    //console.log('Thumbnail => constructor (props)', props);
     // this.media = props.media;
     // this.name = props.name;
   }
@@ -71,11 +71,10 @@ export class Thumbnail extends Component {
 export class PortfolioItem extends Component {
   constructor(props) {
     super(props);
-    console.log('PortfolioItem => constructor (props)', props);
+    //console.log('PortfolioItem => constructor (props)', props);
   }
-
+  componentDidMount() {}
   render(props) {
-    console.log('PortfolioItem => render (props)', props);
     var Site = this.props.Site;
 
     const Languages = Site.technology.languages.map(language => {
@@ -89,7 +88,6 @@ export class PortfolioItem extends Component {
     var Medias = Site.projects[0].media.map((media, index) => {
       return <Thumbnail media={media} index={index} Site={Site} />;
     });
-    console.log(Site);
 
     return (
       <div id={CssFriendlyString(Site.name)} className="portfolio-item">
@@ -114,27 +112,14 @@ export class PortfolioItem extends Component {
     );
   }
 }
-
-// export class PortfolioMedia extends Component {
-//   constructor (props){
-//     super(props);
-
-//   }
-//   render(){
-//     return (
-
-//     )
-//   }
-// }
-
 export class PortfolioThumnnail extends Component {
   constructor(props) {
     super(props);
-    console.log('PortfolioThumnail => constructor (props)', props);
+    //console.log('PortfolioThumnail => constructor (props)', props);
   }
 
-  // console.log(this.props.Sources);
-  // console.log(JSON.stringify(this.props.Sources));
+  // //console.log(this.props.Sources);
+  // //console.log(JSON.stringify(this.props.Sources));
 
   render(props) {
     return <span>{JSON.stringify(this.props.DataSource)}</span>;

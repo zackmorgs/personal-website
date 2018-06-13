@@ -5,10 +5,27 @@ import {
   NavList,
   NavItem,
   NavLink,
-  NavText
+  NavText,
+  NavHamburger
 } from './../Navigation/Navigation';
-import { ToggleTrigger } from './../ToggleTrigger/ToggleTrigger';
+// import { ToggleTrigger } from './../ToggleTrigger/ToggleTrigger';
 import { Portfolio } from './../Portfolio/Portfolio.js';
+
+// class LoadingScreen extends Component {
+//   constructor (props){
+//     super(props);
+
+//   }
+//   componentWillUpdate() {
+//     render(nextProps)
+//   }
+//   render (props) {
+//     if (this.props.hidden) {
+//       return (null);
+//     }
+//     return (this.Loading);
+//   }
+// }
 
 // import logo from './logo.svg';
 class App extends Component {
@@ -16,38 +33,21 @@ class App extends Component {
     super(props);
     console.log('App => constructor (this.props)', this.props);
   }
+  componentDidMount() {
+    console.log('App =>componentDidMount () ');
+    // console.log(this.Loading);
+    document.querySelectorAll('.portfolio-item').forEach(function(item, index) {
+      window.setTimeout(item.classList.toggle('loaded'), 500 + index * 30);
+    });
+  }
   render(props) {
     console.log('App => render (this.props)', this.props);
     return (
       <React.Fragment>
         <Navigation>
           <NavBar className="navbar">
-            {/* <a className='branding'>test</a> */}
-            <ToggleTrigger
-              ref="navigationTrigger"
-              className="toggle"
-              classNameOnToggled="toggled"
-              toggleTargetClassName="nav-list"
-              targetClassNameUntoggled="collapsible"
-              targetClassNameToggled="collapsed"
-              toggledOnInit="true"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <line x1="0" y1="6" x2="24" y2="6" transform="rotate(0)" />
-                <line x1="0" y1="12" x2="24" y2="12" opacity="1.0" />
-                <line x1="0" y1="18" x2="24" y2="18" transform="rotate(0)" />
-              </svg>
-            </ToggleTrigger>
+            <a className="branding" />
+            <NavHamburger />
           </NavBar>
           <NavList ref="navigationList" className="nav-list collapsible">
             <NavItem>
@@ -56,12 +56,12 @@ class App extends Component {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/test">
+              <NavLink href="/about">
                 <NavText>{'about'}</NavText>
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/test">
+              <NavLink href="/contact">
                 <NavText>{'contact'}</NavText>
               </NavLink>
             </NavItem>
