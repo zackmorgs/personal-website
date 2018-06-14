@@ -53,6 +53,8 @@ $base_blue:#253137;
   font-size:12px;
   display:flex;
   padding: .5rem;
+  background: #253137;
+  margin-top: 1rem;
 }
 .site-logo {
   padding: .5rem;
@@ -184,6 +186,35 @@ $base_blue:#253137;
 
 }
 .portfolio-item.selected {
+  position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    /* display: table; */
+    z-index: 2;
+    max-height: 100%;
+    .portolfio-thumbnail {
+      max-height:100%;
+    }
+}
+
+.placeholder{
+  width: 100%;
+  // background-color:white;
+  transition:all 1s ease-in-out;
+
+  &.placeholder-loading {
+    padding-top:10em;
+    img{
+    }
+  }
+  &.placeholder-loaded {
+    padding-top:0em;
+
+    img {
+    }
+  }
 }
 // Galaxy S5-like query
 @media (min-width: 360px) {

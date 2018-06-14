@@ -89,19 +89,14 @@ export class NavHamburger extends Component {
     var defaults = function() {
       window.document.body.classList.toggle('navigation-open');
       window.quick_storage.nav_toggle.classList.toggle('is-active');
-      window.quick_storage.nav_list.classList.toggle('collapsed');
     };
     if (typeof window.quick_storage === 'undefined') {
       window.quick_storage = {};
-      window.quick_storage.nav_toggle = document.querySelector(
-        '.toggle.hamburger'
-      );
-      window.quick_storage.nav_list = document.querySelector(
-        '.nav-list.collapsible'
-      );
+      window.quick_storage.nav_toggle = document.querySelector('.toggle');
+      window.quick_storage.nav_list = document.querySelector('.nav-list');
     }
     defaults();
-    document.querySelector('.nav-list.collapsible');
+    document.querySelector('.nav-list');
   }
   // componentWillMount () {
   //   console.log('componentWillMount','');
@@ -145,7 +140,7 @@ export class NavHamburger extends Component {
   render() {
     return (
       <button
-        className="toggle hamburger hamburger--collapse"
+        className="toggle"
         onClick={this.clickHandle}
         type="button"
         ref="navigation_hamburger"

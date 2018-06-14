@@ -3,6 +3,7 @@ import AllSites from './../../json/sites_worked.json';
 // import Filepaths from './../../json/public.json';
 import Icon from './../Icon/Icon';
 import CssFriendlyString from '../CssFriendlyString/CssFriendlyString';
+import ResponsiveImage from './../ResponsiveImage/ResponsiveImage';
 
 export class Portfolio extends Component {
   constructor(props) {
@@ -10,7 +11,7 @@ export class Portfolio extends Component {
     console.log('Portfolio => constructor (props)', props);
     var SitesDisplayed = [];
     var SitesNotDisplayed = [];
-    AllSites.forEach(function(Site){
+    AllSites.forEach(function(Site) {
       if (Site.display_portfolio_view) {
         SitesDisplayed.push(Site);
       } else {
@@ -19,65 +20,77 @@ export class Portfolio extends Component {
       }
     });
     this.SitesDisplayed = SitesDisplayed;
-    this.SitesNotDisplayed = SitesNotDisplayed
+    this.SitesNotDisplayed = SitesNotDisplayed;
   }
-  PortfolioListing(){
-    return (
-      this.SitesDisplayed.map((Site, Index) => (
-        <PortfolioItem Site={Site} key={Index} />
-      ))
-    );
+  render() {
+    this.makePortfolio();
+    return this.makePortfolio();
+  }
+  PortfolioListing() {
+    return this.SitesDisplayed.map((Site, Index) => (
+      <PortfolioItem Site={Site} key={Index} />
+    ));
   }
   makePortfolio() {
-    return (
-      <div className="portfolio-grid hidden">
-        {this.PortfolioListing()}
-      </div>
-    );
-  }
-  render () {
-    this.makePortfolio()
-    return (this.makePortfolio());
+    return <div className="portfolio-grid">{this.PortfolioListing()}</div>;
   }
 }
+
 export class Thumbnail extends Component {
   constructor(props) {
     super(props);
-    //console.log('Thumbnail => constructor (props)', props);
-    // this.media = props.media;
-    // this.name = props.name;
+    console.log('Thumbnail constructor(props)', props);
+  }
+  makeCaption() {
+    return (
+      <div className="caption-container hidden">
+        <p>{this.props.media.caption}</p>
+      </div>
+    );
+  }
+  makeGraphic() {
+    // var resolved_image_path = this.props.media.graphic;
+    // console.log(resolved_image_path);
+    // let el = lqip(resolved_image_path);
+    // var image = <img className='placeholder' src={} alt={this.props.name} />;
+    // image
+      return (
+        <div className="graphic">
+          <ResponsiveImage src={this.props.media.graphic} alt={this.props.name}/>
+        </div>
+      );
+
+
+  }
+  renderThumbContents() {
+    return (
+      <React.Fragment>
+        {this.makeGraphic()}
+        {this.makeCaption()}
+      </React.Fragment>
+    );
+  }
+  renderThumbnail() {
+    var thumbnailClassName = 'thumb';
+    thumbnailClassName += ' ' + this.props.media.content_type;
+    return (
+      <li className={thumbnailClassName} key={this.props.index}>
+        {this.renderThumbContents()}
+      </li>
+    );
   }
   render() {
-    // we need to hide the other images initially.
-    var thumbnailClassName = 'thumb';
-
-    thumbnailClassName += ' ' + this.props.media.content_type;
-
-    if (this.props.index === 0) {
-      return (
-        <li className={thumbnailClassName}>
-          <div className="graphic">
-            <img
-              src={this.props.media.graphic}
-              alt={this.props.media.caption}
-            />
-          </div>
-          <div className="caption-container hidden">
-            <p>{this.props.media.caption}</p>
-          </div>
-        </li>
-      );
+    if (typeof this.props.media !== 'undefined') {
+      // we need to hide the other images initially.
+      if (this.props.index === 0) {
+        // var image = require(this.this.props.media.graphic);
+        return this.renderThumbnail();
+      } else {
+        return this.renderThumbnail();
+      }
     } else {
-      return (
-        <li className={thumbnailClassName + ' hidden'}>
-          <div className="graphic hidden">
-            <img src={this.props.media.graphic} alt={this.props.Site.name} />
-          </div>
-          <div className="caption-container hidden">
-            {this.props.media.caption}
-          </div>
-        </li>
-      );
+      console.log('Undefined Thumbnail', this.props);
+      return null;
     }
   }
 }
@@ -87,7 +100,12 @@ export class PortfolioItem extends Component {
     //console.log('PortfolioItem => constructor (props)', props);
   }
   componentDidMount() {}
-  render(props) {
+  handlePortfolioItemClick(id, event) {
+    console.log('id',id);
+    console.log('event',event);
+
+  }
+  renderPortfolioItem() {
     var Site = this.props.Site;
 
     const Languages = Site.technology.languages.map(language => {
@@ -97,17 +115,17 @@ export class PortfolioItem extends Component {
         </li>
       );
     });
-
-    var Medias = Site.projects[0].media.map((media, index) => {
-      return <Thumbnail media={media} index={index} Site={Site} />;
+    this.Medias = Site.projects[0].media.map((media, index) => {
+      // console.log(media);
+      return <Thumbnail media={media} index={index} Site={Site} key={index} />;
     });
-
+    // todo turn into structured component
     return (
-      <div id={CssFriendlyString(Site.name)} className="portfolio-item">
-        {/* <PortfolioThumnnail DataSource={Site} /> */}
+      <div id={CssFriendlyString(Site.name)} className="portfolio-item" onClick={(e) => this.handlePortfolioItemClick.bind(CssFriendlyString(Site.name), e)}>
+        {/* <PortfolioThumbnail DataSource={Site} /> */}
         <div className="portfolio-thumbnail">
           {/* <img src={this.props.Site.projects[0]} />> */}
-          <ul className="thumbs">{Medias}</ul>
+          <ul className="thumbs">{this.Medias}</ul>
           {/* <img src='http://via.placeholder.com/600x600' /> */}
         </div>
         <div className="site-info hidden">
@@ -124,8 +142,14 @@ export class PortfolioItem extends Component {
       </div>
     );
   }
+  PortfoliolItemTemplate() {
+    return this.renderPortfolioItem();
+  }
+  render(props) {
+    return this.PortfoliolItemTemplate();
+  }
 }
-export class PortfolioThumnnail extends Component {
+export class PortfolioThumbnail extends Component {
   constructor(props) {
     super(props);
     //console.log('PortfolioThumnail => constructor (props)', props);

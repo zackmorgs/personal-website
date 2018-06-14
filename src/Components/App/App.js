@@ -4,40 +4,48 @@ import Main from './../Main/Main.js';
 // import { ToggleTrigger } from './../ToggleTrigger/ToggleTrigger';
 import { Portfolio } from './../Portfolio/Portfolio.js';
 import LoadingScreen from './../LoadingScreen/LoadingScreen.js';
-
-// class LoadingScreen extends Component {
-//   constructor (props){
-//     super(props);
-
-//   }
-//   componentWillUpdate() {
-//     render(nextProps)
-//   }
-//   render (props) {
-//     if (this.props.hidden) {
-//       return (null);
-//     }
-//     return (this.Loading);
-//   }
-// }
+import { Github, Linkedin, Home, Info, Mail, Facebook } from 'react-feather';
+// import { Icon } from './../Icon/Icon.js';
 
 // import logo from './logo.svg';
 class App extends Component {
   constructor(props) {
     super(props);
     console.log('App => constructor (this.props)', this.props);
+    this.state = {
+      loading: true
+    };
   }
   Header() {
-    return (
-      <header id="about" className="overlay hidden">
-        <hgroup className="hero">
-          <h1>zack morgenthaler</h1>
-          <h1 className="subtitle">full-stack web developer</h1>
-        </hgroup>
-        <p className="lead">Hi! I'm Zack.</p>
-        <p>I'm a web developer with a passion for programming and design.</p>
-      </header>
-    );
+    const HeaderContents = () => {
+      return (
+          <React.Fragment>
+          <hgroup className="hero">
+            <img
+              alt='zackmorgs'
+              src='img/zackmorgs/zackmorgs.profile.jpg'
+              className='profile-picture'
+              />
+            <h1>zack morgenthaler</h1>
+            <h1 className="subtitle">full-stack web developer</h1>
+          </hgroup>
+          <p>I'm a web developer with a passion for programming and design.</p>
+        </React.Fragment>
+      );
+    };
+    if (this.state.loading) {
+      return (
+        <header id="about" className="overlay hidden">
+          {HeaderContents()}
+        </header>
+      );
+    } else {
+      return (
+        <header id="about" className="overlay">
+          {HeaderContents()}
+        </header>
+      );
+    }
   }
   MainNavigation () {
     return (
@@ -46,23 +54,53 @@ class App extends Component {
           <a className="branding" />
           <NavHamburger />
         </NavBar>
-        <NavList ref="navigationList" className="nav-list collapsible">
+        <NavList ref="navigationList" className="nav-list">
           <NavItem>
             <NavLink href="/">
-              <NavText>{'home'}</NavText>
+              <NavText>
+                {'home'}<Home />
+              </NavText>
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/about">
-              <NavText>{'about'}</NavText>
+              <NavText>
+                {'about'}<Info />
+              </NavText>
+            </NavLink>
+          </NavItem>
+        </NavList>
+        <NavList className="social">
+          <NavItem>
+            <NavLink>
+              <NavText>
+                <Github />
+              </NavText>
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink>
+              <NavText>
+                <Linkedin />
+              </NavText>
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink>
+              <NavText>
+                <Facebook />
+              </NavText>
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/contact">
-              <NavText>{'contact'}</NavText>
+              <NavText>
+                <Mail />
+              </NavText>
             </NavLink>
           </NavItem>
         </NavList>
+
       </Navigation>
     );
   }

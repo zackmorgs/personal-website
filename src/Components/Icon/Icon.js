@@ -65,6 +65,16 @@ export class Icon extends Component {
           </svg>
         </a>
       );
+    } else if (this.props.IconName === 'npm') {
+      return (
+        <svg viewBox="0 0 18 7">
+          <path fill="#CB3837" d="M0 0v6h5v1h4V6h9V0" />
+          <path
+            fill="#FFF"
+            d="M1 1v4h2V2h1v3h1V1h1v5h2V2h1v2H8v1h2V1h1v4h2V2h1v3h1V2h1v3h1V1"
+          />
+        </svg>
+      );
     } else if (this.props.IconName === 'Microsoft SQL Server') {
       return 'MSSQL';
     } else if (this.props.IconName === 'XML') {

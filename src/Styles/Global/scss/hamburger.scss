@@ -1,0 +1,88 @@
+// Settings
+// ==================================================
+$hamburger-padding-x: 0.5rem !default;
+$hamburger-padding-y: 0.5rem !default;
+$hamburger-layer-width: 2.25rem !default;
+$hamburger-layer-height: 4px !default;
+$hamburger-layer-spacing: 6px !default;
+$hamburger-layer-color: #858b8e !default;
+$hamburger-layer-border-radius: 4px !default;
+$hamburger-hover-opacity: 1 !default;
+$hamburger-hover-transition-duration: 0.15s !default;
+$hamburger-hover-transition-timing-function: linear !default;
+
+// To use CSS filters as the hover effect instead of opacity,
+// set $hamburger-hover-use-filter as true and
+// change the value of $hamburger-hover-filter accordingly.
+$hamburger-hover-use-filter: false !default;
+$hamburger-hover-filter: opacity(50%) !default;
+
+$hamburger-types: (
+  3dx,
+  3dx-r,
+  3dy,
+  3dy-r,
+  3dxy,
+  3dxy-r,
+  arrow,
+  arrow-r,
+  arrowalt,
+  arrowalt-r,
+  arrowturn,
+  arrowturn-r,
+  boring,
+  collapse,
+  collapse-r,
+  elastic,
+  elastic-r,
+  emphatic,
+  emphatic-r,
+  minus,
+  slider,
+  slider-r,
+  spin,
+  spin-r,
+  spring,
+  spring-r,
+  stand,
+  stand-r,
+  squeeze,
+  vortex,
+  vortex-r
+) !default;
+
+@import 'node_modules/hamburgers/_sass/hamburgers/_base';
+@import 'node_modules/hamburgers/_sass/hamburgers/types/_collapse';
+.toggle {
+  @extend .hamburger;
+  @extend .hamburger--collapse;
+  margin-left: auto;
+}
+.toggle {
+  background-color: #d3d6d7;
+  transition: background-color 200ms ease-in-out;
+  border-radius: 4px;
+  height: auto;
+  padding: 1rem;
+  &:active {
+    // background-color:#D3D6D7;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.hamburger-box {
+}
+.hamburger-inner {
+}
+.navigation-open {
+  .toggle {
+    // background-color: #ff2316;
+    box-shadow: none;
+  }
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    background-color: #d5d8d9;
+  }
+}

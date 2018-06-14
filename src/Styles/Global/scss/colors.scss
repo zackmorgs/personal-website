@@ -1,50 +1,9 @@
 $base_blue:#253137;
 $text_white:rgba(215, 220, 222, 1.0);
 $brand_red:#F44336;
-$menu_item_bg:#738C8E;
 $toggle_bg:#3A2A59;
-$menu_item_text:$base_blue;
-$hamburger:#FA938B;
 
 body {
   background-color:$base_blue;
   color:$text_white;
 }
-// <navigation>
-
-.branding {
-  a {
-    color:$text_white;
-  }
-}
-.nav-list {
-  a {
-    color:$menu_item_text;
-    // background-color:$menu_item_bg;
-    a:link {
-      color:$menu_item_text;
-    }
-    &:active {
-      color:$menu_item_text;
-      background:$brand_red;
-    }
-    &:hover {
-      color:$menu_item_text;
-    }
-    &:visited {
-      color:$menu_item_text;
-    }
-  }
-}
-.nav-item {
-  // background-color:$menu_item_bg;
-  border: 3px solid $menu_item_bg
-  // text-shadow:2px 2px 4px $menu_item_bg;
-}
-.navigation-open {
-  .toggle {
-    background-color:$brand_red;
-    color:$hamburger;
-  }
-}
-// </navigation>
