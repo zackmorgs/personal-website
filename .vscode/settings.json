@@ -1,5 +1,7 @@
 {
-  "editor.fontFamily": "Operator Mono, Fira Code,  Source Code Pro, Hack",
-  "workbench.colorTheme": "Cobalt2",
-  "eslint.enable": true
+  "eslint.enable": true,
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "editor.formatOnSave": true
 }

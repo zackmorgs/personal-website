@@ -1,0 +1,23 @@
+{
+  "Site":{
+    "Title":"Zack Morgenthaler",
+    "Publisher":"Zack Morgenthaler",
+    "Domain":"zackmorgenthaler.io",
+
+    "Pages" : [
+      {
+        "Title":"Home",
+        "_comment":"Okay so this could generate <title>Zack Morgenthaler | Home</title>. Neato.",
+        "Location":"/",
+        "Content":{
+          "Navigation":"@MainNavigation",
+          ""
+        }
+
+      },
+      {
+
+      }
+    ]
+  }
+}

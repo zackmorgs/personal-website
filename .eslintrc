@@ -1,4 +1,12 @@
 {
-  "extends": "react-app",
-  "array-callback-return": "warn"
+  "extends": [
+    "react-app",
+    "prettier",
+    "prettier/react",
+    "prettier/semistandard"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
 }

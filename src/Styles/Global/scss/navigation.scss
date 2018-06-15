@@ -2,101 +2,101 @@
   position: relative;
 }
 nav {
-  z-index:3;
-  position:sticky;
-  top:0px;
-  left:0px;
-  right:0px;
-  bottom:0px;
-  max-height:0px;
-  transition:max-height 300ms ease-in-out;
+  z-index: 3;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  max-height: 0px;
+  transition: max-height 300ms ease-in-out;
 }
 .navigation-open {
   nav {
-    z-index:3;
-    height:auto;
+    z-index: 3;
+    height: auto;
   }
 }
 .navbar {
   display: flex;
   align-items: stretch;
-  padding:.5rem;
-  background-color: #D3D6D733;
+  padding: 0.5rem;
+  background-color: #d3d6d733;
   background-color: transparent;
   margin-bottom: 2rem;
-  transition:background-color .1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
   // box-shadow: 0px 2px 1rem #2222221a;
 }
 .navigation-open {
   .navbar {
-    background-color:#B1D7D6;
+    background-color: #b1d7d6;
   }
 }
 @import './hamburger';
 .nav-list {
-  display:block;
-  width:100%;
-  max-height:0px;
+  display: block;
+  width: 100%;
+  max-height: 0px;
   overflow: hidden;
-  transform: translateY(-150%) scale3d(2,2,2);
-  transition:transform .13s ease-in-out;
-  transition-delay:1s;
+  transform: translateY(-150%) scale3d(2, 2, 2);
+  transition: transform 0.13s ease-in-out;
+  transition-delay: 1s;
 }
 .navigation-open {
   .nav-list {
-    max-height:max-content;
+    max-height: max-content;
 
-    background-color:#253137;
-    transform: translateY(0%) scale3d(1,1,1);
-    transition:transform .13s ease-in-out;
+    background-color: #253137;
+    transform: translateY(0%) scale3d(1, 1, 1);
+    transition: transform 0.13s ease-in-out;
     // padding:1rem 1rem 1rem;
   }
 }
 .branding {
+  visibility: hidden;
   a {
-    color:$text_white;
+    color: $text_white;
   }
 }
 
-$menu_item_text:#253137;
+$menu_item_text: #253137;
 .nav-list,
 .social {
-
   a {
     font: size 1.25;
-    text-align:right;
-    text-transform:lowercase;
-    color:$menu_item_text;
+    text-align: right;
+    text-transform: lowercase;
+    color: $menu_item_text;
     // text-shadow:2px 2px 2px #0003;
     // background-color:$menu_item_bg;
     box-sizing: border-box;
     a:link {
-      color:$menu_item_text;
+      color: $menu_item_text;
     }
     &:active {
-      color:$menu_item_text;
-      color:#ABD1D0;
-      background:#202B31;
-      box-shadow:0px .25rem .25rem rgba(0,0,0,0.1), inset 0 .2rem 1rem #202B31;
+      color: $menu_item_text;
+      color: #abd1d0;
+      background: #202b31;
+      box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.1),
+        inset 0 0.2rem 1rem #202b31;
 
       &:visited {
-        color:#ABD1D0;
-
+        color: #abd1d0;
       }
     }
     &:hover {
-      color:$menu_item_text;
+      color: $menu_item_text;
     }
     &:visited {
-      color:$menu_item_text;
+      color: $menu_item_text;
     }
   }
 }
 .social {
-  display:flex;
+  display: flex;
   // padding: .5rem;
   .nav-item {
-    margin:.25rem;
+    margin: 0.25rem;
     // width:;
   }
   a {
@@ -104,17 +104,17 @@ $menu_item_text:#253137;
     width: 100%;
   }
   svg {
-    margin:0;
+    margin: 0;
   }
 }
 .nav-item {
-  margin:2rem 1rem;
+  margin: 2rem 1rem;
   a {
     display: block;
     // border:1pt solid $menu_item_text;
-    border-radius:4px;
-    opacity:0.0;
-    background-color:#B1D7D6;
+    border-radius: 4px;
+    opacity: 0;
+    background-color: #b1d7d6;
     padding: 1rem;
     font-size: 1.5rem;
   }
@@ -122,31 +122,29 @@ $menu_item_text:#253137;
 
 .navigation-open {
   .nav-list {
-    max-height:100%;
+    max-height: 100%;
   }
   .nav-item {
     a {
-      opacity:1.0;
+      opacity: 1;
     }
   }
   .social {
     max-width: 100%;
-
   }
 }
 .nav-item a,
 .toggle {
-  box-shadow: 0px 2px 5px #060C1066;
-
+  box-shadow: 0px 2px 5px #060c1066;
 }
 main {
-  transition:all ease-in-out .5s;
+  transition: all ease-in-out 0.5s;
   // margin-top:3.5rem;
 }
 .navigation-open {
   main {
-    transform:translateY(60%) scale3d(.3,.3,.3);
-    opacity:0.0;
+    transform: translateY(60%) scale3d(0.3, 0.3, 0.3);
+    opacity: 0;
     // blur is slow universally. no.
     // filter:blur(1rem);
   }
@@ -156,7 +154,7 @@ nav svg {
   height: 1.5rem;
   width: auto;
   vertical-align: middle;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 nav span {
   vertical-align: middle;
@@ -166,7 +164,7 @@ nav span {
   margin: 0rem 1rem;
   justify-content: space-between;
   .nav-item {
-    margin:0;
+    margin: 0;
   }
   a {
     padding: 1rem;

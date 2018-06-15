@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import AllSites from './../../json/sites_worked.json';
+import AllSites from './../../JSON/sites_worked.json';
 // import Filepaths from './../../json/public.json';
 import Icon from './../Icon/Icon';
 import CssFriendlyString from '../CssFriendlyString/CssFriendlyString';
 import ResponsiveImage from './../ResponsiveImage/ResponsiveImage';
 
-export class Portfolio extends Component {
+export class PortfolioGrid extends Component {
   constructor(props) {
     super(props);
     console.log('Portfolio => constructor (props)', props);
@@ -35,7 +35,6 @@ export class Portfolio extends Component {
     return <div className="portfolio-grid">{this.PortfolioListing()}</div>;
   }
 }
-
 export class Thumbnail extends Component {
   constructor(props) {
     super(props);
@@ -54,13 +53,11 @@ export class Thumbnail extends Component {
     // let el = lqip(resolved_image_path);
     // var image = <img className='placeholder' src={} alt={this.props.name} />;
     // image
-      return (
-        <div className="graphic">
-          <ResponsiveImage src={this.props.media.graphic} alt={this.props.name}/>
-        </div>
-      );
-
-
+    return (
+      <div className="graphic">
+        <ResponsiveImage src={this.props.media.graphic} alt={this.props.name} />
+      </div>
+    );
   }
   renderThumbContents() {
     return (
@@ -101,9 +98,8 @@ export class PortfolioItem extends Component {
   }
   componentDidMount() {}
   handlePortfolioItemClick(id, event) {
-    console.log('id',id);
-    console.log('event',event);
-
+    console.log('id', id);
+    console.log('event', event);
   }
   renderPortfolioItem() {
     var Site = this.props.Site;
@@ -121,7 +117,13 @@ export class PortfolioItem extends Component {
     });
     // todo turn into structured component
     return (
-      <div id={CssFriendlyString(Site.name)} className="portfolio-item" onClick={(e) => this.handlePortfolioItemClick.bind(CssFriendlyString(Site.name), e)}>
+      <div
+        id={CssFriendlyString(Site.name)}
+        className="portfolio-item"
+        onClick={e =>
+          this.handlePortfolioItemClick.bind(CssFriendlyString(Site.name), e)
+        }
+      >
         {/* <PortfolioThumbnail DataSource={Site} /> */}
         <div className="portfolio-thumbnail">
           {/* <img src={this.props.Site.projects[0]} />> */}
@@ -163,4 +165,4 @@ export class PortfolioThumbnail extends Component {
   }
 }
 
-export default Portfolio;
+export default PortfolioGrid;

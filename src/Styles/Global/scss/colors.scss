@@ -1,9 +1,9 @@
-$base_blue:#253137;
-$text_white:rgba(215, 220, 222, 1.0);
-$brand_red:#F44336;
-$toggle_bg:#3A2A59;
-
+$base_blue: #253137;
+$text_white: rgba(215, 220, 222, 1);
+$brand_red: #f44336;
+$toggle_bg: #3a2a59;
+// <meta name="theme-color" content="$base_blue"> - see: index.html
 body {
-  background-color:$base_blue;
-  color:$text_white;
+  background-color: $base_blue;
+  color: $text_white;
 }

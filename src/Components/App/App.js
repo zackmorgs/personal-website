@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
-import { Navigation, NavBar, NavList, NavItem, NavLink, NavText, NavHamburger } from './../Navigation/Navigation';
+import {
+  Navigation,
+  NavBar,
+  NavList,
+  NavItem,
+  NavLink,
+  NavText,
+  NavHamburger
+} from './../Navigation/Navigation';
 import Main from './../Main/Main.js';
 // import { ToggleTrigger } from './../ToggleTrigger/ToggleTrigger';
-import { Portfolio } from './../Portfolio/Portfolio.js';
+import { PortfolioGrid } from '../PortfolioGrid/PortfolioGrid';
 import LoadingScreen from './../LoadingScreen/LoadingScreen.js';
 import { Github, Linkedin, Home, Info, Mail, Facebook } from 'react-feather';
+// import SiteMap from '/JSON/SiteMap.json';
+
 // import { Icon } from './../Icon/Icon.js';
 
 // import logo from './logo.svg';
@@ -19,13 +29,13 @@ class App extends Component {
   Header() {
     const HeaderContents = () => {
       return (
-          <React.Fragment>
+        <React.Fragment>
           <hgroup className="hero">
             <img
-              alt='zackmorgs'
-              src='img/zackmorgs/zackmorgs.profile.jpg'
-              className='profile-picture'
-              />
+              alt="zackmorgs"
+              src="img/zackmorgs/zackmorgs.profile.jpg"
+              className="profile-picture"
+            />
             <h1>zack morgenthaler</h1>
             <h1 className="subtitle">full-stack web developer</h1>
           </hgroup>
@@ -47,25 +57,29 @@ class App extends Component {
       );
     }
   }
-  MainNavigation () {
+  MainNavigation() {
     return (
       <Navigation>
         <NavBar className="navbar">
-          <a className="branding" />
+          <a className="branding" src="/">
+            Zack Morgenthaler
+          </a>
           <NavHamburger />
         </NavBar>
         <NavList ref="navigationList" className="nav-list">
           <NavItem>
             <NavLink href="/">
               <NavText>
-                {'home'}<Home />
+                {'home'}
+                <Home />
               </NavText>
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/about">
               <NavText>
-                {'about'}<Info />
+                {'about'}
+                <Info />
               </NavText>
             </NavLink>
           </NavItem>
@@ -100,19 +114,16 @@ class App extends Component {
             </NavLink>
           </NavItem>
         </NavList>
-
       </Navigation>
     );
   }
   MainLoadingScreen() {
     return <LoadingScreen />;
   }
-  MainPortfolio(){
-    return (
-      <Portfolio />
-    );
+  MainPortfolio() {
+    return <PortfolioGrid />;
   }
-  Footer (){
+  Footer() {
     return (
       <footer>
         <p>2018. Zack Morgenthaler</p>
@@ -133,9 +144,7 @@ class App extends Component {
         {this.MainLoadingScreen()}
         {this.MainNavigation()}
         {this.Header()}
-        <Main>
-          {this.MainPortfolio()}
-        </Main>
+        <Main>{this.MainPortfolio()}</Main>
         {this.Footer()}
       </React.Fragment>
     );
