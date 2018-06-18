@@ -1,177 +1,54 @@
 import React, { Component } from 'react';
-import AllSites from './../../JSON/sites_worked.json';
-// import Filepaths from './../../json/public.json';
-import Icon from './../Icon/Icon';
-import CssFriendlyString from '../CssFriendlyString/CssFriendlyString';
 import ResponsiveImage from './../ResponsiveImage/ResponsiveImage';
 
 export class PortfolioGrid extends Component {
 	constructor(props) {
 		super(props);
-		console.log('Portfolio => constructor (props)', props);
-		var SitesDisplayed = [];
-		var SitesNotDisplayed = [];
-		AllSites.forEach(function(Site) {
-			if (Site.display_portfolio_view) {
-				SitesDisplayed.push(Site);
-			} else {
-				// maybe useful later?
-				SitesNotDisplayed.push(Site);
-			}
+		this.createPortfolioItems = this.createPortfolioItems.bind(this);
+	}
+	render() {
+		import json_file_of_sites_i_worked_on from './../../JSON/sites_worked.json';
+		return <div className={this.props.className}>{this.createPortfolioItems(json_file_of_sites_i_worked_on)}</div>;
+	}
+	createPortfolioItems(sites) {
+		import CssFriendlyString from '../CssFriendlyString/CssFriendlyString';
+		return sites.map((site, index, sites_array) => {
+			let identifier = CssFriendlyString(site.name);
+			let _key = identifier + index.toString();
+			return <EmployerPortfolioGridItem id={identifier} SiteData={site} key={_key} />;
 		});
-		this.SitesDisplayed = SitesDisplayed;
-		this.SitesNotDisplayed = SitesNotDisplayed;
-		this.handleClick = this.handleClick.bind(this);
-	}
-	handleClick(wat) {
-		console.log(wat);
-	}
-	render() {
-		return this.makePortfolio();
-	}
-	PortfolioListing() {
-		return this.SitesDisplayed.map((Site, Index) => <PortfolioItem Site={Site} key={Index} />);
-	}
-	makePortfolio() {
-		return <div className="portfolio-grid">{this.PortfolioListing()}</div>;
 	}
 }
-export class Thumbnail extends Component {
+
+class EmployerPortfolioGridItem extends Component {
 	constructor(props) {
 		super(props);
-		console.log('Thumbnail constructor(props)', props);
-	}
-	makeCaption() {
-		return (
-			<div className="caption-container hidden">
-				<p>{this.props.media.caption}</p>
-			</div>
-		);
-	}
-	makeGraphic() {
-		// var resolved_image_path = this.props.media.graphic;
-		// console.log(resolved_image_path);
-		// let el = lqip(resolved_image_path);
-		// var image = <img className='placeholder' src={} alt={this.props.name} />;
-		// image
-		return (
-			<div className="graphic">
-				<ResponsiveImage src={this.props.media.graphic} alt={this.props.name} />
-			</div>
-		);
-	}
-	renderThumbContents() {
-		return (
-			<React.Fragment>
-				{this.makeGraphic()}
-				{this.makeCaption()}
-			</React.Fragment>
-		);
-	}
-	renderThumbnail() {
-		var thumbnailClassName = 'thumb';
-		thumbnailClassName += ' ' + this.props.media.content_type;
-		return (
-			<li className={thumbnailClassName} key={this.props.index}>
-				{this.renderThumbContents()}
-			</li>
-		);
-	}
-	render() {
-		if (typeof this.props.media !== 'undefined') {
-			// we need to hide the other images initially.
-			if (this.props.index === 0) {
-				// var image = require(this.this.props.media.graphic);
-				return this.renderThumbnail();
-			} else {
-				return this.renderThumbnail();
-			}
-		} else {
-			console.log('Undefined Thumbnail', this.props);
-			return null;
-		}
-	}
-}
-export class PortfolioItem extends Component {
-	constructor(props) {
-		super(props);
-		//console.log('PortfolioItem => constructor (props)', props);
-		this.handlePortfolioItemClick = this.handlePortfolioItemClick.bind(this);
 		this.state = {
-			opened: false,
+			loaded: false,
+			show_fullview: false,
 		};
+		this.handleClick = this.handleClick.bind(this);
+		this.createThumbnails = this.createThumbnails.bind(this);
 	}
-	componentDidMount() {}
-	handlePortfolioItemClick(id, event) {
-		console.log('id', id);
-		var item = document.getElementById(id);
-		item.classList.toggle('opened');
-		console.log('event', event.target);
-		this.setState({
-			opened: !this.state.opened,
-		});
-		console.log('state', this.state.opened);
-	}
-	render(props) {
-		var Site = this.props.Site;
 
-		const Languages = Site.technology.languages.map(language => {
-			return (
-				<li className="lang">
-					<Icon IconName={language} />
-				</li>
-			);
+	createThumbnails() {
+		this.props.SiteData.projects.map(project => {
+			return <Thumbnail />;
 		});
-		this.Medias = Site.projects[0].media.map((media, index) => {
-			// console.log(media);
-			return <Thumbnail media={media} index={index} Site={Site} key={index} />;
-		});
-		// todo turn into structured component
-		var p_className = '';
-		// if (this.state.opened) {
-		// 	p_className = 'portfolio-item opened loaded';
-		// } else {
-		// 	p_className = 'portfolio-item';
-		// }
-		p_className = 'portfolio-item';
+	}
+
+	handleClick() {}
+
+	render() {
 		return (
-			<div
-				id={CssFriendlyString(Site.name)}
-				className={p_className}
-				onClick={e => this.handlePortfolioItemClick(CssFriendlyString(Site.name), e)}
-			>
-				{/* <PortfolioThumbnail DataSource={Site} /> */}
-				<div className="portfolio-thumbnail">
-					{/* <img src={this.props.Site.projects[0]} />> */}
-					<ul className="thumbs">{this.Medias}</ul>
-					{/* <img src='http://via.placeholder.com/600x600' /> */}
+			// this.props.SiteData
+			<div>
+				<div className="thumbnail-name-display">
+					<h4 className="site-name">{this.props.SiteData.name}</h4>
 				</div>
-				<div className="site-info hidden">
-					<div className="site-logo">
-						<img src={Site.logo} alt={Site.name} />
-					</div>
-					<div className="info-work">
-						<span className="site-name">{Site.name}</span>
-						<span className="site-years-worked">{Site.year}</span>
-						<ul className="language-list">{Languages}</ul>
-					</div>
-					{/* <a href={Site.url}>[link]</a> */}
-				</div>
+				<ul>{this.createThumbnails(this)}</ul>
 			</div>
 		);
-	}
-}
-export class PortfolioThumbnail extends Component {
-	constructor(props) {
-		super(props);
-		//console.log('PortfolioThumnail => constructor (props)', props);
-	}
-
-	// //console.log(this.props.Sources);
-	// //console.log(JSON.stringify(this.props.Sources));
-
-	render(props) {
-		return <span>{JSON.stringify(this.props.DataSource)}</span>;
 	}
 }
 

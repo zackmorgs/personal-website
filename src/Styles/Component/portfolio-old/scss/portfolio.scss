@@ -219,6 +219,9 @@ $base_blue: #253137;
 	top: 0px;
 	left: 0px;
 	right: 0px;
+	bottom: 100%;
+	z-index: 2;
+	overflow: visible;
 }
 
 // Galaxy S5-like query
