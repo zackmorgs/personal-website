@@ -4,27 +4,24 @@ export class LoadingScreen extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			loading: this.props.loading,
+			loadingScreenLoaded: false,
+			loading: this.props.isLoaded,
 		};
 	}
-	componentWillUpdate() {
-		window.setTimeout(function() {
-			this.setState = (this.prevState,
-			{
-				loading: this.props.loading,
-			});
-		}, 1000);
-		console.log('yes that worked');
+	componentDidMount() {
+		this.setState({
+			loadingScreenLoaded: true,
+		});
 	}
-	componentDidMount() {}
 	render() {
-		this.state = {
-			loading: this.props.loading,
-		};
-		if (this.state.loading) {
-			return <p>Loading</p>;
+		if (this.state.loadingScreenLoaded) {
+			if (this.state.loading) {
+				return;
+			} else {
+				return <p>{}</p>;
+			}
 		} else {
-			return <p>Loaded</p>;
+			return <p>{}</p>;
 		}
 	}
 }

@@ -5,24 +5,57 @@ export class ResponsiveImage extends Component {
 		super(props);
 		this.state = {
 			loaded: false,
+			imageLoaded: false,
 			images: {
-				mobile: '',
-				tablet: '',
-				desktop: '',
+				mobile: false,
+				tablet: false,
+				desktop: false,
 			},
 		};
-		this.handleLoad = this.handleLoad.bind(this);
+		// if () {
+
+		// }
 	}
-	handleLoad() {}
 	componentDidMount(props) {
-		this.setState(this.prevState, {
-			loaded: !this.prevState,
-		});
-		this.handleLoad();
+		window.setTimeout(() => {
+			this.setState({
+				loaded: true,
+			});
+		}, 3000);
+	}
+	handleImageLoad() {
+		window.setTimeout(() => {
+			this.setState({
+				imageLoaded: true,
+			});
+		}, 3000);
 	}
 	render() {
 		// return <img ></img>
-		return null;
+		if (this.state.loaded && this.state.imageLoaded) {
+			return (
+				<div className="gallery-img-container">
+					<img
+						className={'gallery-img loaded'}
+						src={this.props.imgSrc}
+						alt={this.props.imgAlt}
+						onLoad={this.handleImageLoad.bind(this)}
+					/>
+				</div>
+			);
+		} else {
+			return (
+				<div className="gallery-img-container">
+					<div className="loader">Loading...</div>
+					<img
+						className="gallery-img"
+						src={this.props.imgSrc}
+						alt={this.props.imgAlt}
+						onLoad={this.handleImageLoad.bind(this)}
+					/>
+				</div>
+			);
+		}
 	}
 }
 
