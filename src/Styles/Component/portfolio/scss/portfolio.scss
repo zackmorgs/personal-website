@@ -1,0 +1,28 @@
+@keyframes move {
+	from {
+		top: 0;
+		left: 0;
+	}
+	to {
+		top: 100px;
+		left: 100px;
+	}
+}
+.portfolio-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	animation: move 10s steps(10) infinite alternate;
+}
+.portfolio-item {
+	transform: translateY(-100%);
+	opacity: 0;
+	transition: all 1s ease-in-out;
+	transition-delay: 1s;
+	&.loaded {
+		transition-delay: 1s;
+		transition: all 1s ease-in-out;
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}

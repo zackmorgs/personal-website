@@ -13,10 +13,16 @@ export class ResponsiveImage extends Component {
 		};
 		this.handleLoad = this.handleLoad.bind(this);
 	}
+	handleLoad() {}
 	componentDidMount(props) {
-		this.setState(prevState, {
-			loaded: true,
+		this.setState(this.prevState, {
+			loaded: !this.prevState,
 		});
+		this.handleLoad();
+	}
+	render() {
+		// return <img ></img>
+		return null;
 	}
 }
 
