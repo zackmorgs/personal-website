@@ -21,20 +21,22 @@ export class ResponsiveImage extends Component {
 			this.setState({
 				loaded: true,
 			});
-		}, 3000);
+			this.props.onLoad();
+		}, 0);
 	}
 	handleImageLoad() {
+		console.log('test');
 		window.setTimeout(() => {
 			this.setState({
 				imageLoaded: true,
 			});
-		}, 3000);
+		}, 0);
 	}
 	render() {
 		// return <img ></img>
 		if (this.state.loaded && this.state.imageLoaded) {
 			return (
-				<div className="gallery-img-container">
+				<div className={this.props.className}>
 					<img
 						className={'gallery-img loaded'}
 						src={this.props.imgSrc}
@@ -45,7 +47,7 @@ export class ResponsiveImage extends Component {
 			);
 		} else {
 			return (
-				<div className="gallery-img-container">
+				<div className={this.props.className}>
 					<div className="loader">Loading...</div>
 					<img
 						className="gallery-img"

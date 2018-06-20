@@ -16,7 +16,7 @@ export class PortfolioGrid extends Component {
 			this.setState({
 				isLoading: false,
 			});
-		}, 1000);
+		}, 0);
 	}
 	render() {
 		if (this.state.isLoading) {

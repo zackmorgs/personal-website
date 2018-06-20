@@ -1,3 +1,5 @@
+@import './../../device-view/src/devices';
+
 #American_Academy_of_Sleep_Medicine {
 	background-color: #3d4a51;
 }
@@ -47,11 +49,35 @@
 	&.loaded {
 	}
 }
+.fullview-controls {
+	opacity: 0;
+	max-height: 0px;
+}
+.loaded {
+}
+.selected {
+	.fullview-controls {
+		opacity: 1;
+		max-height: auto;
+		button {
+			border: none;
+			padding: none;
+			margin: none;
+		}
+	}
+	.btn-fullview-close {
+		padding: 0.25rem;
+		svg {
+			color: rgb(29, 39, 44);
+		}
+	}
+}
 .employer-portfolio-grid-item {
 	opacity: 0;
 	transition: all 2s ease-in-out;
 	position: relative;
 	top: auto;
+	box-shadow: -2px 0px 8px rgba(21, 29, 33, 0.25);
 	&.loaded {
 		opacity: 1;
 		transition: all 2s ease-in-out;
@@ -79,17 +105,19 @@
 }
 .loaded {
 	.thumbnail-name-display {
-		opacity: 1;
+		opacity: 0;
 		position: absolute;
 		// top: 10px;
 		z-index: 0;
 		justify-content: space-between;
 		padding: 0.25rem;
-		top: 0;
+		top: 0.5rem;
 		left: 0;
+		right: 0;
 		// margin: 1rem;
 		display: flex;
-		background-color: black;
+		justify-content: space-around;
+		// background-color: black;
 		img {
 			max-height: 2rem;
 			// max-width: 2rem;
@@ -108,6 +136,7 @@
 	}
 	.project-container-item {
 		padding: 0px;
+		position: relative;
 	}
 	.gallery-item {
 		max-height: 100%;
@@ -146,7 +175,7 @@
 }
 .project-information {
 	position: absolute;
-	bottom: 0rem;
+	bottom: 2rem;
 	left: 1rem;
 	z-index: 2;
 	background: rgba(45, 59, 66, 1);
@@ -166,8 +195,13 @@
 .selected {
 	.project-information {
 		display: block;
-		top: 0.5rem;
+		position: sticky;
+		top: -4rem;
 		bottom: auto;
+		background: transparent;
+		h5 {
+			color: rgba(45, 59, 66, 1);
+		}
 	}
 	.gallery-caption {
 		max-height: 100%;
@@ -176,9 +210,10 @@
 	}
 }
 .project-gallery {
-	box-shadow: -4px -2px 4px rgb(21, 29, 33);
-	background-color: rgb(218, 235, 235);
-	margin: 3rem 0.5rem 0rem;
+	box-shadow: -4px -2px 1rem rgba(21, 29, 33, 0.25);
+	// background-color: rgb(218, 235, 235);
+	background-color: white;
+	margin: 2rem 0.5rem 0rem;
 }
 .gallery-item {
 	max-height: 12rem;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ResponsiveImage } from '../ResponsiveImage/ResponsiveImage';
-
+import { GalleryImage } from './../GalleryImage/GalleryImage';
 /*
 <GalleryItem
   imgSrc={media.graphic}
@@ -30,8 +30,8 @@ export default class GalleryItem extends Component {
 			additional_class_names += ' loaded';
 		}
 		return (
-			<li className={'gallery-item' + additional_class_names}>
-				<ResponsiveImage imgSrc={this.props.imgSrc} imgAlt={this.props.imgAlt} />
+			<li className={'gallery-item' + additional_class_names} key={this.key}>
+				<GalleryImage imgSrc={this.props.imgSrc} imgAlt={this.props.imgAlt} />
 				<div className="gallery-caption">
 					<p>{this.props.captionText}</p>
 				</div>
